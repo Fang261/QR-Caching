@@ -1,6 +1,6 @@
 # Relatório Inicial - QR-Caching
 
-## Proposta Inicial de Projeto <!-- omit in toc -->
+## Proposta Inicial do Projeto <!-- omit in toc -->
 
 - [Enquadramento do Projeto](#enquadramento-do-projeto)
   - [Ideia](#ideia)
