@@ -50,9 +50,9 @@
 
 ### Guião de Teste 1
 --------------------------------------------------------
-### Guião de Teste 2 - Outro Caso de Utilização
+### Guião de Teste 2
 ----------------------------------------------------------
-### Guião de Teste 3 - Outro Caso de Utilização
+### Guião de Teste 3
 ------------------------------------------------
 
 ## Conclusão
