@@ -12,7 +12,6 @@
   - [Guião de Teste 1](#Guião-de-Teste-1)
   - [Guião de Teste 2](#Guião-de-Teste-2)
   - [Guião de Teste 3](#Guião-de-Teste-3)
-- [Conclusão](#conclusão)
 
 
 ## Enquadramento do Projeto
@@ -52,4 +51,3 @@
 ### Guião de Teste 3
 ------------------------------------------------
 
-## Conclusão
