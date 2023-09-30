@@ -71,8 +71,12 @@ No terceiro caso, depois do logina e já na página inicial, se o utilizador car
 ----------------------------------------------------------
 
 ## Plano de Trabalho
+----------------------------------------------------------
+O nosso plano de trabalho será apoiarmos-nos nas mockups e interfaces e ir desenvolvendo o nosso projeto, começando por desenvolver a parte visual da aplicação no Android Studios, e pensando em começar a criar a BD assim que tivermos o conhecimento.
+Começar a ver também o que é preciso para termos a autorização para espalharmos os QR codes pelo IADE.
 
 ## Requisitos funcionais e não funcionais
+----------------------------------------------------------
 
 ### Requisitos Funcionais
 
@@ -117,5 +121,19 @@ Deve ser desenvolvida uma interface de usuário intuitiva e amigável para facil
 5-Conformidade com Regulamentos:
 A aplicação deve estar em conformidade com regulamentos de privacidade e segurança de dados.
 
-------------------------------------------------
+----------------------------------------------------------
+
+## Modelo do domínio
+----------------------------------------------------------
+1-Utilizador:
+A entidade que representa os utilizadores da aplicação. Possui atributos como ID, Nome de Utilizador, Password e Avatar.
+
+2-QR Code:
+Representa os códigos QR espalhados pelo campus do IADE. Pode ter atributos como ID, Conteúdo (informação associada ao QR code) e Localização (piso e coordenadas).
+
+3-Memória:
+Representa as memórias deixadas pelos utilizadores após scanear um QR code. Pode incluir atributos como Foto, Texto e Data.
+
+4-Edifício IADE:
+Representa o edifício do IADE como um todo. Pode ter atributos como Pisos e Plantas.
 
