@@ -15,6 +15,7 @@
 - [Requisitos funcionais e não funcionais](#requisitos-funcionais-e-não-funcionais)
   - [Requisitos funcionais](#requisitos-funcionais)
   - [Requisitos não funcionais](#requisitos-não-funcionais)
+- [Modelo do domínio](#modelo-do-domínio)
 
 
 ## Enquadramento do Projeto
