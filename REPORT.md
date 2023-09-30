@@ -31,7 +31,8 @@ Queremos proporcionar aos utilizadores uma experiência única e envolvente ao e
 
 ### Objetivos
 
---------------------------------------------------------------
+  O objetivo central deste projeto é promover a inovação e a integração da tecnologia no nosso quotidiano, com foco na exploração do IADE. Almejamos desenvolver uma aplicação que permita aos utilizadores desfrutar da experiência ao máximo, tornando-a divertida e acessível a todos. A nossa meta é que tanto alunos como professores do IADE possam utilizar o QR-Caching sem dificuldades.
+Cada utilizador terá a sua própria conta para uma experiência personalizada e poderão competir entre si para ver quem completa as suas buscas mais rapidamente. Os participantes poderão deixar memórias nos destinos visitados, incluindo fotos ou textos à sua escolha dentro da aplicação. Permitiremos aos utilizadores escolherem avatares para os seus perfis e mudarem os seus nomes de utilizador conforme desejarem. Forneceremos um mapa detalhado do campus do IADE para que os utilizadores possam navegar eficazmente na busca pelos QR codes, onde estes códigos estarão estrategicamente distribuídos pelo edifício e estarão claramente identificados no mapa da aplicação. 
 
 ### Público-Alvo
 
