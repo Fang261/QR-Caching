@@ -85,11 +85,11 @@ Os utilizadores devem ter acesso a um modelo 3D do edifício do IADE, onde podem
 3-Câmara Integrada:
 A aplicação deve integrar uma câmara para a leitura dos QR codes.
 
-4-Escaneamento de QR Codes:
-Os utilizadores devem ser capazes de escanear os QR codes espalhados pelo edifício do IADE.
+4-Scaneamento de QR Codes:
+Os utilizadores devem ser capazes de scanear os QR codes espalhados pelo edifício do IADE.
 
 5-Registo de Memórias:
-Após escanear um QR code, os utilizadores devem poder deixar uma foto ou um texto como memória associada àquele código.
+Após scanear um QR code, os utilizadores devem poder deixar uma foto ou um texto como memória associada àquele código.
 
 6-Personalização de Perfil:
 Os utilizadores devem poder personalizar o seu perfil, incluindo a escolha de avatares e a possibilidade de alterar o nome de utilizador.
@@ -109,21 +109,12 @@ A aplicação deve ter um tempo de resposta rápido, especialmente ao escanear Q
 Deve ser implementada segurança para proteger os dados dos utilizadores e prevenir ataques.
 
 3-Compatibilidade:
-A aplicação deve ser compatível com dispositivos móveis iOS e Android.
+A aplicação deve ser compatível com dispositivos móveis Android.
 
 4-Usabilidade:
 Deve ser desenvolvida uma interface de usuário intuitiva e amigável para facilitar a utilização por utilizadores de diferentes idades e níveis de experiência.
 
-5-Escalabilidade:
-A aplicação deve ser capaz de lidar com um grande número de utilizadores simultâneos.
-
-6-Disponibilidade:
-A aplicação deve ter alta disponibilidade, minimizando o tempo de inatividade.
-
-7-Backup e Recuperação:
-Deve ser implementado um sistema de backup e recuperação de dados para evitar perda de informações.
-
-8-Conformidade com Regulamentos:
+5-Conformidade com Regulamentos:
 A aplicação deve estar em conformidade com regulamentos de privacidade e segurança de dados.
 
 ------------------------------------------------
