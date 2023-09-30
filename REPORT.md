@@ -44,7 +44,7 @@ O nosso público-alvo abrange uma faixa etária diversificada, incluindo jovens 
 
 ### Guião de Teste 1
 
-O nosso caso "core" começa ssim que o utilizador entra na aplicação, faz o seu login e a partir daí tem total acesso à sua conta, onde vai ter o edifício do IADE em modelo 3D, um button que lhe dará acesso imediato à câmara, e o seu nome e foto de perfil que em sí também é um button. Clicando no modelo do IADE vai ser direcionado para uma página com a opção de escolha de todos os pisos do edifício e um outro button que serve para ser redirecionado para a página anterior. Escolhendo um piso vai ser direcionado para uma outra página onde vai ser apresentada a planta e o número do piso escolhido, com todas as localizações dos QR codes, um button para ser redirecionado para a página anterior, e outra vez outro butten para ser direcionado para a câmara. Uma vez na câmara, será encontrado só um button que redirecionará o utilizador para a página de onde veio, a inicial ou a da planta do piso. Aqui o utilizador vai dar scan ao QR code e asssim que o fizer vai para uma página onde vai poder deixar uma foto ou um texto e confirmar a sua tarefa, ou voltar a trás. 
+O nosso caso "core" começa assim que o utilizador entra na aplicação, faz o seu login com o seu ID e Password e a partir daí tem total acesso à sua conta, onde vai ter o edifício do IADE em modelo 3D, um button que lhe dará acesso imediato à câmara, e o seu nome e foto de perfil que em sí também é um button. Clicando no modelo do IADE vai ser direcionado para uma página com a opção de escolha de todos os pisos do edifício e um outro button que serve para ser redirecionado para a página anterior. Escolhendo um piso vai ser direcionado para uma outra página onde vai ser apresentada a planta e o número do piso escolhido, com todas as localizações dos QR codes, um button para ser redirecionado para a página anterior, e outra vez outro butten para ser direcionado para a câmara. Uma vez na câmara, será encontrado só um button que redirecionará o utilizador para a página de onde veio, a inicial ou a da planta do piso. Aqui o utilizador vai dar scan ao QR code e asssim que o fizer vai para uma página onde vai poder deixar uma foto ou um texto e confirmar a sua tarefa, ou voltar a trás. 
 
 ![image](https://github.com/Fang261/QR-Caching/assets/116730433/18973af9-4a27-4ebb-94fa-4153ea865b75)
 
@@ -52,11 +52,15 @@ O nosso caso "core" começa ssim que o utilizador entra na aplicação, faz o se
 --------------------------------------------------------
 ### Guião de Teste 2
 
+No segundo caso temos o sign in, em que quando um utilizador entra na aplicação e não tem uma conta, logo vai ter de carregar no button para se registar e será direcionado para outra página. Nesta página o utilizador encontrará quatro espaços de preenchimento obrigatório, Username, ID, Email e Password. Após preencher todos os espaços poderá se registar, e depois disto é direcionado de volta para a página de login.
+
 ![image](https://github.com/Fang261/QR-Caching/assets/116730433/221d79a1-e9bb-46d9-bc0f-398a5d71d7f4)
 
 
 ----------------------------------------------------------
 ### Guião de Teste 3
+
+No terceiro caso, depois do logina e já na página inicial, se o utilizador carregar no icon do seu avatar será direcionado para o seu perfil, onde vai encontra o se Username, o seu avatar, a sua barra de progresso e um button para voltar para a página inicial. Se carregar no username poderá mudalo nessa mesma página, e se carregar no avatar irá ser direcionado para uma outra página onde terá muitos outros avatares que poderá escolher e um button para voltar para trás assim que escolher um novo ou não.
 
 ![image](https://github.com/Fang261/QR-Caching/assets/116730433/58e9bf36-2453-47b5-97bf-1b2afec00a3d)
 
