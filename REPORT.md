@@ -25,7 +25,9 @@
 
 ### Contexto
 
--------------------------------------------------------------
+Este projeto está inserido num contexto tecnológico em que os QR codes se tornaram uma parte essencial da comunicação e interação. Os QR codes são uma forma eficaz de ligar o mundo físico e digital, e a sua utilização está cada vez mais comum em vários setores, incluindo a educação e o turismo. Baseando-nos no Geocaching, faremos com que a nossa aplicaçáo seja basicamente uma aventura digital, em que em vez de caixas físicas, teremos os nossos QR codes. É dentro deste contexto que a nossa aplicação encontra a sua relevância.
+
+Queremos proporcionar aos utilizadores uma experiência única e envolvente ao explorarem o IADE em busca dos QR codes espalhados estrategicamente. Ao fazer isso, criaremos uma ligação mais profunda entre as pessoas e o ambiente do IADE, incentivando a exploração e a descoberta.
 
 ### Objetivos
 
