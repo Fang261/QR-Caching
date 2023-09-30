@@ -77,55 +77,54 @@ No terceiro caso, depois do logina e já na página inicial, se o utilizador car
 ### Requisitos Funcionais
 
 Login de Utilizadores:
+-Os utilizadores devem poder fazer login na aplicação usando um ID e senha.
 
-Os utilizadores devem poder fazer login na aplicação usando um ID e senha.
 Exploração do IADE:
+-Os utilizadores devem ter acesso a um modelo 3D do edifício do IADE, onde podem navegar pelos diferentes pisos.
 
-Os utilizadores devem ter acesso a um modelo 3D do edifício do IADE, onde podem navegar pelos diferentes pisos.
 Câmara Integrada:
+-A aplicação deve integrar uma câmara para a leitura dos QR codes.
 
-A aplicação deve integrar uma câmara para a leitura dos QR codes.
 Escaneamento de QR Codes:
+-Os utilizadores devem ser capazes de escanear os QR codes espalhados pelo edifício do IADE.
 
-Os utilizadores devem ser capazes de escanear os QR codes espalhados pelo edifício do IADE.
 Registo de Memórias:
+-Após escanear um QR code, os utilizadores devem poder deixar uma foto ou um texto como memória associada àquele código.
 
-Após escanear um QR code, os utilizadores devem poder deixar uma foto ou um texto como memória associada àquele código.
 Personalização de Perfil:
+-Os utilizadores devem poder personalizar o seu perfil, incluindo a escolha de avatares e a possibilidade de alterar o nome de utilizador.
 
-Os utilizadores devem poder personalizar o seu perfil, incluindo a escolha de avatares e a possibilidade de alterar o nome de utilizador.
 Mapa Detalhado:
+-Fornecimento de um mapa detalhado do campus do IADE com a localização estratégica dos QR codes.
 
-Fornecimento de um mapa detalhado do campus do IADE com a localização estratégica dos QR codes.
 Barra de Progresso:
-
-Os utilizadores devem ter uma barra de progresso que indica o seu progresso na busca pelos QR codes.
+-Os utilizadores devem ter uma barra de progresso que indica o seu progresso na busca pelos QR codes.
 
 ### Requisitos Não Funcionais
 
 Desempenho:
-A aplicação deve ter um tempo de resposta rápido, especialmente ao escanear QR codes.
+-A aplicação deve ter um tempo de resposta rápido, especialmente ao escanear QR codes.
 
 Segurança:
-Deve ser implementada segurança para proteger os dados dos utilizadores e prevenir ataques.
+-Deve ser implementada segurança para proteger os dados dos utilizadores e prevenir ataques.
 
 Compatibilidade:
-A aplicação deve ser compatível com dispositivos móveis iOS e Android.
+-A aplicação deve ser compatível com dispositivos móveis iOS e Android.
 
 Usabilidade:
-Deve ser desenvolvida uma interface de usuário intuitiva e amigável para facilitar a utilização por utilizadores de diferentes idades e níveis de experiência.
+-Deve ser desenvolvida uma interface de usuário intuitiva e amigável para facilitar a utilização por utilizadores de diferentes idades e níveis de experiência.
 
 Escalabilidade:
-A aplicação deve ser capaz de lidar com um grande número de utilizadores simultâneos.
+-A aplicação deve ser capaz de lidar com um grande número de utilizadores simultâneos.
 
 Disponibilidade:
-A aplicação deve ter alta disponibilidade, minimizando o tempo de inatividade.
+-A aplicação deve ter alta disponibilidade, minimizando o tempo de inatividade.
 
 Backup e Recuperação:
-Deve ser implementado um sistema de backup e recuperação de dados para evitar perda de informações.
+-Deve ser implementado um sistema de backup e recuperação de dados para evitar perda de informações.
 
 Conformidade com Regulamentos:
-A aplicação deve estar em conformidade com regulamentos de privacidade e segurança de dados.
+-A aplicação deve estar em conformidade com regulamentos de privacidade e segurança de dados.
 
 ------------------------------------------------
 
