@@ -44,6 +44,8 @@ O nosso público-alvo abrange uma faixa etária diversificada, incluindo jovens 
 
 ### Guião de Teste 1
 
+O nosso caso "core" começa ssim que o utilizador entra na aplicação, faz o seu login e a partir daí tem total acesso à sua conta, onde vai ter o edifício do IADE em modelo 3D, um button que lhe dará acesso imediato à câmara, e o seu nome e foto de perfil que em sí também é um button. Clicando no modelo do IADE vai ser direcionado para uma página com a opção de escolha de todos os pisos do edifício e um outro button que serve para ser redirecionado para a página anterior. Escolhendo um piso vai ser direcionado para uma outra página onde vai ser apresentada a planta e o número do piso escolhido, com todas as localizações dos QR codes, um button para ser redirecionado para a página anterior, e outra vez outro butten para ser direcionado para a câmara. Uma vez na câmara, será encontrado só um button que redirecionará o utilizador para a página de onde veio, a inicial ou a da planta do piso. Aqui o utilizador vai dar scan ao QR code e asssim que o fizer vai para uma página onde vai poder deixar uma foto ou um texto e confirmar a sua tarefa, ou voltar a trás. 
+
 ![image](https://github.com/Fang261/QR-Caching/assets/116730433/18973af9-4a27-4ebb-94fa-4153ea865b75)
 
 
