@@ -13,8 +13,8 @@
   - [Guião de Teste 3](#Guião-de-Teste-3)
 - [Plano de trabalho](#plano-de-trabalho)
 - [Requisitos funcionais e não funcionais](#requisitos-funcionais-e-não-funcionais)
- - [Requisitos funcionais](#requisitos-funcionais)
- - [Requisitos não funcionais](#requisitos-não-funcionais)
+  - [Requisitos funcionais](#requisitos-funcionais)
+  - [Requisitos não funcionais](#requisitos-não-funcionais)
 
 
 ## Enquadramento do Projeto
@@ -126,8 +126,6 @@ Deve ser implementado um sistema de backup e recuperação de dados para evitar 
 
 Conformidade com Regulamentos:
 A aplicação deve estar em conformidade com regulamentos de privacidade e segurança de dados.
-
-
 
 ------------------------------------------------
 
