@@ -11,6 +11,8 @@
   - [Guião de Teste 1](#Guião-de-Teste-1)
   - [Guião de Teste 2](#Guião-de-Teste-2)
   - [Guião de Teste 3](#Guião-de-Teste-3)
+- [Plano de trabalho](#plano-de-trabalho)
+- [Requisitos funcionais e não funcionais](#requisitos-funcionais-e-nao-funcionais)
 
 
 ## Enquadramento do Projeto
@@ -63,6 +65,21 @@ No segundo caso temos o sign in, em que quando um utilizador entra na aplicaçã
 No terceiro caso, depois do logina e já na página inicial, se o utilizador carregar no icon do seu avatar será direcionado para o seu perfil, onde vai encontra o se Username, o seu avatar, a sua barra de progresso e um button para voltar para a página inicial. Se carregar no username poderá mudalo nessa mesma página, e se carregar no avatar irá ser direcionado para uma outra página onde terá muitos outros avatares que poderá escolher e um button para voltar para trás assim que escolher um novo ou não.
 
 ![image](https://github.com/Fang261/QR-Caching/assets/116730433/58e9bf36-2453-47b5-97bf-1b2afec00a3d)
+
+----------------------------------------------------------
+
+## Plano de Trabalho
+
+## Requisitos funcionais e não funcionais
+
+Recursos Funcionais:
+
+Autenticação de usuário.
+Capacidade de atualizar informações de perfil.
+
+Recursos Não Funcionais:
+
+
 
 
 ------------------------------------------------
