@@ -20,9 +20,6 @@
 
 ## Enquadramento do Projeto
 
--------------------------------------------------------------
-
-
 ### Ideia
 
   A ideia do nosso projeto é criar uma aplicação de QR code caching, ou seja, os nossos utilizadores iram ter de andar pelo IADE em busca de todos os QR codes para que consigam completar a sua barra de progresso.
@@ -42,10 +39,9 @@ Cada utilizador terá a sua própria conta para uma experiência personalizada e
 
 O nosso público-alvo abrange uma faixa etária diversificada, incluindo jovens estudantes universitários e professores com diferentes idades e experiências.  Este público está familiarizado com a tecnologia e utiliza dispositivos móveis no seu quotidiano, existe também uma inclinação para a competição amigável e o desejo de interagir socialmente com os colegas, tornando a aplicação QR-Caching uma opção atrativa.
 
+-------------------------------------------------------------
 
 ## Versão Preliminar com Guiões de Teste
-
------------------------------------------------------------
 
 ### Guião de Teste 1
 
@@ -55,6 +51,7 @@ O nosso caso "core" começa assim que o utilizador entra na aplicação, faz o s
 
 
 --------------------------------------------------------
+
 ### Guião de Teste 2
 
 No segundo caso temos o sign in, em que quando um utilizador entra na aplicação e não tem uma conta, logo vai ter de carregar no button para se registar e será direcionado para outra página. Nesta página o utilizador encontrará quatro espaços de preenchimento obrigatório, Username, ID, Email e Password. Após preencher todos os espaços poderá se registar, e depois disto é direcionado de volta para a página de login.
@@ -63,6 +60,7 @@ No segundo caso temos o sign in, em que quando um utilizador entra na aplicaçã
 
 
 ----------------------------------------------------------
+
 ### Guião de Teste 3
 
 No terceiro caso, depois do logina e já na página inicial, se o utilizador carregar no icon do seu avatar será direcionado para o seu perfil, onde vai encontra o se Username, o seu avatar, a sua barra de progresso e um button para voltar para a página inicial. Se carregar no username poderá mudalo nessa mesma página, e se carregar no avatar irá ser direcionado para uma outra página onde terá muitos outros avatares que poderá escolher e um button para voltar para trás assim que escolher um novo ou não.
@@ -72,12 +70,13 @@ No terceiro caso, depois do logina e já na página inicial, se o utilizador car
 ----------------------------------------------------------
 
 ## Plano de Trabalho
-----------------------------------------------------------
+
 O nosso plano de trabalho será apoiarmos-nos nas mockups e interfaces e ir desenvolvendo o nosso projeto, começando por desenvolver a parte visual da aplicação no Android Studios, e pensando em começar a criar a BD assim que tivermos o conhecimento.
 Começar a ver também o que é preciso para termos a autorização para espalharmos os QR codes pelo IADE.
 
-## Requisitos funcionais e não funcionais
 ----------------------------------------------------------
+
+## Requisitos funcionais e não funcionais
 
 ### Requisitos Funcionais
 
@@ -125,7 +124,7 @@ A aplicação deve estar em conformidade com regulamentos de privacidade e segur
 ----------------------------------------------------------
 
 ## Modelo do domínio
-----------------------------------------------------------
+
 1-Utilizador:
 A entidade que representa os utilizadores da aplicação. Possui atributos como ID, Nome de Utilizador, Password e Avatar.
 
@@ -138,3 +137,4 @@ Representa as memórias deixadas pelos utilizadores após scanear um QR code. Po
 4-Edifício IADE:
 Representa o edifício do IADE como um todo. Pode ter atributos como Pisos e Plantas.
 
+----------------------------------------------------------
