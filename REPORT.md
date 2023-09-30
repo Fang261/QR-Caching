@@ -7,7 +7,6 @@
   - [Contexto](#contexto)
   - [Objetivos](#objetivos)
   - [Público-Alvo](#Público-alvo)
-  - [Pesquisa sobre Outras Ferramentas](#pesquisa-sobre-outras-ferramentas)
 - [Versão Preliminar com Guiões de Teste](#versão-preliminar-com-guiões-de-teste)
   - [Guião de Teste 1](#Guião-de-Teste-1)
   - [Guião de Teste 2](#Guião-de-Teste-2)
@@ -37,11 +36,6 @@ Cada utilizador terá a sua própria conta para uma experiência personalizada e
 ### Público-Alvo
 
 O nosso público-alvo abrange uma faixa etária diversificada, incluindo jovens estudantes universitários e professores com diferentes idades e experiências.  Este público está familiarizado com a tecnologia e utiliza dispositivos móveis no seu quotidiano, existe também uma inclinação para a competição amigável e o desejo de interagir socialmente com os colegas, tornando a aplicação QR-Caching uma opção atrativa.
-
-### Pesquisa sobre Outras Ferramentas
-
----------------------------------------------------------
-
 
 
 ## Versão Preliminar com Guiões de Teste
