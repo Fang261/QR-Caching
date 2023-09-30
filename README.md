@@ -12,7 +12,7 @@
   - [Guião de Teste 2](#Guião-de-Teste-2)
   - [Guião de Teste 3](#Guião-de-Teste-3)
 - [Plano de trabalho](#plano-de-trabalho)
-- [Requisitos funcionais e não funcionais](#requisitos-funcionais-e-nao-funcionais)
+- [Requisitos funcionais e não funcionais](#requisitos-funcionais-e-não-funcionais)
 
 
 ## Enquadramento do Projeto
