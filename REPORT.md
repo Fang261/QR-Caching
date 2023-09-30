@@ -22,6 +22,7 @@
 ### Ideia
 
 A ideia do nosso projeto é criar uma aplicação de QR code caching, ou seja, os nossos utilizadores iram ter de andar pelo IADE em busca de todos os QR codes para que consigam completar a sua barra de progresso.
+
 ### Contexto
 
 -------------------------------------------------------------
