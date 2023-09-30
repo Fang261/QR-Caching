@@ -43,6 +43,9 @@ O nosso público-alvo abrange uma faixa etária diversificada, incluindo jovens 
 -----------------------------------------------------------
 
 ### Guião de Teste 1
+
+![image](https://github.com/Fang261/QR-Caching/assets/116730433/d931c60d-2194-419c-9d1f-a738871c682a)
+
 --------------------------------------------------------
 ### Guião de Teste 2
 ----------------------------------------------------------
