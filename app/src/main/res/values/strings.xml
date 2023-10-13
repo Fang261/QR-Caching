@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QR Caching</string>
+    <string name="app_signup">Sign Up</string>
+    <string name="app_login">Login</string>
+    <string name="app_IDtext">Student ID</string>
+    <string name="app_passwordtext">Password</string>
+    <string name="dev_0550">João Moniz 20220550</string>
+    <string name="dev_0589">Tomas Salgueiro 20220589</string>
+    <string name="app_qrtext">QR CODE</string>
+</resources>
