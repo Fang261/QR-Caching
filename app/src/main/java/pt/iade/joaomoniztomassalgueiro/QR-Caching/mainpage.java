@@ -2,10 +2,8 @@ package pt.iade.joaomoniz.copypasteplayground;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.content.Intent;
 import android.widget.ImageButton;
 
@@ -17,7 +15,7 @@ private ImageButton profilepage;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage);
 
-    profilepage = findViewById(R.id.profilepic_imageButton);
+    profilepage = findViewById(R.id.profilepicselect_imageButton);
         profilepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

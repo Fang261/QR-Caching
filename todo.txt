@@ -1,0 +1,1 @@
+1- fazer o spinner da mainprofile page funcionar
