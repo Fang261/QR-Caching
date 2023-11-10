@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/profilepicselect_imageButton"
+            android:id="@+id/profilepic_imageButton"
             android:layout_width="79dp"
             android:layout_height="79dp"
             android:layout_marginTop="24dp"
@@ -41,7 +41,7 @@
             android:layout_marginEnd="24dp"
             android:background="@color/white"
             android:backgroundTint="@color/white"
-            app:layout_constraintEnd_toStartOf="@+id/profilepicselect_imageButton"
+            app:layout_constraintEnd_toStartOf="@+id/profilepic_imageButton"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -55,7 +55,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/profilepicselect_imageButton" />
+            app:layout_constraintEnd_toStartOf="@+id/profilepic_imageButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

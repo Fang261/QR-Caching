@@ -7,6 +7,8 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.ImageButton;
 
+import pt.iade.joaomoniz.copypasteplayground.R;
+
 public class mainpage extends AppCompatActivity {
 
 private ImageButton profilepage;
@@ -15,7 +17,7 @@ private ImageButton profilepage;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage);
 
-    profilepage = findViewById(R.id.profilepicselect_imageButton);
+    profilepage = findViewById(R.id.profilepic_imageButton);
         profilepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
