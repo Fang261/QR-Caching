@@ -2,17 +2,21 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/im"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingHorizontal="0dp"
+    android:paddingVertical="0dp"
     tools:context=".mainpage">
 
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/backgroundimg1">
+        android:background="@drawable/backgroundimg1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
     </RelativeLayout>
 
@@ -47,6 +51,7 @@
         android:layout_marginBottom="50dp"
         android:adjustViewBounds="false"
         android:alpha="1"
+        android:background="?attr/selectableItemBackground"
         android:background="?android:attr/windowSplashScreenBackground"
         android:contentDescription="camera"
         android:defaultFocusHighlightEnabled="false"
@@ -59,16 +64,16 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:scaleType="centerInside"
-        android:scaleX="4"
-        android:scaleY="4"
+        android:scaleX="2"
+        android:scaleY="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        app:srcCompat="@drawable/camera" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="126dp"
         android:background="#673AB7"
         android:backgroundTint="#673AB7"
@@ -85,6 +90,8 @@
             android:layout_marginEnd="22dp"
             android:layout_marginBottom="24dp"
             android:contentDescription="profilepic"
+            android:paddingHorizontal="0dp"
+            android:paddingVertical="0dp"
             android:scaleType="fitCenter"
             android:src="@drawable/screenshot_1"
             app:layout_constraintBottom_toBottomOf="parent"
