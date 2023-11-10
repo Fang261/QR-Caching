@@ -1,4 +1,4 @@
-package pt.iade.joaomoniz.copypasteplayground;
+package pt.iade.joaotomas.QRCaching;
 
 import androidx.appcompat.app.AppCompatActivity;
 

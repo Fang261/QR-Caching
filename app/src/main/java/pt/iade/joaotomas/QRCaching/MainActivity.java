@@ -1,4 +1,4 @@
-package pt.iade.joaomoniz.copypasteplayground;
+package pt.iade.joaotomas.QRCaching;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         signinbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, signin.class);
+                Intent intent=new Intent(MainActivity.this,signin.class);
                 startActivity(intent);
             }
         });
