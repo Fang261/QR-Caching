@@ -52,6 +52,7 @@
         android:adjustViewBounds="false"
         android:alpha="1"
         android:background="?attr/selectableItemBackground"
+        android:background="?android:attr/windowSplashScreenBackground"
         android:contentDescription="camera"
         android:defaultFocusHighlightEnabled="false"
         android:duplicateParentState="false"
