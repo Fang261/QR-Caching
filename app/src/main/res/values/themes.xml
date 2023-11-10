@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Copypasteplayground" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/Primary</item> -->
-        <item name="colorOnBackground">@color/BackgroundColor</item>
-        <item name="backgroundColor">@color/BackgroundColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:editTextColor">@color/white</item>
     </style>
 
     <style name="Theme.Copypasteplayground" parent="Base.Theme.Copypasteplayground" />

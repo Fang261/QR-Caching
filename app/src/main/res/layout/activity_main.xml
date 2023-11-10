@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundimg1">
+
+    </RelativeLayout>
+
     <ImageView
         android:id="@+id/logo_image"
         android:layout_width="wrap_content"
@@ -115,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="password"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"/>
 
         </TableRow>
 
@@ -127,14 +137,14 @@
             <CheckBox
                 android:id="@+id/login_rememberme_checkBox"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/login_rememberme_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/app_rm"
-                android:textSize="16sp" />
+                android:textSize="16sp"/>
         </TableRow>
 
     </TableLayout>

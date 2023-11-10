@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".mainpage">
 
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundimg1">
+
+    </RelativeLayout>
+
     <Button
         android:id="@+id/event_button"
         android:layout_width="wrap_content"
@@ -35,8 +45,19 @@
         android:layout_width="98dp"
         android:layout_height="69dp"
         android:layout_marginBottom="50dp"
-        android:background="@color/white"
+        android:adjustViewBounds="false"
+        android:alpha="1"
         android:contentDescription="camera"
+        android:defaultFocusHighlightEnabled="false"
+        android:duplicateParentState="false"
+        android:padding="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:scaleType="centerInside"
         android:scaleX="4"
         android:scaleY="4"
         app:layout_constraintBottom_toBottomOf="parent"
