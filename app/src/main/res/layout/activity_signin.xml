@@ -81,7 +81,7 @@
                 android:id="@+id/register_id_edit"
                 android:layout_width="237dp"
                 android:layout_height="wrap_content"
-                android:contentDescription="id"
+                android:contentDescription="ID"
                 android:ems="10"
                 android:inputType="number" />
 
