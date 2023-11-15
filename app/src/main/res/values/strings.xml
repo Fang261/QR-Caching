@@ -20,4 +20,5 @@
     <string name="app_level">Level</string>
     <string name="app_backtext">Back</string>
     <string name="title_activity_maps">Maps</string>
+    <string name="app_locationtext">Location</string>
 </resources>

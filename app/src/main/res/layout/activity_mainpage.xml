@@ -32,12 +32,12 @@
         android:scaleX="3"
         android:scaleY="3"
         android:text="@string/app_maptext"
-        app:layout_constraintBottom_toTopOf="@+id/camera_button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_scan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/camera_button"
+        android:id="@+id/btn_scan"
         android:layout_width="98dp"
         android:layout_height="69dp"
         android:layout_marginBottom="50dp"

@@ -1,3 +1,5 @@
 1- fazer o spinner da mainprofile page funcionar
-2- fazer o maps e apagar o map antigo
-3-fix button size
+2- terminar a Google API
+3- arranjar buttons que movem activities
+4- testar a camera e o QR CODE scanner
+5- arranjar um backrgound para os buttons
