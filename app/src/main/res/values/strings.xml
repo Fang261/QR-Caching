@@ -15,7 +15,9 @@
     <string name="app_maptext">Map</string>
     <string name="app_eventtext">Events</string>
     <string name="app_profilelevel">100</string>
-    <string name="app_locationtext">Location</string>
+    <string name="app_camera_button">Camera</string>
+    <string name="app_profilepic_button">Profilepic</string>
+    <string name="app_level">Level</string>
     <string name="app_backtext">Back</string>
     <string name="title_activity_maps">Maps</string>
 </resources>
