@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import pt.iade.joaomoniz.copypasteplayground.R;
-
 public class signin extends AppCompatActivity {
 
 private Button loginbutton;

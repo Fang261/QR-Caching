@@ -1,5 +1,4 @@
-1- fazer o spinner da mainprofile page funcionar
-2- terminar a Google API
-3- arranjar buttons que movem activities
-4- testar a camera e o QR CODE scanner
-5- arranjar um backrgound para os buttons
+1- fazer o spinner da mainprofile page funcionar --
+2- arranjar buttons que movem activities --
+3- testar a camera e o QR CODE scanner --
+

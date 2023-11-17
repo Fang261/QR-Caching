@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "pt.iade.joaomoniz.copypasteplayground"
+    namespace = "pt.iade.joaotomas.QRCaching"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "pt.iade.joaomoniz.copypasteplayground"
+        applicationId = "pt.iade.joaotomas.QRCaching"
         minSdk = 28
         targetSdk = 33
         versionCode = 1

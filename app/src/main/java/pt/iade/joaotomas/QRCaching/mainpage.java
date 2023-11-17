@@ -14,12 +14,11 @@ import android.widget.ImageButton;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
-import pt.iade.joaomoniz.copypasteplayground.R;
 
 public class mainpage extends AppCompatActivity {
 
 private ImageButton profilepage;
-private Button btn_scan;
+private ImageButton btn_scan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
