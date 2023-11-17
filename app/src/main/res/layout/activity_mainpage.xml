@@ -35,11 +35,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleX="3"
-        android:text="Map"
+        android:text="@string/app_maptext"
         app:layout_constraintBottom_toBottomOf="@+id/map_imageButton"
         app:layout_constraintEnd_toEndOf="@+id/map_imageButton"
         app:layout_constraintStart_toStartOf="@+id/map_imageButton"
-        app:layout_constraintTop_toTopOf="@+id/map_imageButton" />
+        app:layout_constraintTop_toTopOf="@+id/map_imageButton"
+        tools:text="@string/app_maptext" />
 
     <ImageButton
         android:id="@+id/events_imageButton"
@@ -62,11 +63,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleX="3"
-        android:text="Events"
+        android:text="@string/app_eventtext"
         app:layout_constraintBottom_toBottomOf="@+id/events_imageButton"
         app:layout_constraintEnd_toEndOf="@+id/events_imageButton"
         app:layout_constraintStart_toStartOf="@+id/events_imageButton"
-        app:layout_constraintTop_toTopOf="@+id/events_imageButton" />
+        app:layout_constraintTop_toTopOf="@+id/events_imageButton"
+        tools:text="@string/app_eventtext" />
 
     <ImageButton
         android:id="@+id/camara_imagebutton"
