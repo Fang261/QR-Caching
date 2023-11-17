@@ -12,29 +12,39 @@
     tools:context=".mainpage">
 
 
-    <Button
-        android:id="@+id/event_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
-        android:scaleX="3"
-        android:scaleY="3"
-        android:text="@string/app_eventtext"
-        app:layout_constraintBottom_toTopOf="@+id/map_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/map_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="138dp"
-        android:scaleX="3"
-        android:scaleY="3"
-        android:text="@string/app_maptext"
+    <ImageButton
+        android:id="@+id/map_imageButton"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="?android:attr/windowSplashScreenIconBackgroundColor"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:scaleType="fitCenter"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/button_big"
         app:layout_constraintBottom_toTopOf="@+id/btn_scan"
+        app:layout_constraintEnd_toEndOf="@+id/events_imageButton"
+        app:layout_constraintStart_toStartOf="@+id/events_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/events_imageButton" />
+
+    <ImageButton
+        android:id="@+id/events_imageButton"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:scaleType="fitCenter"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/button_big"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="242dp" />
 
     <ImageButton
         android:id="@+id/btn_scan"
