@@ -18,6 +18,7 @@ import com.journeyapps.barcodescanner.ScanOptions;
 public class mainpage extends AppCompatActivity {
 
 private ImageButton profilepage;
+
 private ImageButton btn_scan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,14 @@ private ImageButton btn_scan;
     {
         scanCode();
     });
+
+        loginbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,mainpage.class);
+                startActivity(intent);
+            }
+        });
 }
     private  void scanCode()
     {
