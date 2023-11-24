@@ -102,7 +102,7 @@
         android:layout_width="409dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="1dp"
         android:entries="@array/coisas"
         android:popupBackground="?android:attr/scrollbarThumbVertical"
@@ -114,7 +114,7 @@
     <TableLayout
         android:id="@+id/record_layout"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
         app:layout_constraintBottom_toTopOf="@+id/goback_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,40 +127,35 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@android:drawable/btn_star" />
+                android:id="@+id/imageButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@android:drawable/btn_star_big_on" />
 
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/btn_star" />
+                android:text="EVENT NAME" />
+
         </TableRow>
 
         <TableRow
             android:id="@+id/locations_table"
-            android:layout_width="233dp"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
 
             <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@android:drawable/btn_star" />
 
-            <ImageButton
-                android:id="@+id/imageButton8"
+            <TextView
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/btn_star" />
-
-            <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@android:drawable/btn_star" />
+                android:text="Rua Jose Maria Nicolau" />
 
         </TableRow>
 
