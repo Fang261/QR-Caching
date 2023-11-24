@@ -65,10 +65,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="718dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="127dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
