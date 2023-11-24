@@ -1,4 +1,6 @@
-1- fazer o spinner da mainprofile page funcionar --
-2- arranjar buttons que movem activities --
-3- testar a camera e o QR CODE scanner --
-
+1- meter os marker no mapa
+2- fazer o spinner completo (tutorial)
+3- fazer a event list (tutorial)
+4- testar maps
+5- testar camera num device irl
+6- fazer 2 exemplos para info no qrcode (PRIO) (Para a apresentação)
