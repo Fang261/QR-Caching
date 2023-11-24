@@ -17,24 +17,17 @@
         android:layout_height="80dp"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="50dp"
-        android:backgroundTint="?android:attr/windowSplashScreenIconBackgroundColor"
+        android:backgroundTint="#00FFFFFF"
         android:paddingHorizontal="0dp"
         android:paddingVertical="0dp"
         android:scaleType="fitCenter"
         android:scaleX="2"
         android:scaleY="2"
         android:src="@drawable/button_big"
-<<<<<<< HEAD
-        app:layout_constraintBottom_toTopOf="@+id/btn_scan"
-        app:layout_constraintEnd_toEndOf="@+id/events_imageButton"
-        app:layout_constraintStart_toStartOf="@+id/events_imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/events_imageButton" />
-=======
         app:layout_constraintBottom_toTopOf="@+id/events_imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header" />
->>>>>>> tomas
 
     <TextView
         android:id="@+id/map_textView4"
@@ -55,7 +48,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="100dp"
-        android:backgroundTint="?android:attr/windowSplashScreenBackground"
+        android:backgroundTint="#00FFFFFF"
         android:paddingHorizontal="0dp"
         android:paddingVertical="0dp"
         android:scaleType="fitCenter"
@@ -64,7 +57,6 @@
         android:src="@drawable/button_big"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/map_imageButton" />
 
@@ -82,18 +74,11 @@
         tools:text="@string/app_eventtext" />
 
     <ImageButton
-<<<<<<< HEAD
-        android:id="@+id/btn_scan"
-        android:layout_width="98dp"
-        android:layout_height="69dp"
-        android:layout_marginBottom="50dp"
-=======
         android:id="@+id/imageButton"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="65dp"
->>>>>>> tomas
         android:adjustViewBounds="false"
         android:alpha="1"
         android:background="?attr/selectableItemBackground"
@@ -147,7 +132,7 @@
 
         <ProgressBar
             android:id="@+id/experiencebar_progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
+            style="@style/experiencebar"
             android:layout_width="174dp"
             android:layout_height="21dp"
             android:layout_marginTop="36dp"
