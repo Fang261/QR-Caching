@@ -33,13 +33,19 @@ private Spinner list;
     list.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
         @Override
         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+            if (i == 0) {
+                LocationTable.setVisibility(View.GONE);
+                EventTable.setVisibility(View.VISIBLE);
+            }
+            else {
+                LocationTable.setVisibility(View.VISIBLE);
+                EventTable.setVisibility(View.GONE);
+            };
         }
 
         @Override
         public void onNothingSelected(AdapterView<?> adapterView) {
-            LocationTable.setVisibility(View.GONE);
-            EventTable.setVisibility(View.GONE);
+
         }
     });
         gobackbutton.setOnClickListener(new View.OnClickListener() {
