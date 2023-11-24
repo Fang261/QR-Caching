@@ -127,7 +127,7 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/btn_scan"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@android:drawable/btn_star_big_on" />
