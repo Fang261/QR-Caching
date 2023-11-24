@@ -19,14 +19,16 @@ public class mainpage extends AppCompatActivity {
 
 private ImageButton profilepage;
 
+private ImageButton mappage;
+
 private ImageButton btn_scan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage);
         btn_scan =findViewById(R.id.btn_scan);
-
-    profilepage = findViewById(R.id.profilepic_imageButton);
+        profilepage = findViewById(R.id.profilepic_imageButton);
+        mappage = findViewById(R.id.map_imageButton);
         profilepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,10 +41,10 @@ private ImageButton btn_scan;
         scanCode();
     });
 
-        loginbutton.setOnClickListener(new View.OnClickListener() {
+        mappage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,mainpage.class);
+                Intent intent=new Intent(mainpage.this,map.class);
                 startActivity(intent);
             }
         });
