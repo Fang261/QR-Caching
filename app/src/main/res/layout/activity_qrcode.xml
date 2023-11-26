@@ -43,14 +43,14 @@
         android:id="@+id/map_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="3"
+        android:scaleX="2"
         android:scaleY="1.5"
-        android:text="@string/app_maptext"
+        android:text="@string/app_writesomethingtext"
         app:layout_constraintBottom_toBottomOf="@+id/map_imageButton2"
         app:layout_constraintEnd_toEndOf="@+id/map_imageButton2"
         app:layout_constraintStart_toStartOf="@+id/map_imageButton2"
         app:layout_constraintTop_toTopOf="@+id/map_imageButton2"
-        tools:text="@string/app_maptext" />
+        tools:text="@string/app_writesomethingtext" />
 
     <ImageButton
         android:id="@+id/events_imageButton2"
@@ -75,14 +75,14 @@
         android:id="@+id/events_textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="3"
+        android:scaleX="2"
         android:scaleY="1.5"
-        android:text="@string/app_eventtext"
+        android:text="@string/app_takephototext"
         app:layout_constraintBottom_toBottomOf="@+id/events_imageButton2"
         app:layout_constraintEnd_toEndOf="@+id/events_imageButton2"
         app:layout_constraintStart_toStartOf="@+id/events_imageButton2"
         app:layout_constraintTop_toTopOf="@+id/events_imageButton2"
-        tools:text="@string/app_eventtext" />
+        tools:text="@string/app_takephototext" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
