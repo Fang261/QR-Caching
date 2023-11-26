@@ -13,7 +13,7 @@ import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
 import pt.iade.joaotomas.QRCaching.R;
-import pt.iade.joaotomas.QRCaching.adaptors.CaptureAct;
+import pt.iade.joaotomas.QRCaching.adapters.CaptureAct;
 
 
 public class mainpage extends AppCompatActivity {

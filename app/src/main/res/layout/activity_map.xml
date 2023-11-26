@@ -26,6 +26,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ProgressBar
+            android:id="@+id/experiencebar_progressBar6"
+            style="@style/experiencebar"
+            android:layout_width="174dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/profilepic_imageButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageButton
             android:id="@+id/profilepic_imageButton"
             android:layout_width="52dp"
@@ -42,18 +54,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.444" />
-
-        <ProgressBar
-            android:id="@+id/experiencebar_progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="174dp"
-            android:layout_height="21dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="24dp"
-            android:background="@color/white"
-            android:backgroundTint="@color/white"
-            app:layout_constraintEnd_toStartOf="@+id/profilepic_imageButton"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/level_text"

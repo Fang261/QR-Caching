@@ -23,6 +23,9 @@
         android:theme="@style/Theme.Copypasteplayground"
         tools:targetApi="31">
         <activity
+            android:name=".models.event_page"
+            android:exported="false" />
+        <activity
             android:name=".models.vault"
             android:exported="false" />
         <activity
@@ -59,7 +62,7 @@
             android:name=".models.signin"
             android:exported="false" />
         <activity
-            android:name=".adaptors.CaptureAct"
+            android:name=".adapters.CaptureAct"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme" />

@@ -6,12 +6,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
+import pt.iade.joaotomas.QRCaching.adapters.eventlist_adapter;
+
+
 import pt.iade.joaotomas.QRCaching.R;
 
 
 public class eventlist extends AppCompatActivity {
-
     private RecyclerView itemsListView;
+    protected eventlist_adapter eventlistAdapter;
+
+    protected ArrayList<eventrow> itemList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +27,12 @@ public class eventlist extends AppCompatActivity {
     }
 
     private void setupComponents() {
+        eventlistAdapter = new eventlist_adapter(this, itemList);
+
         // set up the event list recycler view
         itemsListView = (RecyclerView) findViewById(R.id.event_list);
         itemsListView.setLayoutManager(new LinearLayoutManager(this));
+        itemsListView.setAdapter(eventlistAdapter);
 
     }
 

@@ -1,21 +1,35 @@
 package pt.iade.joaotomas.QRCaching.models;
 
 public class eventrow {
+    private int id;
     private String eventname;
     private float latitude;
     private float longitude;
     private String idate;
     private String fdate;
 
+
+    public eventrow() {
+        this(0, "", 0, 0, "", "");
+    }
+
+
     //Constructor
-    public eventrow(String eventname, float latitude, float longitude, String idate, String fdate) {
+    public eventrow(int id, String eventname, float latitude, float longitude, String idate, String fdate) {
+        this.id = id;
         this.eventname = eventname;
         this.latitude = latitude;
         this.longitude = longitude;
         this.idate = idate;
         this.fdate = fdate;
     }
+
     //Getters
+
+    public int getId() {
+        return id;
+    }
+
     public String getEventname() {
         return eventname;
     }
