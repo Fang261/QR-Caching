@@ -11,6 +11,33 @@
     android:paddingVertical="0dp"
     tools:context=".qrcode">
 
+    <ImageButton
+        android:id="@+id/vault_imageButton"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#00FFFFFF"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:scaleType="fitCenter"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/button_big"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <TextView
+        android:id="@+id/vault_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="1.5"
+        android:text="@string/app_vaulttext"
+        app:layout_constraintBottom_toBottomOf="@+id/vault_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/vault_imageButton"
+        app:layout_constraintStart_toStartOf="@+id/vault_imageButton"
+        app:layout_constraintTop_toTopOf="@+id/vault_imageButton"
+        tools:text="@string/app_vaulttext" />
+
     <Button
         android:id="@+id/goback_buttonqrcode"
         android:layout_width="96dp"
@@ -22,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/map_imageButton2"
+        android:id="@+id/write_imageButton"
         android:layout_width="152dp"
         android:layout_height="55dp"
         android:layout_marginTop="50dp"
@@ -37,23 +64,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/events_imageButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/photo_imageButton" />
 
     <TextView
-        android:id="@+id/map_textView"
+        android:id="@+id/write_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleX="2"
         android:scaleY="1.5"
         android:text="@string/app_writesomethingtext"
-        app:layout_constraintBottom_toBottomOf="@+id/map_imageButton2"
-        app:layout_constraintEnd_toEndOf="@+id/map_imageButton2"
-        app:layout_constraintStart_toStartOf="@+id/map_imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/map_imageButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/write_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/write_imageButton"
+        app:layout_constraintStart_toStartOf="@+id/write_imageButton"
+        app:layout_constraintTop_toTopOf="@+id/write_imageButton"
         tools:text="@string/app_writesomethingtext" />
 
     <ImageButton
-        android:id="@+id/events_imageButton2"
+        android:id="@+id/photo_imageButton"
         android:layout_width="152dp"
         android:layout_height="55dp"
         android:layout_marginTop="100dp"
@@ -65,23 +92,23 @@
         android:scaleX="2"
         android:scaleY="2"
         android:src="@drawable/button_big"
-        app:layout_constraintBottom_toTopOf="@+id/map_imageButton2"
+        app:layout_constraintBottom_toTopOf="@+id/write_imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <TextView
-        android:id="@+id/events_textView2"
+        android:id="@+id/photo_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleX="2"
         android:scaleY="1.5"
         android:text="@string/app_takephototext"
-        app:layout_constraintBottom_toBottomOf="@+id/events_imageButton2"
-        app:layout_constraintEnd_toEndOf="@+id/events_imageButton2"
-        app:layout_constraintStart_toStartOf="@+id/events_imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/events_imageButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/photo_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/photo_imageButton"
+        app:layout_constraintStart_toStartOf="@+id/photo_imageButton"
+        app:layout_constraintTop_toTopOf="@+id/photo_imageButton"
         tools:text="@string/app_takephototext" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
