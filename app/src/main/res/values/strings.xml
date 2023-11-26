@@ -21,4 +21,7 @@
     <string name="app_backtext">Back</string>
     <string name="title_activity_maps">Maps</string>
     <string name="app_locationtext">Location</string>
+    <string name="app_takephototext">Take a picture</string>
+    <string name="app_writesomethingtext">Write something</string>
+    <string name="app_vaulttext">Photo Vault</string>
 </resources>

@@ -1,7 +1,9 @@
 package pt.iade.joaotomas.QRCaching;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -27,8 +29,16 @@ private Button confirmbutton;
         confirmbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(signin.this,mainpage.class);
-                startActivity(intent);
+         //       Intent intent=new Intent(signin.this,mainpage.class);
+         //       startActivity(intent);
+                AlertDialog.Builder builder = new AlertDialog.Builder(signin.this);
+                builder.setTitle("Work In Progress");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                }).show();
             }
         });
     }
