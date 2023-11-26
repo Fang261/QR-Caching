@@ -1,7 +1,9 @@
-package pt.iade.joaotomas.QRCaching;
+package pt.iade.joaotomas.QRCaching.models;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import pt.iade.joaotomas.QRCaching.R;
 
 public class qrcode extends AppCompatActivity {
 

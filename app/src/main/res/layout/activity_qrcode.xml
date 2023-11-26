@@ -9,7 +9,7 @@
     android:clipToPadding="false"
     android:paddingHorizontal="0dp"
     android:paddingVertical="0dp"
-    tools:context=".qrcode">
+    tools:context=".models.qrcode">
 
     <ImageButton
         android:id="@+id/vault_imageButton"
