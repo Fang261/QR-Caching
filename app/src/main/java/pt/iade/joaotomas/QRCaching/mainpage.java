@@ -21,6 +21,7 @@ private ImageButton profilepage;
 
 private ImageButton mappage;
 
+private ImageButton eventpage;
 private ImageButton btn_scan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ private ImageButton btn_scan;
         btn_scan =findViewById(R.id.btn_scan);
         profilepage = findViewById(R.id.profilepic_imageButton);
         mappage = findViewById(R.id.map_imageButton);
+        eventpage = findViewById(R.id.events_imageButton);
         profilepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +47,13 @@ private ImageButton btn_scan;
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(mainpage.this,map.class);
+                startActivity(intent);
+            }
+        });
+        eventpage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(mainpage.this,eventlist.class);
                 startActivity(intent);
             }
         });
