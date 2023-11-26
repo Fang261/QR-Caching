@@ -72,11 +72,11 @@ private ImageButton btn_scan;
         if(result.getContents() !=null)
         {
            if(result.getContents() == "exemplo_1"){
-               Intent intent=new Intent(mainpage.this,eventlist.class);
+               Intent intent=new Intent(mainpage.this,qrcode.class);
                startActivity(intent);
            }
            else if(result.getContents() == "exemplo_2"){
-               Intent intent=new Intent(mainpage.this,eventlist.class);
+               Intent intent=new Intent(mainpage.this,qrcode.class);
                startActivity(intent);
            }
            else {
