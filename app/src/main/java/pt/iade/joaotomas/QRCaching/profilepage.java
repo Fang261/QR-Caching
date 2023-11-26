@@ -3,7 +3,6 @@ package pt.iade.joaotomas.QRCaching;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.metrics.Event;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,7 +24,7 @@ private Spinner list;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profilepage);
-    gobackbutton = findViewById(R.id.goback_button);
+    gobackbutton = findViewById(R.id.goback_buttonmap);
     list = findViewById(R.id.record_spinner);
     LocationTable = findViewById(R.id.locations_table);
     EventTable = findViewById(R.id.events_table);

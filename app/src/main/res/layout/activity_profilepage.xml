@@ -64,7 +64,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/goback_button"
+        android:id="@+id/goback_buttonprofile"
         android:layout_width="96dp"
         android:layout_height="52dp"
         android:layout_marginBottom="8dp"
@@ -77,7 +77,7 @@
         android:id="@+id/profilepicselect_imageButton"
         android:layout_width="228dp"
         android:layout_height="0dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="profilepic"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +102,7 @@
         android:layout_width="409dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="1dp"
         android:entries="@array/coisas"
         android:popupBackground="?android:attr/scrollbarThumbVertical"
@@ -113,10 +113,10 @@
 
     <TableLayout
         android:id="@+id/record_layout"
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/goback_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/goback_buttonprofile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/record_spinner">

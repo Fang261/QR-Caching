@@ -71,7 +71,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/goback_button2"
+        android:id="@+id/goback_buttonmap"
         android:layout_width="96dp"
         android:layout_height="52dp"
         android:layout_marginBottom="8dp"
