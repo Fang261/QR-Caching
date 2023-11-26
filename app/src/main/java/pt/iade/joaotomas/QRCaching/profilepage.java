@@ -24,7 +24,7 @@ private Spinner list;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profilepage);
-    gobackbutton = findViewById(R.id.goback_buttonmap);
+    gobackbutton = findViewById(R.id.goback_buttonprofile);
     list = findViewById(R.id.record_spinner);
     LocationTable = findViewById(R.id.locations_table);
     EventTable = findViewById(R.id.events_table);
