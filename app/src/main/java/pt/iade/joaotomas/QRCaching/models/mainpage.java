@@ -51,7 +51,7 @@ private ImageButton btn_scan;
            //     startActivity(intent);
                 AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this);
                 builder.setTitle("Work In Progress");
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton("WIP", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();

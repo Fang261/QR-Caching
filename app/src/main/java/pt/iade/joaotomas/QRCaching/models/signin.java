@@ -34,8 +34,8 @@ private Button confirmbutton;
          //       Intent intent=new Intent(signin.this,mainpage.class);
          //       startActivity(intent);
                 AlertDialog.Builder builder = new AlertDialog.Builder(signin.this);
-                builder.setTitle("Work In Progress");
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                builder.setTitle("WIP");
+                builder.setPositiveButton("WIP", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();

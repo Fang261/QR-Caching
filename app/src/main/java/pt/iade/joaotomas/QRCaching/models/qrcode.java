@@ -32,7 +32,7 @@ public class qrcode extends AppCompatActivity {
              //  startActivity(intent);
                 AlertDialog.Builder builder = new AlertDialog.Builder(qrcode.this);
                 builder.setTitle("Work In Progress");
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton("WIP", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
@@ -47,7 +47,7 @@ public class qrcode extends AppCompatActivity {
               //  startActivity(intent);
                 AlertDialog.Builder builder = new AlertDialog.Builder(qrcode.this);
                 builder.setTitle("Work In Progress");
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton("WIP", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
