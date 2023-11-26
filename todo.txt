@@ -1,6 +1,5 @@
-1- meter os marker no mapa
-2- fazer o spinner completo (tutorial)
-3- fazer a event list (tutorial)
-4- testar maps
-5- testar camera num device irl
-6- fazer 2 exemplos para info no qrcode (PRIO) (Para a apresentação)
+1- meter os marker no mapa!
+2- fazer o spinner completo (tutorial)!
+3- fazer a event list (tutorial)--
+4- testar maps-x
+5- fazer 2 exemplos para info no qrcode (PRIO) (Para a apresentação)!!

@@ -19,7 +19,6 @@ private Button gobackbutton;
 
 private TableRow LocationTable;
 private TableRow EventTable;
-
 private Spinner list;
 
     @Override
