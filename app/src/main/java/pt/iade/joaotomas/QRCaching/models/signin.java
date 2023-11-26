@@ -1,4 +1,4 @@
-package pt.iade.joaotomas.QRCaching;
+package pt.iade.joaotomas.QRCaching.models;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import pt.iade.joaotomas.QRCaching.R;
 
 public class signin extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package pt.iade.joaotomas.QRCaching;
+package pt.iade.joaotomas.QRCaching.models;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TableRow;
+
+import pt.iade.joaotomas.QRCaching.R;
 
 
 public class profilepage extends AppCompatActivity {

@@ -8,18 +8,21 @@
     android:clipToPadding="false"
     android:paddingHorizontal="0dp"
     android:paddingVertical="0dp"
-    tools:context=".mainpage" >
+    tools:context=".models.mainpage" >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
         android:layout_width="0dp"
         android:layout_height="126dp"
+        android:layout_marginBottom="1dp"
         android:background="@drawable/header"
         android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toTopOf="@+id/event_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
 
         <ImageButton
             android:id="@+id/profilepic_imageButton"
@@ -61,11 +64,13 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/profilepic_imageButton" />
+            app:layout_constraintEnd_toStartOf="@+id/profilepic_imageButton"
+            tools:ignore="TextSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/event_list"
         android:layout_width="409dp"
         android:layout_height="718dp"
         android:layout_marginStart="1dp"
@@ -74,7 +79,9 @@
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header" />
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
