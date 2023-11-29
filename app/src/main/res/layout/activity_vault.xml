@@ -9,7 +9,7 @@
     android:clipToPadding="false"
     android:paddingHorizontal="0dp"
     android:paddingVertical="0dp"
-    tools:context=".models.qrcode">
+    tools:context=".qrcode">
 
     <Button
         android:id="@+id/goback_buttonvault"

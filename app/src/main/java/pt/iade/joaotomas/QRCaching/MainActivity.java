@@ -1,4 +1,4 @@
-package pt.iade.joaotomas.QRCaching.models;
+package pt.iade.joaotomas.QRCaching;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
-
-import pt.iade.joaotomas.QRCaching.R;
 
 
 public class MainActivity extends AppCompatActivity {

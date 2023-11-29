@@ -1,4 +1,4 @@
-package pt.iade.joaotomas.QRCaching.models;
+package pt.iade.joaotomas.QRCaching;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 import pt.iade.joaotomas.QRCaching.R;
+import pt.iade.joaotomas.QRCaching.models.eventrow;
 
 public class event_page extends AppCompatActivity {
     //protected EditText street;

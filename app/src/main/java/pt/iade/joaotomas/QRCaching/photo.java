@@ -1,4 +1,4 @@
-package pt.iade.joaotomas.QRCaching.models;
+package pt.iade.joaotomas.QRCaching;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -23,19 +23,19 @@
         android:theme="@style/Theme.Copypasteplayground"
         tools:targetApi="31">
         <activity
-            android:name=".models.photo"
+            android:name=".photo"
             android:exported="false" />
         <activity
-            android:name=".models.event_page"
+            android:name=".event_page"
             android:exported="false" />
         <activity
-            android:name=".models.vault"
+            android:name=".vault"
             android:exported="false" />
         <activity
-            android:name=".models.qrcode"
+            android:name=".qrcode"
             android:exported="false" />
         <activity
-            android:name=".models.eventlist"
+            android:name=".eventlist"
             android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -53,16 +53,16 @@
             android:value="YOUR_API_KEY" />
 
         <activity
-            android:name=".models.map"
+            android:name=".map"
             android:exported="false" />
         <activity
-            android:name=".models.profilepage"
+            android:name=".profilepage"
             android:exported="false" />
         <activity
-            android:name=".models.mainpage"
+            android:name=".mainpage"
             android:exported="false" />
         <activity
-            android:name=".models.signin"
+            android:name=".signin"
             android:exported="false" />
         <activity
             android:name=".adapters.CaptureAct"
@@ -70,7 +70,7 @@
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme" />
         <activity
-            android:name=".models.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

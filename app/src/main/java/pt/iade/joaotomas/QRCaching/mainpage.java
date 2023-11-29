@@ -1,4 +1,4 @@
-package pt.iade.joaotomas.QRCaching.models;
+package pt.iade.joaotomas.QRCaching;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AlertDialog;
@@ -12,7 +12,6 @@ import android.widget.ImageButton;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
-import pt.iade.joaotomas.QRCaching.R;
 import pt.iade.joaotomas.QRCaching.adapters.CaptureAct;
 
 

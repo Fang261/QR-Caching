@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundimg1"
-    tools:context=".models.profilepage">
+    tools:context=".profilepage">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
