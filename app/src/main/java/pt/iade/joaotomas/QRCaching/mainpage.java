@@ -80,11 +80,11 @@ private ImageButton btn_scan;
     {
         if(result.getContents() !=null)
         {
-           if(result.getContents() == "exemplo_1"){
+           if(result.getContents().equals("exemplo_1")){
                Intent intent=new Intent(mainpage.this,qrcode.class);
                startActivity(intent);
            }
-           else if(result.getContents() == "exemplo_2"){
+           else if(result.getContents().equals("exemplo_2")){
                Intent intent=new Intent(mainpage.this,qrcode.class);
                startActivity(intent);
            }
