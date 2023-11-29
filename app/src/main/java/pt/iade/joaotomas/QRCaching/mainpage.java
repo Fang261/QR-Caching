@@ -89,9 +89,10 @@ private ImageButton btn_scan;
                startActivity(intent);
            }
            else {
-               AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this);
+               AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this, R.style.AlertDialogCustom);
                builder.setTitle("QR Code invalid");
-               builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+               builder.setMessage(result.getContents());
+               builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                    @Override
                    public void onClick(DialogInterface dialogInterface, int i) {
                        dialogInterface.dismiss();
