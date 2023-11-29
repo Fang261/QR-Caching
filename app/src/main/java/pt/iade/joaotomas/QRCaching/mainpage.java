@@ -12,7 +12,7 @@ import android.widget.ImageButton;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
-import pt.iade.joaotomas.QRCaching.adapters.CaptureAct;
+import pt.iade.joaotomas.QRCaching.models.CaptureAct;
 
 
 public class mainpage extends AppCompatActivity {
