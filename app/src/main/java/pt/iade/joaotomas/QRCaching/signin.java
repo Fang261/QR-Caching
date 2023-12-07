@@ -8,15 +8,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class signin extends AppCompatActivity {
 
 private Button loginbutton;
+private EditText email;
 private Button confirmbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
+
+
         loginbutton = (Button) (findViewById(R.id.login_button2));
         confirmbutton = (Button) (findViewById(R.id.confirm_button));
         loginbutton.setOnClickListener(new View.OnClickListener() {

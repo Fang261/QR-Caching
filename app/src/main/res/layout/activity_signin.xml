@@ -68,9 +68,9 @@
                 android:id="@+id/register_username_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="username"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:inputType="text" />
+
         </TableRow>
 
         <TableRow
@@ -104,16 +104,16 @@
                 android:id="@+id/register_email_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_passwordtext"
+                android:text="@string/app_emailtext"
                 android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/register_email_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="password"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:inputType="textEmailAddress" />
+
         </TableRow>
 
         <TableRow
@@ -125,7 +125,7 @@
                 android:id="@+id/register_pw_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_emailtext"
+                android:text="@string/app_passwordtext"
                 android:textSize="20sp" />
 
             <EditText
