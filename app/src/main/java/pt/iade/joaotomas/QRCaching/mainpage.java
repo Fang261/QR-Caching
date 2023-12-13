@@ -1,4 +1,4 @@
-package pt.iade.joaotomas.QRCaching.models;
+package pt.iade.joaotomas.QRCaching;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AlertDialog;
@@ -12,8 +12,7 @@ import android.widget.ImageButton;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
-import pt.iade.joaotomas.QRCaching.R;
-import pt.iade.joaotomas.QRCaching.adapters.CaptureAct;
+import pt.iade.joaotomas.QRCaching.models.CaptureAct;
 
 
 public class mainpage extends AppCompatActivity {
@@ -81,18 +80,19 @@ private ImageButton btn_scan;
     {
         if(result.getContents() !=null)
         {
-           if(result.getContents() == "exemplo_1"){
+           if(result.getContents().equals("exemplo_1")){
                Intent intent=new Intent(mainpage.this,qrcode.class);
                startActivity(intent);
            }
-           else if(result.getContents() == "exemplo_2"){
+           else if(result.getContents().equals("exemplo_2")){
                Intent intent=new Intent(mainpage.this,qrcode.class);
                startActivity(intent);
            }
            else {
-               AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this);
+               AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this, R.style.AlertDialogCustom);
                builder.setTitle("QR Code invalid");
-               builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+               builder.setMessage(result.getContents());
+               builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                    @Override
                    public void onClick(DialogInterface dialogInterface, int i) {
                        dialogInterface.dismiss();

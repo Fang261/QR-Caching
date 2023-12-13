@@ -1,4 +1,4 @@
-package pt.iade.joaotomas.QRCaching.models;
+package pt.iade.joaotomas.QRCaching;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import pt.iade.joaotomas.QRCaching.adapters.eventlist_adapter;
 
 
 import pt.iade.joaotomas.QRCaching.R;
+import pt.iade.joaotomas.QRCaching.models.eventrow;
 
 
 public class eventlist extends AppCompatActivity {
