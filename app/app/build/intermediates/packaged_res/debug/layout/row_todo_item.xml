@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageButton
+        android:id="@+id/eventname_imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:backgroundTint="#00FFFFFF"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="10dp"
+        android:scaleType="fitCenter"
+        android:scaleX="3.25"
+        android:scaleY="1.7"
+        android:src="@drawable/button_big"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eventname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/eventname_imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/eventname_imageButton"
+        tools:text="Event name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
