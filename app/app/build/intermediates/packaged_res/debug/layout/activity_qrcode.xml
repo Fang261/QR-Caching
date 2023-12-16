@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/im"
+    android:background="@drawable/backgroundimg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingHorizontal="0dp"
+    android:paddingVertical="0dp"
+    tools:context=".models.qrcode">
+
+    <ImageButton
+        android:id="@+id/vault_imageButton"
+        android:layout_width="280dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#00FFFFFF"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:scaleType="fitCenter"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/button_big"
+        app:layout_constraintBottom_toTopOf="@+id/goback_buttonqrcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/vault_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="1.5"
+        android:text="@string/app_vaulttext"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/vault_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/vault_imageButton"
+        app:layout_constraintStart_toStartOf="@+id/vault_imageButton"
+        app:layout_constraintTop_toTopOf="@+id/vault_imageButton"
+        tools:text="@string/app_vaulttext" />
+
+    <Button
+        android:id="@+id/goback_buttonqrcode"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/app_backtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/write_imageButton"
+        android:layout_width="280dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#00FFFFFF"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:scaleType="fitCenter"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/button_big"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/write_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="1.5"
+        android:text="@string/app_writesomethingtext"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/write_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/write_imageButton"
+        app:layout_constraintStart_toStartOf="@+id/write_imageButton"
+        app:layout_constraintTop_toTopOf="@+id/write_imageButton"
+        tools:text="@string/app_writesomethingtext" />
+
+    <ImageButton
+        android:id="@+id/photo_imageButton"
+        android:layout_width="280dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#00FFFFFF"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:scaleType="fitCenter"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/button_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/photo_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="1.5"
+        android:text="@string/app_takephototext"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/photo_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/photo_imageButton"
+        app:layout_constraintStart_toStartOf="@+id/photo_imageButton"
+        app:layout_constraintTop_toTopOf="@+id/photo_imageButton"
+        tools:text="@string/app_takephototext" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:background="@drawable/header"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/experiencebar_progressBar3"
+            style="@style/experiencebar"
+            android:layout_width="174dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/profilepic_imageButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/profilepic_imageButton"
+            android:layout_width="52dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/app_profilepic_button"
+            android:paddingHorizontal="0dp"
+            android:paddingVertical="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/screenshot_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <TextView
+            android:id="@+id/level_text"
+            android:layout_width="36dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="36dp"
+            android:text="@string/app_profilelevel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profilepic_imageButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
