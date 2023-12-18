@@ -3,21 +3,21 @@ Membros da Equipa:
 João Moniz (Número de Estudante: 20220550):
 
 Atividades Android:
-João Moniz desempenhou um papel crucial no desenvolvimento das atividades relacionadas com o Android. A sua contribuição abrangeu a maior parte das funcionalidades do aplicativo, destacando-se pela implementação eficaz e eficiente de diversas atividades.
+João Moniz desempenhou um papel crucial no desenvolvimento das atividades relacionadas com o Android. A sua contribuição abrangeu a maior parte das funcionalidades do aplicativo, destacando-se pela implementação eficaz e eficiente de diversas atividades. 75%
 
 Idealização da Base de Dados:
-Além das atividades Android, João Moniz contribuiu na idealização da base de dados, fornecendo insights importantes para garantir uma estrutura sólida e coerente.
+Além das atividades Android, João Moniz contribuiu na idealização da base de dados, fornecendo insights importantes para garantir uma estrutura sólida e coerente. 25%
 
 Slides do PowerPoint:
-João Moniz participou ativamente na fase de criação dos slides, oferecendo ideias e perspectivas valiosas para a composição visual e estrutura da apresentação.
+João Moniz participou ativamente na fase de criação dos slides, oferecendo ideias e perspectivas valiosas para a composição visual e estrutura da apresentação. 25%
 
 Tomas Salgueiro (Número de Estudante: 20220589):
 
 Atividades Android:
-Tomas Salgueiro contribuiu para o desenvolvimento das atividades Android, focando em áreas específicas do projeto. A sua participação foi notável na implementação de algumas das atividades, com especial ênfase na vertente de design, complementando o trabalho realizado por João Moniz.
+Tomas Salgueiro contribuiu para o desenvolvimento das atividades Android, focando em áreas específicas do projeto. A sua participação foi notável na implementação de algumas das atividades, com especial ênfase na vertente de design, complementando o trabalho realizado por João Moniz. 25%
 
 Base de Dados:
-Para além das atividades Android, Tomas Salgueiro assumiu responsabilidades na criação e gestão da base de dados. A sua contribuição foi crucial para garantir uma integração eficiente no armazenamento de dados.
+Para além das atividades Android, Tomas Salgueiro assumiu responsabilidades na criação e gestão da base de dados. A sua contribuição foi crucial para garantir uma integração eficiente no armazenamento de dados. 75%
 
 Slides do PowerPoint:
-Tomas Salgueiro desempenhou um papel importante na criação dos slides de apresentação em PowerPoint, concentrando-se na composição visual e na organização das informações, de forma a fornecer uma apresentação de topo.
+Tomas Salgueiro desempenhou um papel importante na criação dos slides de apresentação em PowerPoint, concentrando-se na composição visual e na organização das informações, de forma a fornecer uma apresentação de topo. 75%

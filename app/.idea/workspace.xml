@@ -9,7 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b562634-748f-49ae-a059-3f70423ccc31" name="Changes" comment="" />
+    <list default="true" id="2b562634-748f-49ae-a059-3f70423ccc31" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Tarefas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tarefas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/tomas/Ambiente de Trabalho/coding/Iade/Projeto_3semestre/QR-Caching/app"
+    "last_opened_file_path": "C:/Users/tomas/Ambiente de Trabalho/project/sample-todo-android/app"
   }
 }]]></component>
   <component name="RecentsManager">
