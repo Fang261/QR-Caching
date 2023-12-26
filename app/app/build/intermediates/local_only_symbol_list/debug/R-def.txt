@@ -8,6 +8,7 @@ color colorPrimary
 color colorPrimaryDark
 color myBackgroundColor
 color white
+drawable back
 drawable backgroundimg1
 drawable button_big
 drawable camera_button
@@ -46,6 +47,7 @@ id goback_buttonqrcode
 id goback_buttonvault
 id header
 id im
+id imageButton
 id imageButton2
 id level_text
 id locations_table
@@ -63,15 +65,14 @@ id map_textView4
 id name_editText
 id photo_imageButton
 id photo_textView
+id photosListView
 id profilepic_imageButton
 id profilepicselect_imageButton
 id record_layout
 id record_spinner
 id recyclerView
 id register
-id register_email
 id register_email_edit
-id register_email_text
 id register_id
 id register_id_edit
 id register_id_text
@@ -79,9 +80,7 @@ id register_password
 id register_pw_edit
 id register_pw_text
 id register_rememberme
-id register_username
 id register_username_edit
-id register_username_text
 id signguest_button
 id signup_button
 id textView3
@@ -100,6 +99,7 @@ layout activity_profilepage
 layout activity_qrcode
 layout activity_signin
 layout activity_vault
+layout row_photo_item
 layout row_todo_item
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -128,6 +128,7 @@ string app_writesomethingtext
 string dev_0550
 string dev_0589
 string title_activity_maps
+style AlertDialogCustom
 style Base.Theme.Copypasteplayground
 style Theme.Copypasteplayground
 style experiencebar

@@ -7,11 +7,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -37,71 +36,35 @@ public final class ActivitySigninBinding implements ViewBinding {
   public final TextView logoText2;
 
   @NonNull
-  public final TableLayout register;
-
-  @NonNull
-  public final TableRow registerEmail;
+  public final LinearLayoutCompat register;
 
   @NonNull
   public final EditText registerEmailEdit;
 
   @NonNull
-  public final TextView registerEmailText;
-
-  @NonNull
-  public final TableRow registerId;
-
-  @NonNull
   public final EditText registerIdEdit;
-
-  @NonNull
-  public final TextView registerIdText;
-
-  @NonNull
-  public final TableRow registerPassword;
 
   @NonNull
   public final EditText registerPwEdit;
 
   @NonNull
-  public final TextView registerPwText;
-
-  @NonNull
-  public final TableRow registerUsername;
-
-  @NonNull
   public final EditText registerUsernameEdit;
-
-  @NonNull
-  public final TextView registerUsernameText;
 
   private ActivitySigninBinding(@NonNull ConstraintLayout rootView, @NonNull Button confirmButton,
       @NonNull Button loginButton2, @NonNull ImageView logoImage2, @NonNull TextView logoText2,
-      @NonNull TableLayout register, @NonNull TableRow registerEmail,
-      @NonNull EditText registerEmailEdit, @NonNull TextView registerEmailText,
-      @NonNull TableRow registerId, @NonNull EditText registerIdEdit,
-      @NonNull TextView registerIdText, @NonNull TableRow registerPassword,
-      @NonNull EditText registerPwEdit, @NonNull TextView registerPwText,
-      @NonNull TableRow registerUsername, @NonNull EditText registerUsernameEdit,
-      @NonNull TextView registerUsernameText) {
+      @NonNull LinearLayoutCompat register, @NonNull EditText registerEmailEdit,
+      @NonNull EditText registerIdEdit, @NonNull EditText registerPwEdit,
+      @NonNull EditText registerUsernameEdit) {
     this.rootView = rootView;
     this.confirmButton = confirmButton;
     this.loginButton2 = loginButton2;
     this.logoImage2 = logoImage2;
     this.logoText2 = logoText2;
     this.register = register;
-    this.registerEmail = registerEmail;
     this.registerEmailEdit = registerEmailEdit;
-    this.registerEmailText = registerEmailText;
-    this.registerId = registerId;
     this.registerIdEdit = registerIdEdit;
-    this.registerIdText = registerIdText;
-    this.registerPassword = registerPassword;
     this.registerPwEdit = registerPwEdit;
-    this.registerPwText = registerPwText;
-    this.registerUsername = registerUsername;
     this.registerUsernameEdit = registerUsernameEdit;
-    this.registerUsernameText = registerUsernameText;
   }
 
   @Override
@@ -156,14 +119,8 @@ public final class ActivitySigninBinding implements ViewBinding {
       }
 
       id = R.id.register;
-      TableLayout register = ViewBindings.findChildViewById(rootView, id);
+      LinearLayoutCompat register = ViewBindings.findChildViewById(rootView, id);
       if (register == null) {
-        break missingId;
-      }
-
-      id = R.id.register_email;
-      TableRow registerEmail = ViewBindings.findChildViewById(rootView, id);
-      if (registerEmail == null) {
         break missingId;
       }
 
@@ -173,33 +130,9 @@ public final class ActivitySigninBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.register_email_text;
-      TextView registerEmailText = ViewBindings.findChildViewById(rootView, id);
-      if (registerEmailText == null) {
-        break missingId;
-      }
-
-      id = R.id.register_id;
-      TableRow registerId = ViewBindings.findChildViewById(rootView, id);
-      if (registerId == null) {
-        break missingId;
-      }
-
       id = R.id.register_id_edit;
       EditText registerIdEdit = ViewBindings.findChildViewById(rootView, id);
       if (registerIdEdit == null) {
-        break missingId;
-      }
-
-      id = R.id.register_id_text;
-      TextView registerIdText = ViewBindings.findChildViewById(rootView, id);
-      if (registerIdText == null) {
-        break missingId;
-      }
-
-      id = R.id.register_password;
-      TableRow registerPassword = ViewBindings.findChildViewById(rootView, id);
-      if (registerPassword == null) {
         break missingId;
       }
 
@@ -209,34 +142,15 @@ public final class ActivitySigninBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.register_pw_text;
-      TextView registerPwText = ViewBindings.findChildViewById(rootView, id);
-      if (registerPwText == null) {
-        break missingId;
-      }
-
-      id = R.id.register_username;
-      TableRow registerUsername = ViewBindings.findChildViewById(rootView, id);
-      if (registerUsername == null) {
-        break missingId;
-      }
-
       id = R.id.register_username_edit;
       EditText registerUsernameEdit = ViewBindings.findChildViewById(rootView, id);
       if (registerUsernameEdit == null) {
         break missingId;
       }
 
-      id = R.id.register_username_text;
-      TextView registerUsernameText = ViewBindings.findChildViewById(rootView, id);
-      if (registerUsernameText == null) {
-        break missingId;
-      }
-
       return new ActivitySigninBinding((ConstraintLayout) rootView, confirmButton, loginButton2,
-          logoImage2, logoText2, register, registerEmail, registerEmailEdit, registerEmailText,
-          registerId, registerIdEdit, registerIdText, registerPassword, registerPwEdit,
-          registerPwText, registerUsername, registerUsernameEdit, registerUsernameText);
+          logoImage2, logoText2, register, registerEmailEdit, registerIdEdit, registerPwEdit,
+          registerUsernameEdit);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

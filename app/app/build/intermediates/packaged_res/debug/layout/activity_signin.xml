@@ -4,16 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg1"
     tools:context=".models.signin">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/backgroundimg1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
-    </RelativeLayout>
 
     <TextView
         android:id="@+id/logo_text2"
@@ -42,105 +34,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/screenshot_1" />
 
-    <TableLayout
-        android:id="@+id/register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        app:layout_constraintBottom_toTopOf="@+id/login_button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TableRow
-            android:id="@+id/register_username"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/register_username_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/app_usernametext"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/register_username_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text" />
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/register_id"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/register_id_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/app_IDtext"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/register_id_edit"
-                android:layout_width="237dp"
-                android:layout_height="wrap_content"
-                android:contentDescription="ID"
-                android:ems="10"
-                android:inputType="number" />
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/register_email"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/register_email_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/app_emailtext"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/register_email_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textEmailAddress" />
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/register_password"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/register_pw_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/app_passwordtext"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/register_pw_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="email"
-                android:ems="10"
-                android:inputType="textPassword" />
-
-        </TableRow>
-
-    </TableLayout>
-
     <Button
         android:id="@+id/confirm_button"
         android:layout_width="wrap_content"
@@ -168,4 +61,68 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/confirm_button"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/register"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/header"
+        android:orientation="vertical"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="55dp"
+        android:scaleX="1.1"
+        android:scaleY="1.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="400dp">
+
+
+        <EditText
+            android:id="@+id/register_username_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="username"
+            android:ems="10"
+            android:hint="@string/app_usernametext"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/register_id_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="ID"
+            android:ems="10"
+            android:hint="@string/app_IDtext"
+            android:inputType="number"
+            android:textColorHint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/register_email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="password"
+            android:ems="10"
+            android:hint="@string/app_emailtext"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/register_pw_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="email"
+            android:ems="10"
+            android:hint="@string/app_passwordtext"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>

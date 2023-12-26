@@ -46,16 +46,16 @@ private ImageButton btn_scan;
         mappage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-           //     Intent intent=new Intent(mainpage.this,map.class);
-           //     startActivity(intent);
-                AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this);
-                builder.setTitle("Work In Progress");
-                builder.setPositiveButton("WIP", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                }).show();
+                Intent intent=new Intent(mainpage.this,map.class);
+                startActivity(intent);
+  //              AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this);
+  //              builder.setTitle("Work In Progress");
+  //              builder.setPositiveButton("WIP", new DialogInterface.OnClickListener() {
+  //                  @Override
+  //                  public void onClick(DialogInterface dialogInterface, int i) {
+  //                      dialogInterface.dismiss();
+  //                  }
+  //              }).show();
             }
         });
         eventpage.setOnClickListener(new View.OnClickListener() {

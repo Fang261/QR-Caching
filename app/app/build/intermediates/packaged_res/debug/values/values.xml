@@ -36,10 +36,17 @@
     <string name="dev_0550">João Moniz 20220550</string>
     <string name="dev_0589">Tomas Salgueiro 20220589</string>
     <string name="title_activity_maps">Maps</string>
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:headerDividersEnabled">true</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:background">@color/Primary</item>
+    </style>
     <style name="Base.Theme.Copypasteplayground" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/Primary</item> -->
         <item name="android:textColor">@color/white</item>
-        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:titleTextColor">@color/Primary</item>
         <item name="android:editTextColor">@color/white</item>
 
     </style>

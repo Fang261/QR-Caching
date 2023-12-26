@@ -2969,6 +2969,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable backgroundimg1
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3349,6 +3350,7 @@ id ignore
 id ignoreRequest
 id im
 id image
+id imageButton
 id imageButton2
 id immediateStop
 id included
@@ -3482,6 +3484,7 @@ id peekHeight
 id percent
 id photo_imageButton
 id photo_textView
+id photosListView
 id pin
 id position
 id postLayout
@@ -3497,9 +3500,7 @@ id record_spinner
 id rectangles
 id recyclerView
 id register
-id register_email
 id register_email_edit
-id register_email_text
 id register_id
 id register_id_edit
 id register_id_text
@@ -3507,9 +3508,7 @@ id register_password
 id register_pw_edit
 id register_pw_text
 id register_rememberme
-id register_username
 id register_username_edit
-id register_username_text
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3882,6 +3881,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout row_photo_item
 layout row_todo_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -4111,6 +4111,7 @@ string zxing_msg_camera_framework_bug
 string zxing_msg_default_status
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
+style AlertDialogCustom
 style Animation_AppCompat_Dialog
 style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
