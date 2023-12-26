@@ -8,9 +8,7 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-import pt.iade.joaotomas.QRCaching.R;
 import pt.iade.joaotomas.QRCaching.adapters.eventlist_adapter;
-import pt.iade.joaotomas.QRCaching.models.eventrow;
 
 public class vault extends AppCompatActivity {
 

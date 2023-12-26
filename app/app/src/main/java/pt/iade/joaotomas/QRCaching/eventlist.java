@@ -11,15 +11,14 @@ import java.util.ArrayList;
 import pt.iade.joaotomas.QRCaching.adapters.eventlist_adapter;
 
 
-import pt.iade.joaotomas.QRCaching.R;
-import pt.iade.joaotomas.QRCaching.models.eventrow;
+import pt.iade.joaotomas.QRCaching.models.eventitem;
 
 
 public class eventlist extends AppCompatActivity {
     private RecyclerView itemsListView;
     protected eventlist_adapter eventlistAdapter;
 
-    protected ArrayList<eventrow> itemList;
+    protected ArrayList<eventitem> itemList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
