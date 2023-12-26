@@ -10,17 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b562634-748f-49ae-a059-3f70423ccc31" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../BD.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tarefas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tarefas.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\tomas\.android\avd\Pixel_3a_API_34_2.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\cocas\.android\avd\Pixel_7_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -91,7 +88,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/tomas/Ambiente de Trabalho/coding/Iade/Projeto_3semestre/QR-Caching/app"
+    "last_opened_file_path": "C:/Users/cocas/QRCaching/app"
   }
 }]]></component>
   <component name="RecentsManager">
