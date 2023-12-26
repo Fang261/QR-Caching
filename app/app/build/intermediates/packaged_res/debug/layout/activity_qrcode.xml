@@ -55,11 +55,6 @@
         android:id="@+id/write_imageButton"
         android:layout_width="280dp"
         android:layout_height="95dp"
-<<<<<<< HEAD:app/app/build/intermediates/packaged_res/debug/layout/activity_qrcode.xml
-=======
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="100dp"
->>>>>>> b083eb7b18076e88fc1ce2e41e7183f543a64d72:app/src/main/res/layout/activity_qrcode.xml
         android:backgroundTint="#00FFFFFF"
         android:paddingHorizontal="0dp"
         android:paddingVertical="0dp"
