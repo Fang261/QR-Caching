@@ -4,20 +4,66 @@
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event_page.xml">
+        <config>
+          <theme>@style/Theme.Copypasteplayground</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_eventlist.xml">
+        <config>
+          <theme>@style/Theme.Copypasteplayground</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.Copypasteplayground</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_mainpage.xml">
+        <config>
+          <theme>@style/Theme.Copypasteplayground</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_profilepage.xml">
+        <config>
+          <theme>@style/Theme.Copypasteplayground</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_qrcode.xml">
+        <config>
+          <theme>@style/Theme.Copypasteplayground</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/row_todo_item.xml">
+        <config>
+          <theme>@style/Theme.Copypasteplayground</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b562634-748f-49ae-a059-3f70423ccc31" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/map.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/QrcodeItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/adapters/eventlist_adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/adapters/eventlist_adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/event_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/event_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/eventlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/eventlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/eventrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/Eventrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/back.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/back.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profilepage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profilepage.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\cocas\.android\avd\Pixel_7_API_30.avd]" />
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\tomas\.android\avd\Pixel_3_API_34.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -64,12 +110,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="tomas" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -83,18 +133,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cocas/QRCaching/app&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/tomas/Ambiente de Trabalho/coding/my_projects/Notes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\cocas\QRCaching\app\app\src\main\res\drawable" />
+      <recent name="C:\Users\tomas\Ambiente de Trabalho\coding\Iade\Projeto_3semestre\QR-Caching\app\app\src\main\res\drawable" />
     </key>
     <key name="android.template.-1788933535">
       <recent name="pt.iade.joaotomas.QRCaching" />
@@ -111,6 +161,7 @@
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
@@ -180,12 +231,17 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="05b6c6fb-6d1b-4cb3-8d6c-e681d3d27ddb" value="TOOL_WINDOW" />
+        <entry key="5b961afd-dae2-41f8-a7f3-7c5686c8f279" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="05b6c6fb-6d1b-4cb3-8d6c-e681d3d27ddb">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -204,13 +260,13 @@
                   </entry>
                 </map>
               </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
         <entry key="5b961afd-dae2-41f8-a7f3-7c5686c8f279">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -229,20 +285,27 @@
                   </entry>
                 </map>
               </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="tomas" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
-      </map>
-    </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="05b6c6fb-6d1b-4cb3-8d6c-e681d3d27ddb" value="TOOL_WINDOW" />
-        <entry key="5b961afd-dae2-41f8-a7f3-7c5686c8f279" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
