@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".signin">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/backgroundimg1">
+        android:background="@drawable/backgroundimg1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
     </RelativeLayout>
+
     <TextView
         android:id="@+id/logo_text2"
         android:layout_width="wrap_content"
