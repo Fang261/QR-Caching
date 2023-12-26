@@ -39,12 +39,10 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
+        LatLng lisbon = new LatLng(38.44, 9.8);
         mMap.addMarker(new MarkerOptions()
-                .position(sydney)
-                .title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                .position(/*insert qrcode coords from a future qrcodeitem*/ )
+                .title(/*insert qrcode name from a future qrcodeitem*/));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(lisbon));
     }
 }
-
