@@ -13,16 +13,16 @@ import java.util.ArrayList;
 
 import pt.iade.joaotomas.QRCaching.R;
 
-import pt.iade.joaotomas.QRCaching.models.eventItem;
+import pt.iade.joaotomas.QRCaching.models.EventItem;
 
 public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.ViewHolder> {
-    private ArrayList<eventItem> eventitems;
+    private ArrayList<EventItem> eventItems;
     private LayoutInflater inflater;
     private ItemClickListener clicklistener;
 
-    public eventlist_adapter(Context context, ArrayList<eventItem> items) {
+    public eventlist_adapter(Context context, ArrayList<EventItem> items) {
         inflater = LayoutInflater.from(context);
-        eventitems = items;
+        eventItems = items;
 
         clicklistener = null;
     }
@@ -41,7 +41,7 @@ public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.Vi
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        eventItem item = eventitems.get(position);
+        EventItem item = eventItems.get(position);
 
         holder.eventname.setText(item.getEventname());
 
@@ -50,7 +50,7 @@ public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.Vi
 
     @Override
     public int getItemCount() {
-        return eventitems.size();
+        return eventItems.size();
 
     }
 

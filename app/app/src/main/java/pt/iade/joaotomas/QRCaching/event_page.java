@@ -4,30 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-<<<<<<< HEAD
-import pt.iade.joaotomas.QRCaching.models.eventitem;
+import pt.iade.joaotomas.QRCaching.models.EventItem;
 
 public class event_page extends AppCompatActivity {
     //protected EditText street;
-    protected eventitem item;
-=======
-import pt.iade.joaotomas.QRCaching.models.Eventrow;
+    protected EventItem item;
 
-public class event_page extends AppCompatActivity {
-    //protected EditText street;
-    protected Eventrow item;
->>>>>>> tomas
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_page);
 
-<<<<<<< HEAD
-        item = new eventitem();
-=======
-        item = new Eventrow();
->>>>>>> tomas
+
+        item = new EventItem();
 
         setupComponents();
     }

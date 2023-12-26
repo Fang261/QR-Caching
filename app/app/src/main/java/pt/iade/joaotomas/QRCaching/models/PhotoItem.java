@@ -1,16 +1,16 @@
 package pt.iade.joaotomas.QRCaching.models;
 
-public class photorow {
+public class PhotoItem {
     private int id;
     private int idindb;
 
-    public photorow() {
+    public PhotoItem() {
         this(0,0);
     }
 
 
     //Constructor
-    public photorow(int id, int idindb) {
+    public PhotoItem(int id, int idindb) {
         this.id = id;
         this.idindb = idindb;
     }

@@ -47,13 +47,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b562634-748f-49ae-a059-3f70423ccc31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/photorow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/adapters/eventlist_adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/adapters/eventlist_adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/event_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/event_page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/eventlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/eventlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/eventitem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/eventItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/eventItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/EventItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/profilepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/profilepage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/back.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/back.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profilepage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profilepage.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +139,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "android.gradle.sync.needed": "true",
     "cidr.known.project.marker": "true",
     "last_opened_file_path": "C:/Users/tomas/Ambiente de Trabalho/coding/my_projects/Notes"
   }

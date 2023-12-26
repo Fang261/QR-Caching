@@ -24,9 +24,7 @@ private Spinner list;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profilepage);
     gobackbutton = findViewById(R.id.goback_buttonprofile);
-    list = findViewById(R.id.record_spinner);
-    LocationTable = findViewById(R.id.locations_table);
-    EventTable = findViewById(R.id.events_table);
+    //Recycleview
 
     list.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
         @Override
