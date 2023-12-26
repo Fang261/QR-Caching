@@ -1,6 +1,7 @@
 package pt.iade.joaotomas.QRCaching.models;
 
-public class eventitem {
+
+public class eventItem {
     private int id;
     private String eventname;
     private float latitude;
@@ -9,13 +10,14 @@ public class eventitem {
     private String fdate;
 
 
-    public eventitem() {
+
+    public eventItem() {
         this(0, "", 0, 0, "", "");
     }
 
 
     //Constructor
-    public eventitem(int id, String eventname, float latitude, float longitude, String idate, String fdate) {
+    public eventItem(int id, String eventname, float latitude, float longitude, String idate, String fdate) {
         this.id = id;
         this.eventname = eventname;
         this.latitude = latitude;
