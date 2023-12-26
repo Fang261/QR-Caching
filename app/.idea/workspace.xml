@@ -48,10 +48,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2b562634-748f-49ae-a059-3f70423ccc31" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/QrcodeItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/adapters/eventlist_adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/adapters/eventlist_adapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/event_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/event_page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/eventlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/eventlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/eventrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/Eventrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/eventitem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/eventItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/back.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/back.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profilepage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profilepage.xml" afterDir="false" />
     </list>

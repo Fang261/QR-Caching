@@ -12,16 +12,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import pt.iade.joaotomas.QRCaching.R;
-import pt.iade.joaotomas.QRCaching.models.Eventrow;
+import pt.iade.joaotomas.QRCaching.models.eventItem;
 
 public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.ViewHolder> {
-    private ArrayList<Eventrow> Eventrows;
+    private ArrayList<eventItem> eventitems;
     private LayoutInflater inflater;
     private ItemClickListener clicklistener;
 
-    public eventlist_adapter(Context context, ArrayList<Eventrow> items) {
+    public eventlist_adapter(Context context, ArrayList<eventItem> items) {
         inflater = LayoutInflater.from(context);
-        Eventrows = items;
+        eventitems = items;
         clicklistener = null;
     }
 
@@ -39,7 +39,7 @@ public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.Vi
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Eventrow item = Eventrows.get(position);
+        eventItem item = eventitems.get(position);
 
         holder.eventname.setText(item.getEventname());
 
@@ -48,7 +48,7 @@ public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.Vi
 
     @Override
     public int getItemCount() {
-        return Eventrows.size();
+        return eventitems.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
