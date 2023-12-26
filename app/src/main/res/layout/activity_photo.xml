@@ -12,12 +12,12 @@
 
     <Button
         android:id="@+id/goback_buttonphoto"
-        android:layout_width="96dp"
-        android:layout_height="52dp"
+        android:layout_width="81dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/app_backtext"
+        android:background="@drawable/back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -91,7 +91,6 @@
         android:id="@+id/imageView"
         android:layout_width="177dp"
         android:layout_height="176dp"
-        app:layout_constraintBottom_toTopOf="@+id/goback_buttonphoto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
