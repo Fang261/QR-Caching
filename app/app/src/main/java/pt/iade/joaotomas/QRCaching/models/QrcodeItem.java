@@ -5,18 +5,16 @@ import java.util.jar.Attributes;
 
 public class QrcodeItem {
     private int id;
-    private String name;
     private String streetName;
     private float latitude;
     private float longitude;
     private float altitude;
-    private ArrayList<String> photos;
+    private ArrayList<PhotoItem> photos;
 
     public QrcodeItem() {this(0, "", "", 0, 0, 0, null);}
 
-    public QrcodeItem(int id, String name, String streetName, float latitude, float longitude, float altitude, ArrayList<String> photos) {
+    public QrcodeItem(int id, String name, String streetName, float latitude, float longitude, float altitude, ArrayList<PhotoItem> photos) {
         this.id = id;
-        this.name = name;
         this.streetName = streetName;
         this.latitude = latitude;
         this.longitude = longitude;
@@ -25,12 +23,6 @@ public class QrcodeItem {
     }
 
     public int getId() { return id; }
-
-    public String getName() { return name; }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getStreetName() { return streetName; }
 
@@ -56,9 +48,9 @@ public class QrcodeItem {
         this.altitude = altitude;
     }
 
-    public ArrayList<String> getPhotos() { return photos; }
+    public ArrayList<PhotoItem> getPhotos() { return photos; }
 
-    public void setPhotos(ArrayList<String> photos) {
+    public void setPhotos(ArrayList<PhotoItem> photos) {
         this.photos = photos;
     }
 

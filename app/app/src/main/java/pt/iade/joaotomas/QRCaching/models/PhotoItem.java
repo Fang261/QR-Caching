@@ -1,18 +1,19 @@
 package pt.iade.joaotomas.QRCaching.models;
 
+import android.media.Image;
+
 public class PhotoItem {
     private int id;
-    private int idindb;
+    private String photoUrl;
 
     public PhotoItem() {
-        this(0,0);
+        this(0,"");
     }
 
-
     //Constructor
-    public PhotoItem(int id, int idindb) {
+    public PhotoItem(int id, String photoUrl) {
         this.id = id;
-        this.idindb = idindb;
+
     }
 
     public int getId() {
@@ -23,11 +24,8 @@ public class PhotoItem {
         this.id = id;
     }
 
-    public int getIdindb() {
-        return idindb;
-    }
+    public String getPhotoUrl() { return photoUrl; }
 
-    public void setIdindb(int idindb) {
-        this.idindb = idindb;
-    }
+    public void setPhotoUrl(String photoUrl) { this.photoUrl = photoUrl; }
+
 }

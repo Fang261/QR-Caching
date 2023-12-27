@@ -2981,7 +2981,6 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_big
 drawable camera_button
-drawable camera_img
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3024,6 +3023,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable img
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3193,6 +3193,7 @@ id autor_table_0550
 id autor_table_0550_text
 id autor_table_0589
 id autor_table_0589_text
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3293,7 +3294,6 @@ id eventlocation_editText
 id eventname
 id eventname_imageButton
 id events_imageButton
-id events_table
 id events_textView
 id exitUntilCollapsed
 id expand_activities_button
@@ -3350,8 +3350,6 @@ id ignore
 id ignoreRequest
 id im
 id image
-id imageButton
-id imageButton2
 id immediateStop
 id included
 id indeterminate
@@ -3374,7 +3372,6 @@ id line3
 id linear
 id listMode
 id list_item
-id locations_table
 id login_button
 id login_button2
 id login_rememberme_checkBox
@@ -3382,7 +3379,6 @@ id login_rememberme_textView
 id logo_image
 id logo_image2
 id logo_text
-id logo_text2
 id m3_side_sheet
 id mapView
 id map_imageButton
@@ -3472,6 +3468,7 @@ id outline
 id outward
 id overshoot
 id packed
+id pad
 id parallax
 id parent
 id parentPanel
@@ -3495,8 +3492,6 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
-id record_layout
-id record_spinner
 id rectangles
 id recyclerView
 id register
@@ -3616,8 +3611,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView3
-id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3881,8 +3874,8 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout row_event_item
 layout row_photo_item
-layout row_todo_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

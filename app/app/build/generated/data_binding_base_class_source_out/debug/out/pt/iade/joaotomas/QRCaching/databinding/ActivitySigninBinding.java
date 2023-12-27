@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.LinearLayoutCompat;
@@ -33,9 +32,6 @@ public final class ActivitySigninBinding implements ViewBinding {
   public final ImageView logoImage2;
 
   @NonNull
-  public final TextView logoText2;
-
-  @NonNull
   public final LinearLayoutCompat register;
 
   @NonNull
@@ -51,7 +47,7 @@ public final class ActivitySigninBinding implements ViewBinding {
   public final EditText registerUsernameEdit;
 
   private ActivitySigninBinding(@NonNull ConstraintLayout rootView, @NonNull Button confirmButton,
-      @NonNull Button loginButton2, @NonNull ImageView logoImage2, @NonNull TextView logoText2,
+      @NonNull Button loginButton2, @NonNull ImageView logoImage2,
       @NonNull LinearLayoutCompat register, @NonNull EditText registerEmailEdit,
       @NonNull EditText registerIdEdit, @NonNull EditText registerPwEdit,
       @NonNull EditText registerUsernameEdit) {
@@ -59,7 +55,6 @@ public final class ActivitySigninBinding implements ViewBinding {
     this.confirmButton = confirmButton;
     this.loginButton2 = loginButton2;
     this.logoImage2 = logoImage2;
-    this.logoText2 = logoText2;
     this.register = register;
     this.registerEmailEdit = registerEmailEdit;
     this.registerIdEdit = registerIdEdit;
@@ -112,12 +107,6 @@ public final class ActivitySigninBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.logo_text2;
-      TextView logoText2 = ViewBindings.findChildViewById(rootView, id);
-      if (logoText2 == null) {
-        break missingId;
-      }
-
       id = R.id.register;
       LinearLayoutCompat register = ViewBindings.findChildViewById(rootView, id);
       if (register == null) {
@@ -149,7 +138,7 @@ public final class ActivitySigninBinding implements ViewBinding {
       }
 
       return new ActivitySigninBinding((ConstraintLayout) rootView, confirmButton, loginButton2,
-          logoImage2, logoText2, register, registerEmailEdit, registerIdEdit, registerPwEdit,
+          logoImage2, register, registerEmailEdit, registerIdEdit, registerPwEdit,
           registerUsernameEdit);
     }
     String missingId = rootView.getResources().getResourceName(id);

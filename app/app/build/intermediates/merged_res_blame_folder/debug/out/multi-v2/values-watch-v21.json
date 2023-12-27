@@ -4,7 +4,7 @@
             "outputFile": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-30:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cocas\\.gradle\\caches\\transforms-3\\1ceac7efd2ac0072f833a26d4c326380\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\tomas\\.gradle\\caches\\transforms-3\\1ceac7efd2ac0072f833a26d4c326380\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

@@ -8,7 +8,8 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-import pt.iade.joaotomas.QRCaching.adapters.eventlist_adapter;
+import pt.iade.joaotomas.QRCaching.adapters.photolist_adapter;
+import pt.iade.joaotomas.QRCaching.models.PhotoItem;
 
 public class vault extends AppCompatActivity {
 
@@ -21,11 +22,11 @@ public class vault extends AppCompatActivity {
     private RecyclerView photosListView;
     protected photolist_adapter photolistAdapter;
 
-    protected ArrayList<photorow> itemList;
+    protected ArrayList<PhotoItem> itemList;
 
 
     private void setupComponents() {
-        photolistAdapter = new eventlist_adapter(this, itemList);
+        photolistAdapter = new photolist_adapter(this, itemList);
 
         // set up the event list recycler view
         photosListView = (RecyclerView) findViewById(R.id.event_list);

@@ -8,13 +8,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
-import android.widget.Spinner;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -27,10 +26,7 @@ public final class ActivityProfilepageBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton btnScan;
-
-  @NonNull
-  public final TableRow eventsTable;
+  public final CardView back;
 
   @NonNull
   public final ProgressBar experiencebarProgressBar2;
@@ -42,16 +38,13 @@ public final class ActivityProfilepageBinding implements ViewBinding {
   public final ConstraintLayout header;
 
   @NonNull
-  public final ImageButton imageButton2;
-
-  @NonNull
   public final TextView levelText;
 
   @NonNull
-  public final TableRow locationsTable;
+  public final EditText nameEditText;
 
   @NonNull
-  public final EditText nameEditText;
+  public final RecyclerView pad;
 
   @NonNull
   public final ImageButton profilepicImageButton;
@@ -59,42 +52,21 @@ public final class ActivityProfilepageBinding implements ViewBinding {
   @NonNull
   public final ImageButton profilepicselectImageButton;
 
-  @NonNull
-  public final TableLayout recordLayout;
-
-  @NonNull
-  public final Spinner recordSpinner;
-
-  @NonNull
-  public final TextView textView3;
-
-  @NonNull
-  public final TextView textView4;
-
-  private ActivityProfilepageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageButton btnScan, @NonNull TableRow eventsTable,
+  private ActivityProfilepageBinding(@NonNull ConstraintLayout rootView, @NonNull CardView back,
       @NonNull ProgressBar experiencebarProgressBar2, @NonNull Button gobackButtonprofile,
-      @NonNull ConstraintLayout header, @NonNull ImageButton imageButton2,
-      @NonNull TextView levelText, @NonNull TableRow locationsTable, @NonNull EditText nameEditText,
-      @NonNull ImageButton profilepicImageButton, @NonNull ImageButton profilepicselectImageButton,
-      @NonNull TableLayout recordLayout, @NonNull Spinner recordSpinner,
-      @NonNull TextView textView3, @NonNull TextView textView4) {
+      @NonNull ConstraintLayout header, @NonNull TextView levelText, @NonNull EditText nameEditText,
+      @NonNull RecyclerView pad, @NonNull ImageButton profilepicImageButton,
+      @NonNull ImageButton profilepicselectImageButton) {
     this.rootView = rootView;
-    this.btnScan = btnScan;
-    this.eventsTable = eventsTable;
+    this.back = back;
     this.experiencebarProgressBar2 = experiencebarProgressBar2;
     this.gobackButtonprofile = gobackButtonprofile;
     this.header = header;
-    this.imageButton2 = imageButton2;
     this.levelText = levelText;
-    this.locationsTable = locationsTable;
     this.nameEditText = nameEditText;
+    this.pad = pad;
     this.profilepicImageButton = profilepicImageButton;
     this.profilepicselectImageButton = profilepicselectImageButton;
-    this.recordLayout = recordLayout;
-    this.recordSpinner = recordSpinner;
-    this.textView3 = textView3;
-    this.textView4 = textView4;
   }
 
   @Override
@@ -124,15 +96,9 @@ public final class ActivityProfilepageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_scan;
-      ImageButton btnScan = ViewBindings.findChildViewById(rootView, id);
-      if (btnScan == null) {
-        break missingId;
-      }
-
-      id = R.id.events_table;
-      TableRow eventsTable = ViewBindings.findChildViewById(rootView, id);
-      if (eventsTable == null) {
+      id = R.id.back;
+      CardView back = ViewBindings.findChildViewById(rootView, id);
+      if (back == null) {
         break missingId;
       }
 
@@ -154,27 +120,21 @@ public final class ActivityProfilepageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageButton2;
-      ImageButton imageButton2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton2 == null) {
-        break missingId;
-      }
-
       id = R.id.level_text;
       TextView levelText = ViewBindings.findChildViewById(rootView, id);
       if (levelText == null) {
         break missingId;
       }
 
-      id = R.id.locations_table;
-      TableRow locationsTable = ViewBindings.findChildViewById(rootView, id);
-      if (locationsTable == null) {
-        break missingId;
-      }
-
       id = R.id.name_editText;
       EditText nameEditText = ViewBindings.findChildViewById(rootView, id);
       if (nameEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.pad;
+      RecyclerView pad = ViewBindings.findChildViewById(rootView, id);
+      if (pad == null) {
         break missingId;
       }
 
@@ -190,34 +150,9 @@ public final class ActivityProfilepageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.record_layout;
-      TableLayout recordLayout = ViewBindings.findChildViewById(rootView, id);
-      if (recordLayout == null) {
-        break missingId;
-      }
-
-      id = R.id.record_spinner;
-      Spinner recordSpinner = ViewBindings.findChildViewById(rootView, id);
-      if (recordSpinner == null) {
-        break missingId;
-      }
-
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
-        break missingId;
-      }
-
-      return new ActivityProfilepageBinding((ConstraintLayout) rootView, btnScan, eventsTable,
-          experiencebarProgressBar2, gobackButtonprofile, header, imageButton2, levelText,
-          locationsTable, nameEditText, profilepicImageButton, profilepicselectImageButton,
-          recordLayout, recordSpinner, textView3, textView4);
+      return new ActivityProfilepageBinding((ConstraintLayout) rootView, back,
+          experiencebarProgressBar2, gobackButtonprofile, header, levelText, nameEditText, pad,
+          profilepicImageButton, profilepicselectImageButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

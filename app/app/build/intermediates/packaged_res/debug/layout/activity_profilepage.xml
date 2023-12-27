@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundimg1"
+    android:background="@color/material_dynamic_neutral10"
     tools:context=".profilepage">
 
 
@@ -97,67 +97,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header" />
 
-    <Spinner
-        android:id="@+id/record_spinner"
-        android:layout_width="409dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="1dp"
-        android:entries="@array/coisas"
-        android:popupBackground="?android:attr/scrollbarThumbVertical"
-        android:spinnerMode="dropdown"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/material_dynamic_neutral20"
+        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilepicselect_imageButton" />
+        app:layout_constraintTop_toBottomOf="@+id/profilepicselect_imageButton">
 
-    <TableLayout
-        android:id="@+id/record_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="22dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/record_spinner">
-
-        <TableRow
-            android:id="@+id/events_table"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pad"
             android:layout_width="match_parent"
-            android:layout_height="73dp">
-
-            <ImageButton
-                android:id="@+id/btn_scan"
-                android:layout_width="86dp"
-                android:layout_height="73dp"
-                android:src="@android:drawable/btn_star_big_on" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="IADE Games4Good" />
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/locations_table"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="75dp"
-                android:layout_height="66dp"
-                android:src="@android:drawable/btn_star" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rua Jose Maria Nicolau" />
-
-        </TableRow>
-
-    </TableLayout>
+            android:layout_height="match_parent"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
