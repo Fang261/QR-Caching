@@ -25,6 +25,16 @@
           <theme>@style/Theme.Copypasteplayground</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml">
+        <config>
+          <theme>@style/Theme.Copypasteplayground</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_photo.xml">
+        <config>
+          <theme>@style/Theme.Copypasteplayground</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_profilepage.xml">
         <config>
           <theme>@style/Theme.Copypasteplayground</theme>
@@ -56,7 +66,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b562634-748f-49ae-a059-3f70423ccc31" name="Changes" comment="" />
+    <list default="true" id="2b562634-748f-49ae-a059-3f70423ccc31" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/back.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/back.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/button_big.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_photo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_photo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

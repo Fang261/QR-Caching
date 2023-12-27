@@ -10,32 +10,6 @@
     android:paddingVertical="0dp"
     tools:context=".mainpage">
 
-    <ImageButton
-        android:id="@+id/btn_scan2"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="156dp"
-        android:adjustViewBounds="false"
-        android:alpha="1"
-        android:background="?attr/selectableItemBackground"
-        android:contentDescription="@string/app_camera_button"
-        android:defaultFocusHighlightEnabled="false"
-        android:duplicateParentState="false"
-        android:padding="0dp"
-        android:paddingHorizontal="0dp"
-        android:paddingVertical="0dp"
-        android:paddingLeft="0dp"
-        android:paddingTop="0dp"
-        android:paddingRight="0dp"
-        android:paddingBottom="0dp"
-        android:scaleType="centerInside"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/camera_button" />
-
     <Button
         android:id="@+id/goback_buttonphoto"
         android:layout_width="96dp"
