@@ -3023,7 +3023,6 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
-drawable img
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3206,7 +3205,6 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btn_scan
-id btn_scan2
 id buttonPanel
 id cache_measures
 id callMeasure

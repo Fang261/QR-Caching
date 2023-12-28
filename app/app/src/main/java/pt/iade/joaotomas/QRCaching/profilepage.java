@@ -1,55 +1,42 @@
 package pt.iade.joaotomas.QRCaching;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.TableRow;
+
+import java.util.ArrayList;
+
+import pt.iade.joaotomas.QRCaching.adapters.qrcodelist_adapter;
+import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
 
 
 public class profilepage extends AppCompatActivity {
+    private Button gobackbutton;
+    private RecyclerView itemsListView;
+    protected qrcodelist_adapter qrcodelistAdapter;
 
-private Button gobackbutton;
-
-private TableRow LocationTable;
-private TableRow EventTable;
-private Spinner list;
+    protected ArrayList<QrcodeItem> itemList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profilepage);
-    gobackbutton = findViewById(R.id.goback_buttonprofile);
-    //Recycleview
+        gobackbutton = findViewById(R.id.goback_buttonprofile);
 
-    list.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-        @Override
-        public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-            if (i == 0) {
-                LocationTable.setVisibility(View.GONE);
-                EventTable.setVisibility(View.VISIBLE);
-            }
-            else {
-                LocationTable.setVisibility(View.VISIBLE);
-                EventTable.setVisibility(View.GONE);
-            };
-        }
-
-        @Override
-        public void onNothingSelected(AdapterView<?> adapterView) {
-
-        }
-    });
-        gobackbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(profilepage.this,mainpage.class);
-                startActivity(intent);
-            }
-        });
     }
+
+    private void setupComponents() {
+        qrcodelistAdapter = new qrcodelist_adapter(this, itemList);
+
+        // set up the qrcode list recycler view
+        itemsListView = (RecyclerView) findViewById(R.id.qrcode_list);
+        itemsListView.setLayoutManager(new LinearLayoutManager(this));
+        itemsListView.setAdapter(qrcodelistAdapter);
+
+    }
+
 }

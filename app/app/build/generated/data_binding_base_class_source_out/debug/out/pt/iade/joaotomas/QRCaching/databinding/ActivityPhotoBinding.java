@@ -23,9 +23,6 @@ public final class ActivityPhotoBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton btnScan2;
-
-  @NonNull
   public final ProgressBar experiencebarProgressBar5;
 
   @NonNull
@@ -40,12 +37,11 @@ public final class ActivityPhotoBinding implements ViewBinding {
   @NonNull
   public final ImageButton profilepicImageButton;
 
-  private ActivityPhotoBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton btnScan2,
+  private ActivityPhotoBinding(@NonNull ConstraintLayout rootView,
       @NonNull ProgressBar experiencebarProgressBar5, @NonNull Button gobackButtonphoto,
       @NonNull ConstraintLayout header, @NonNull TextView levelText,
       @NonNull ImageButton profilepicImageButton) {
     this.rootView = rootView;
-    this.btnScan2 = btnScan2;
     this.experiencebarProgressBar5 = experiencebarProgressBar5;
     this.gobackButtonphoto = gobackButtonphoto;
     this.header = header;
@@ -80,12 +76,6 @@ public final class ActivityPhotoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_scan2;
-      ImageButton btnScan2 = ViewBindings.findChildViewById(rootView, id);
-      if (btnScan2 == null) {
-        break missingId;
-      }
-
       id = R.id.experiencebar_progressBar5;
       ProgressBar experiencebarProgressBar5 = ViewBindings.findChildViewById(rootView, id);
       if (experiencebarProgressBar5 == null) {
@@ -116,8 +106,8 @@ public final class ActivityPhotoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPhotoBinding((ConstraintLayout) rootView, btnScan2,
-          experiencebarProgressBar5, gobackButtonphoto, header, levelText, profilepicImageButton);
+      return new ActivityPhotoBinding((ConstraintLayout) rootView, experiencebarProgressBar5,
+          gobackButtonphoto, header, levelText, profilepicImageButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

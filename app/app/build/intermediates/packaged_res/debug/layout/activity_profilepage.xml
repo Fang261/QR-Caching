@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_neutral10"
+    android:background="@drawable/backgroundimg1"
     tools:context=".profilepage">
 
 
@@ -12,7 +12,7 @@
         android:id="@+id/goback_buttonprofile"
         android:layout_width="81dp"
         android:layout_height="71dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/back"
         app:layout_constraintBottom_toBottomOf="parent"

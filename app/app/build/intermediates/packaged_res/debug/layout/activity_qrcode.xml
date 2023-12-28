@@ -15,7 +15,7 @@
         android:id="@+id/vault_imageButton"
         android:layout_width="280dp"
         android:layout_height="95dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#00FFFFFF"
         android:paddingHorizontal="0dp"
         android:paddingVertical="0dp"
@@ -87,8 +87,7 @@
         android:id="@+id/photo_imageButton"
         android:layout_width="280dp"
         android:layout_height="95dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#00FFFFFF"
         android:paddingHorizontal="0dp"
         android:paddingVertical="0dp"
@@ -99,8 +98,7 @@
         app:layout_constraintBottom_toTopOf="@+id/write_imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/photo_textView"

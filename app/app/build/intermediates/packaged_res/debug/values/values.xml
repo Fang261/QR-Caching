@@ -4,7 +4,7 @@
         <item>@string/app_eventtext</item>
         <item>@string/app_locationtext</item>
     </array>
-    <color name="Primary">#FF6D0F87</color>
+    <color name="Primary">#2E3133</color>
     <color name="black">#FF000000</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#3F51B5</color>

@@ -16,7 +16,6 @@ drawable experiencebar
 drawable header
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable img
 drawable screenshot_1
 id autor_table
 id autor_table_0550
@@ -25,7 +24,6 @@ id autor_table_0589
 id autor_table_0589_text
 id back
 id btn_scan
-id btn_scan2
 id confirm_button
 id event3Dmodel_ImageView
 id event_list

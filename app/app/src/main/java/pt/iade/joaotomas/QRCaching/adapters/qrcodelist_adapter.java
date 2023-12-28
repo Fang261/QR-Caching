@@ -3,24 +3,25 @@ package pt.iade.joaotomas.QRCaching.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 import pt.iade.joaotomas.QRCaching.R;
-import pt.iade.joaotomas.QRCaching.models.PhotoItem;
-import pt.iade.joaotomas.QRCaching.vault;
+import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
+import pt.iade.joaotomas.QRCaching.profilepage;
 
-public class photolist_adapter extends RecyclerView.Adapter<photolist_adapter.ViewHolder> {
-    private ArrayList<PhotoItem> photoItems;
+public class qrcodelist_adapter extends RecyclerView.Adapter<qrcodelist_adapter.ViewHolder> {
+    private ArrayList<QrcodeItem> qrcodeItems;
     private LayoutInflater inflater;
-    private photolist_adapter.ItemClickListener clicklistener;
+    private qrcodelist_adapter.ItemClickListener clicklistener;
 
-    public photolist_adapter(vault vault, ArrayList<PhotoItem> itemList) {
-        inflater = LayoutInflater.from(vault);
-        photoItems = itemList;
+    public qrcodelist_adapter(profilepage profilepage, ArrayList<QrcodeItem> itemList) {
+        inflater = LayoutInflater.from(profilepage);
+        qrcodeItems = itemList;
 
         clicklistener = null;
     }
@@ -29,29 +30,31 @@ public class photolist_adapter extends RecyclerView.Adapter<photolist_adapter.Vi
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.row_photo_item, parent, false);
+        View view = inflater.inflate(R.layout.row_qrcode_item, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(photolist_adapter.ViewHolder holder, int position) {
-        PhotoItem item = photoItems.get(position);
+    public void onBindViewHolder(qrcodelist_adapter.ViewHolder holder, int position) {
+        QrcodeItem item = qrcodeItems.get(position);
 
     }
 
     @Override
     public int getItemCount() {
-        return photoItems.size();
+        return qrcodeItems.size();
 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        public ImageButton photo_imageButton;
+        public ImageView qrcode_imageView;
+        public TextView qrcode_streename_textView;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
-            photo_imageButton = itemView.findViewById(R.id.photo_imageButton);
+            qrcode_imageView = itemView.findViewById(R.id.qrcode_imageView);
+            qrcode_streename_textView = itemView.findViewById(R.id.qrcode_streename_textView);
 
             itemView.setOnClickListener(this);
         }
