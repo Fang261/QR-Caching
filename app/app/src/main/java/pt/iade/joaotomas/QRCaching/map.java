@@ -10,6 +10,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import pt.iade.joaotomas.QRCaching.R;
+import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
 
 public class map extends AppCompatActivity implements OnMapReadyCallback {
 
@@ -25,24 +26,16 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
         mapFragment.getMapAsync(this);
     }
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     *
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        QrcodeItem Item = new QrcodeItem();
         LatLng lisbon = new LatLng(38.44, 9.8);
+        LatLng currentQRCode = new LatLng(Item.getLatitude(),Item.getLongitude());
         mMap.addMarker(new MarkerOptions()
-                .position(/*insert qrcode coords from a future qrcodeitem*/ )
-                .title(/*insert qrcode name from a future qrcodeitem*/));
+                .position(currentQRCode)
+                .title(Item.getStreetName()));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(lisbon));
     }
 }
