@@ -31,8 +31,6 @@ public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.Vi
         clicklistener = listener;
     }
 
-
-
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.row_event_item, parent, false);

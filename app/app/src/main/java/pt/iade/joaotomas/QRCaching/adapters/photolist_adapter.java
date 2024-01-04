@@ -18,9 +18,9 @@ public class photolist_adapter extends RecyclerView.Adapter<photolist_adapter.Vi
     private LayoutInflater inflater;
     private photolist_adapter.ItemClickListener clicklistener;
 
-    public photolist_adapter(vault vault, ArrayList<PhotoItem> itemList) {
+    public photolist_adapter(vault vault, ArrayList<PhotoItem> items) {
         inflater = LayoutInflater.from(vault);
-        photoItems = itemList;
+        photoItems = items;
 
         clicklistener = null;
     }

@@ -19,9 +19,9 @@ public class qrcodelist_adapter extends RecyclerView.Adapter<qrcodelist_adapter.
     private LayoutInflater inflater;
     private qrcodelist_adapter.ItemClickListener clicklistener;
 
-    public qrcodelist_adapter(profilepage profilepage, ArrayList<QrcodeItem> itemList) {
+    public qrcodelist_adapter(profilepage profilepage, ArrayList<QrcodeItem> items) {
         inflater = LayoutInflater.from(profilepage);
-        qrcodeItems = itemList;
+        qrcodeItems = items;
 
         clicklistener = null;
     }
