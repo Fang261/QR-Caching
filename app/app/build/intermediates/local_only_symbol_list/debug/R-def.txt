@@ -57,12 +57,14 @@ id mapView
 id map_imageButton
 id map_textView4
 id name_editText
-id pad
 id photo_imageButton
+id photo_list
 id photo_textView
-id photosListView
 id profilepic_imageButton
 id profilepicselect_imageButton
+id qrcode_imageView
+id qrcode_list
+id qrcode_streename_textView
 id recyclerView
 id register
 id register_email_edit
@@ -92,6 +94,7 @@ layout activity_signin
 layout activity_vault
 layout row_event_item
 layout row_photo_item
+layout row_qrcode_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_IDtext

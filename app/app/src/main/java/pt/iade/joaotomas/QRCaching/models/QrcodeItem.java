@@ -11,7 +11,7 @@ public class QrcodeItem {
     private float altitude;
     private ArrayList<PhotoItem> photos;
 
-    public QrcodeItem() {this(0, "", "", 0, 0, 0, null);}
+    public QrcodeItem() {this(0, "Name", "streetName", 0,0 , 0, null);}
 
     public QrcodeItem(int id, String name, String streetName, float latitude, float longitude, float altitude, ArrayList<PhotoItem> photos) {
         this.id = id;

@@ -111,7 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/profilepicselect_imageButton">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/pad"
+            android:id="@+id/qrcode_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingHorizontal="10dp"
