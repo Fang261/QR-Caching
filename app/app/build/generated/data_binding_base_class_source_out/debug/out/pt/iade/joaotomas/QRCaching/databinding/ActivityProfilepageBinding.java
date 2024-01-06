@@ -44,19 +44,19 @@ public final class ActivityProfilepageBinding implements ViewBinding {
   public final EditText nameEditText;
 
   @NonNull
-  public final RecyclerView pad;
-
-  @NonNull
   public final ImageButton profilepicImageButton;
 
   @NonNull
   public final ImageButton profilepicselectImageButton;
 
+  @NonNull
+  public final RecyclerView qrcodeList;
+
   private ActivityProfilepageBinding(@NonNull ConstraintLayout rootView, @NonNull CardView back,
       @NonNull ProgressBar experiencebarProgressBar2, @NonNull Button gobackButtonprofile,
       @NonNull ConstraintLayout header, @NonNull TextView levelText, @NonNull EditText nameEditText,
-      @NonNull RecyclerView pad, @NonNull ImageButton profilepicImageButton,
-      @NonNull ImageButton profilepicselectImageButton) {
+      @NonNull ImageButton profilepicImageButton, @NonNull ImageButton profilepicselectImageButton,
+      @NonNull RecyclerView qrcodeList) {
     this.rootView = rootView;
     this.back = back;
     this.experiencebarProgressBar2 = experiencebarProgressBar2;
@@ -64,9 +64,9 @@ public final class ActivityProfilepageBinding implements ViewBinding {
     this.header = header;
     this.levelText = levelText;
     this.nameEditText = nameEditText;
-    this.pad = pad;
     this.profilepicImageButton = profilepicImageButton;
     this.profilepicselectImageButton = profilepicselectImageButton;
+    this.qrcodeList = qrcodeList;
   }
 
   @Override
@@ -132,12 +132,6 @@ public final class ActivityProfilepageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.pad;
-      RecyclerView pad = ViewBindings.findChildViewById(rootView, id);
-      if (pad == null) {
-        break missingId;
-      }
-
       id = R.id.profilepic_imageButton;
       ImageButton profilepicImageButton = ViewBindings.findChildViewById(rootView, id);
       if (profilepicImageButton == null) {
@@ -150,9 +144,15 @@ public final class ActivityProfilepageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.qrcode_list;
+      RecyclerView qrcodeList = ViewBindings.findChildViewById(rootView, id);
+      if (qrcodeList == null) {
+        break missingId;
+      }
+
       return new ActivityProfilepageBinding((ConstraintLayout) rootView, back,
-          experiencebarProgressBar2, gobackButtonprofile, header, levelText, nameEditText, pad,
-          profilepicImageButton, profilepicselectImageButton);
+          experiencebarProgressBar2, gobackButtonprofile, header, levelText, nameEditText,
+          profilepicImageButton, profilepicselectImageButton, qrcodeList);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

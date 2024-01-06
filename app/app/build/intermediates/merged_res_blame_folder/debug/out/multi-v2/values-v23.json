@@ -4,7 +4,7 @@
             "outputFile": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-30:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tomas\\.gradle\\caches\\transforms-3\\1ceac7efd2ac0072f833a26d4c326380\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\cocas\\.gradle\\caches\\transforms-3\\1ceac7efd2ac0072f833a26d4c326380\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tomas\\.gradle\\caches\\transforms-3\\71e4f9d94e839367e0e177b90e6d2657\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\cocas\\.gradle\\caches\\transforms-3\\71e4f9d94e839367e0e177b90e6d2657\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tomas\\.gradle\\caches\\transforms-3\\21366f6076b67d3560dc7a509598e750\\transformed\\material-1.9.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\cocas\\.gradle\\caches\\transforms-3\\21366f6076b67d3560dc7a509598e750\\transformed\\material-1.9.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

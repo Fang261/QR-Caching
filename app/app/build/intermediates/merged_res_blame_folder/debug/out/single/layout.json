@@ -44,6 +44,10 @@
         "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_main.xml"
     },
     {
+        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-31:/layout/row_qrcode_item.xml",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/row_qrcode_item.xml"
+    },
+    {
         "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-31:/layout/activity_signin.xml",
         "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_signin.xml"
     }

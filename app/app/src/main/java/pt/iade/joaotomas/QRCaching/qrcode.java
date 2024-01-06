@@ -17,6 +17,7 @@ public class qrcode extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String qrCodeValue = getIntent().getStringExtra("QRCodeValue");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qrcode);
         picture = findViewById(R.id.photo_imageButton);
