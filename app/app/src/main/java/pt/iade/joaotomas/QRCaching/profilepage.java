@@ -29,12 +29,19 @@ public class profilepage extends AppCompatActivity {
         setContentView(R.layout.activity_profilepage);
         gobackbutton = findViewById(R.id.goback_buttonprofile);
 
+<<<<<<< HEAD
         Intent intent = getIntent();
         if (intent != null) {
             itemList = (ArrayList<QrcodeItem>) intent.getSerializableExtra("itemList");
             if (itemList == null) {
                 itemList = new ArrayList<>();
             }
+=======
+        // Retrieve itemList from intent
+        Intent intent = getIntent();
+        if (intent != null) {
+            itemList = (ArrayList<QrcodeItem>) intent.getSerializableExtra("itemList");
+>>>>>>> c93dc1b5fb674f3c482a28e4604e8988bd45d399
         } else {
             AlertDialog.Builder builder = new AlertDialog.Builder(profilepage.this, R.style.AlertDialogCustom);
             builder.setTitle("Failed to load Lists");

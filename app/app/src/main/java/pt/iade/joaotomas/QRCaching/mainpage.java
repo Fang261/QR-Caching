@@ -32,6 +32,8 @@ public class mainpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage);
 
+        itemList = new ArrayList<>();
+
         btn_scan = findViewById(R.id.btn_scan);
         profilepage = findViewById(R.id.profilepic_imageButton);
         mappage = findViewById(R.id.map_imageButton);
@@ -58,6 +60,7 @@ public class mainpage extends AppCompatActivity {
                 Intent intent = new Intent(mainpage.this, map.class);
                 startActivity(intent);
                 finish();
+
             }
         });
         eventpage.setOnClickListener(new View.OnClickListener() {
