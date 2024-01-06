@@ -16,6 +16,10 @@
         "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_row_qrcode_item.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/row_qrcode_item.xml"
+    },
+    {
         "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_button_big.png.flat",
         "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/button_big.png"
     },

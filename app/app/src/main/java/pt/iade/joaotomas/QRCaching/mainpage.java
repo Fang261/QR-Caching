@@ -12,7 +12,11 @@ import android.widget.ImageButton;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
+import java.util.ArrayList;
+
 import pt.iade.joaotomas.QRCaching.models.CaptureAct;
+import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
+import pt.iade.joaotomas.QRCaching.profilepage;
 
 
 public class mainpage extends AppCompatActivity {
@@ -23,8 +27,12 @@ private ImageButton mappage;
 
 private ImageButton eventpage;
 private ImageButton btn_scan;
+
+profilepage profilePageInstance = new profilepage();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ArrayList<QrcodeItem> itemList = profilePageInstance.getItemList();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage);
         btn_scan =findViewById(R.id.btn_scan);
@@ -76,29 +84,29 @@ private ImageButton btn_scan;
         barLauncher.launch(options);
     }
 
-    ActivityResultLauncher<ScanOptions> barLauncher = registerForActivityResult(new ScanContract(), result->
-    {
-        if(result.getContents() !=null)
-        {
-           if(result.getContents().equals("exemplo_1")){
-               Intent intent=new Intent(mainpage.this,qrcode.class);
-               startActivity(intent);
-           }
-           else if(result.getContents().equals("exemplo_2")){
-               Intent intent=new Intent(mainpage.this,qrcode.class);
-               startActivity(intent);
-           }
-           else {
-               AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this, R.style.AlertDialogCustom);
-               builder.setTitle("QR Code invalid");
-               builder.setMessage(result.getContents());
-               builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                   @Override
-                   public void onClick(DialogInterface dialogInterface, int i) {
-                       dialogInterface.dismiss();
-                   }
-               }).show();
-           }
+    ActivityResultLauncher<ScanOptions> barLauncher = registerForActivityResult(new ScanContract(), result -> {
+        String QRCodeValue = null;
+        if (result.getContents() != null) {
+            boolean isQRCodeValid = false;
+
+            for (QrcodeItem item : profilePageInstance.getItemList()) {
+                if (result.getContents().equals(item.getQrcode())) {
+                    isQRCodeValid = true;
+                    QRCodeValue = item.getQrcode();
+                    break;
+                }
+            }
+
+            if (isQRCodeValid) {
+                Intent intent = new Intent(mainpage.this, qrcode.class);
+                intent.putExtra("QRCodeValue", QRCodeValue);
+                startActivity(intent);
+            } else {
+                AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this, R.style.AlertDialogCustom);
+                builder.setTitle("QR Code invalid");
+                builder.setMessage(result.getContents());
+                builder.setPositiveButton("Ok", (dialogInterface, i) -> dialogInterface.dismiss()).show();
+            }
         }
     });
 }

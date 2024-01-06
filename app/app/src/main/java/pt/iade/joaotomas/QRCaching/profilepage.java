@@ -19,7 +19,7 @@ public class profilepage extends AppCompatActivity {
     private RecyclerView itemsListView;
     protected qrcodelist_adapter qrcodelistAdapter;
 
-    protected ArrayList<QrcodeItem> itemList;
+    public ArrayList<QrcodeItem> itemList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,9 @@ public class profilepage extends AppCompatActivity {
         itemsListView.setLayoutManager(new LinearLayoutManager(this));
         itemsListView.setAdapter(qrcodelistAdapter);
 
+    }
+    public ArrayList<QrcodeItem> getItemList() {
+        return itemList;
     }
 
 }

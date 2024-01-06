@@ -1,35 +1,35 @@
-pt.iade.joaotomas.QRCaching.app-zxing-android-embedded-4.3.0-0 C:\Users\tomas\.gradle\caches\transforms-3\02345006939baee8dfa8f1f6bbcc2193\transformed\zxing-android-embedded-4.3.0\res
-pt.iade.joaotomas.QRCaching.app-drawerlayout-1.1.1-1 C:\Users\tomas\.gradle\caches\transforms-3\02b5590853d80389611f1c9a63cadc61\transformed\drawerlayout-1.1.1\res
-pt.iade.joaotomas.QRCaching.app-lifecycle-viewmodel-2.5.1-2 C:\Users\tomas\.gradle\caches\transforms-3\07ca7439fe40a64a32a891af1bb8dd87\transformed\lifecycle-viewmodel-2.5.1\res
-pt.iade.joaotomas.QRCaching.app-startup-runtime-1.1.1-3 C:\Users\tomas\.gradle\caches\transforms-3\1994fcc0007167d874500872f890f7bc\transformed\startup-runtime-1.1.1\res
-pt.iade.joaotomas.QRCaching.app-appcompat-1.6.1-4 C:\Users\tomas\.gradle\caches\transforms-3\1ceac7efd2ac0072f833a26d4c326380\transformed\appcompat-1.6.1\res
-pt.iade.joaotomas.QRCaching.app-material-1.9.0-5 C:\Users\tomas\.gradle\caches\transforms-3\21366f6076b67d3560dc7a509598e750\transformed\material-1.9.0\res
-pt.iade.joaotomas.QRCaching.app-appcompat-resources-1.6.1-6 C:\Users\tomas\.gradle\caches\transforms-3\21476b44eb040660252b2b72581e8140\transformed\appcompat-resources-1.6.1\res
-pt.iade.joaotomas.QRCaching.app-annotation-experimental-1.3.0-7 C:\Users\tomas\.gradle\caches\transforms-3\2335e76f442454b504a52994fb88d9e6\transformed\annotation-experimental-1.3.0\res
-pt.iade.joaotomas.QRCaching.app-activity-1.6.0-8 C:\Users\tomas\.gradle\caches\transforms-3\2427e4f86aaef6e96e00da9c2badabcf\transformed\activity-1.6.0\res
-pt.iade.joaotomas.QRCaching.app-emoji2-views-helper-1.2.0-9 C:\Users\tomas\.gradle\caches\transforms-3\2cbcba03e78b5c096a885b1479cf99e3\transformed\emoji2-views-helper-1.2.0\res
-pt.iade.joaotomas.QRCaching.app-lifecycle-viewmodel-savedstate-2.5.1-10 C:\Users\tomas\.gradle\caches\transforms-3\434c6ec02f672787991af79786c538e0\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
-pt.iade.joaotomas.QRCaching.app-lifecycle-runtime-2.5.1-11 C:\Users\tomas\.gradle\caches\transforms-3\48186f2f13864b01b94d1ca67a35c53f\transformed\lifecycle-runtime-2.5.1\res
-pt.iade.joaotomas.QRCaching.app-lifecycle-process-2.4.1-12 C:\Users\tomas\.gradle\caches\transforms-3\5372d276e64f88c1effa733f08501c40\transformed\lifecycle-process-2.4.1\res
-pt.iade.joaotomas.QRCaching.app-fragment-1.3.6-13 C:\Users\tomas\.gradle\caches\transforms-3\5b05c14d0d2dcb8b2f26caf5b9bfb577\transformed\fragment-1.3.6\res
-pt.iade.joaotomas.QRCaching.app-coordinatorlayout-1.1.0-14 C:\Users\tomas\.gradle\caches\transforms-3\6f7570fe31f56646ff161157b4cbbe24\transformed\coordinatorlayout-1.1.0\res
-pt.iade.joaotomas.QRCaching.app-cardview-1.0.0-15 C:\Users\tomas\.gradle\caches\transforms-3\71e4f9d94e839367e0e177b90e6d2657\transformed\cardview-1.0.0\res
-pt.iade.joaotomas.QRCaching.app-viewpager2-1.0.0-16 C:\Users\tomas\.gradle\caches\transforms-3\72d764deee00a0234928089e8cf904a3\transformed\viewpager2-1.0.0\res
-pt.iade.joaotomas.QRCaching.app-recyclerview-1.1.0-17 C:\Users\tomas\.gradle\caches\transforms-3\786b7c0d488641a7e87fde12d4006ba2\transformed\recyclerview-1.1.0\res
-pt.iade.joaotomas.QRCaching.app-play-services-base-18.0.1-18 C:\Users\tomas\.gradle\caches\transforms-3\7f4b778ed040d4f480fed2caa1e19f17\transformed\play-services-base-18.0.1\res
-pt.iade.joaotomas.QRCaching.app-play-services-basement-18.0.0-19 C:\Users\tomas\.gradle\caches\transforms-3\835194d0b5333b97011df0c5c6d0d6f2\transformed\play-services-basement-18.0.0\res
-pt.iade.joaotomas.QRCaching.app-emoji2-1.2.0-20 C:\Users\tomas\.gradle\caches\transforms-3\88ea80389722538e595c0196273ea24e\transformed\emoji2-1.2.0\res
-pt.iade.joaotomas.QRCaching.app-core-ktx-1.9.0-21 C:\Users\tomas\.gradle\caches\transforms-3\9fdf2c6bd385df6ab448481b347fce43\transformed\core-ktx-1.9.0\res
-pt.iade.joaotomas.QRCaching.app-savedstate-1.2.0-22 C:\Users\tomas\.gradle\caches\transforms-3\a2a9e334e177fe7d9c4719e5785e5d32\transformed\savedstate-1.2.0\res
-pt.iade.joaotomas.QRCaching.app-play-services-maps-18.2.0-23 C:\Users\tomas\.gradle\caches\transforms-3\a2f3e39d34a953b0396a3422758f8cad\transformed\play-services-maps-18.2.0\res
-pt.iade.joaotomas.QRCaching.app-core-1.9.0-24 C:\Users\tomas\.gradle\caches\transforms-3\bf308e625ebf6cfea084cdde47c41dc9\transformed\core-1.9.0\res
-pt.iade.joaotomas.QRCaching.app-lifecycle-livedata-core-2.5.1-25 C:\Users\tomas\.gradle\caches\transforms-3\c97a7fd8b1fee3612a910b7024d259db\transformed\lifecycle-livedata-core-2.5.1\res
-pt.iade.joaotomas.QRCaching.app-transition-1.2.0-26 C:\Users\tomas\.gradle\caches\transforms-3\ce526d727c9eb14cb47dda630aa8c665\transformed\transition-1.2.0\res
-pt.iade.joaotomas.QRCaching.app-constraintlayout-2.1.4-27 C:\Users\tomas\.gradle\caches\transforms-3\db9704b8eb306319c4147056bfcd8d2d\transformed\constraintlayout-2.1.4\res
-pt.iade.joaotomas.QRCaching.app-pngs-28 C:\Users\tomas\Ambiente de Trabalho\coding\Iade\Projeto_3semestre\QR-Caching\app\app\build\generated\res\pngs\debug
-pt.iade.joaotomas.QRCaching.app-resValues-29 C:\Users\tomas\Ambiente de Trabalho\coding\Iade\Projeto_3semestre\QR-Caching\app\app\build\generated\res\resValues\debug
-pt.iade.joaotomas.QRCaching.app-packageDebugResources-30 C:\Users\tomas\Ambiente de Trabalho\coding\Iade\Projeto_3semestre\QR-Caching\app\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-pt.iade.joaotomas.QRCaching.app-packageDebugResources-31 C:\Users\tomas\Ambiente de Trabalho\coding\Iade\Projeto_3semestre\QR-Caching\app\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-pt.iade.joaotomas.QRCaching.app-merged_res-32 C:\Users\tomas\Ambiente de Trabalho\coding\Iade\Projeto_3semestre\QR-Caching\app\app\build\intermediates\merged_res\debug
-pt.iade.joaotomas.QRCaching.app-debug-33 C:\Users\tomas\Ambiente de Trabalho\coding\Iade\Projeto_3semestre\QR-Caching\app\app\src\debug\res
-pt.iade.joaotomas.QRCaching.app-main-34 C:\Users\tomas\Ambiente de Trabalho\coding\Iade\Projeto_3semestre\QR-Caching\app\app\src\main\res
+pt.iade.joaotomas.QRCaching.app-zxing-android-embedded-4.3.0-0 C:\Users\cocas\.gradle\caches\transforms-3\02345006939baee8dfa8f1f6bbcc2193\transformed\zxing-android-embedded-4.3.0\res
+pt.iade.joaotomas.QRCaching.app-drawerlayout-1.1.1-1 C:\Users\cocas\.gradle\caches\transforms-3\02b5590853d80389611f1c9a63cadc61\transformed\drawerlayout-1.1.1\res
+pt.iade.joaotomas.QRCaching.app-lifecycle-viewmodel-2.5.1-2 C:\Users\cocas\.gradle\caches\transforms-3\07ca7439fe40a64a32a891af1bb8dd87\transformed\lifecycle-viewmodel-2.5.1\res
+pt.iade.joaotomas.QRCaching.app-startup-runtime-1.1.1-3 C:\Users\cocas\.gradle\caches\transforms-3\1994fcc0007167d874500872f890f7bc\transformed\startup-runtime-1.1.1\res
+pt.iade.joaotomas.QRCaching.app-appcompat-1.6.1-4 C:\Users\cocas\.gradle\caches\transforms-3\1ceac7efd2ac0072f833a26d4c326380\transformed\appcompat-1.6.1\res
+pt.iade.joaotomas.QRCaching.app-material-1.9.0-5 C:\Users\cocas\.gradle\caches\transforms-3\21366f6076b67d3560dc7a509598e750\transformed\material-1.9.0\res
+pt.iade.joaotomas.QRCaching.app-appcompat-resources-1.6.1-6 C:\Users\cocas\.gradle\caches\transforms-3\21476b44eb040660252b2b72581e8140\transformed\appcompat-resources-1.6.1\res
+pt.iade.joaotomas.QRCaching.app-annotation-experimental-1.3.0-7 C:\Users\cocas\.gradle\caches\transforms-3\2335e76f442454b504a52994fb88d9e6\transformed\annotation-experimental-1.3.0\res
+pt.iade.joaotomas.QRCaching.app-activity-1.6.0-8 C:\Users\cocas\.gradle\caches\transforms-3\2427e4f86aaef6e96e00da9c2badabcf\transformed\activity-1.6.0\res
+pt.iade.joaotomas.QRCaching.app-emoji2-views-helper-1.2.0-9 C:\Users\cocas\.gradle\caches\transforms-3\2cbcba03e78b5c096a885b1479cf99e3\transformed\emoji2-views-helper-1.2.0\res
+pt.iade.joaotomas.QRCaching.app-lifecycle-viewmodel-savedstate-2.5.1-10 C:\Users\cocas\.gradle\caches\transforms-3\434c6ec02f672787991af79786c538e0\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+pt.iade.joaotomas.QRCaching.app-lifecycle-runtime-2.5.1-11 C:\Users\cocas\.gradle\caches\transforms-3\48186f2f13864b01b94d1ca67a35c53f\transformed\lifecycle-runtime-2.5.1\res
+pt.iade.joaotomas.QRCaching.app-lifecycle-process-2.4.1-12 C:\Users\cocas\.gradle\caches\transforms-3\5372d276e64f88c1effa733f08501c40\transformed\lifecycle-process-2.4.1\res
+pt.iade.joaotomas.QRCaching.app-fragment-1.3.6-13 C:\Users\cocas\.gradle\caches\transforms-3\5b05c14d0d2dcb8b2f26caf5b9bfb577\transformed\fragment-1.3.6\res
+pt.iade.joaotomas.QRCaching.app-coordinatorlayout-1.1.0-14 C:\Users\cocas\.gradle\caches\transforms-3\6f7570fe31f56646ff161157b4cbbe24\transformed\coordinatorlayout-1.1.0\res
+pt.iade.joaotomas.QRCaching.app-cardview-1.0.0-15 C:\Users\cocas\.gradle\caches\transforms-3\71e4f9d94e839367e0e177b90e6d2657\transformed\cardview-1.0.0\res
+pt.iade.joaotomas.QRCaching.app-viewpager2-1.0.0-16 C:\Users\cocas\.gradle\caches\transforms-3\72d764deee00a0234928089e8cf904a3\transformed\viewpager2-1.0.0\res
+pt.iade.joaotomas.QRCaching.app-recyclerview-1.1.0-17 C:\Users\cocas\.gradle\caches\transforms-3\786b7c0d488641a7e87fde12d4006ba2\transformed\recyclerview-1.1.0\res
+pt.iade.joaotomas.QRCaching.app-play-services-base-18.0.1-18 C:\Users\cocas\.gradle\caches\transforms-3\7f4b778ed040d4f480fed2caa1e19f17\transformed\play-services-base-18.0.1\res
+pt.iade.joaotomas.QRCaching.app-play-services-basement-18.0.0-19 C:\Users\cocas\.gradle\caches\transforms-3\835194d0b5333b97011df0c5c6d0d6f2\transformed\play-services-basement-18.0.0\res
+pt.iade.joaotomas.QRCaching.app-emoji2-1.2.0-20 C:\Users\cocas\.gradle\caches\transforms-3\88ea80389722538e595c0196273ea24e\transformed\emoji2-1.2.0\res
+pt.iade.joaotomas.QRCaching.app-core-ktx-1.9.0-21 C:\Users\cocas\.gradle\caches\transforms-3\9fdf2c6bd385df6ab448481b347fce43\transformed\core-ktx-1.9.0\res
+pt.iade.joaotomas.QRCaching.app-savedstate-1.2.0-22 C:\Users\cocas\.gradle\caches\transforms-3\a2a9e334e177fe7d9c4719e5785e5d32\transformed\savedstate-1.2.0\res
+pt.iade.joaotomas.QRCaching.app-play-services-maps-18.2.0-23 C:\Users\cocas\.gradle\caches\transforms-3\a2f3e39d34a953b0396a3422758f8cad\transformed\play-services-maps-18.2.0\res
+pt.iade.joaotomas.QRCaching.app-core-1.9.0-24 C:\Users\cocas\.gradle\caches\transforms-3\bf308e625ebf6cfea084cdde47c41dc9\transformed\core-1.9.0\res
+pt.iade.joaotomas.QRCaching.app-lifecycle-livedata-core-2.5.1-25 C:\Users\cocas\.gradle\caches\transforms-3\c97a7fd8b1fee3612a910b7024d259db\transformed\lifecycle-livedata-core-2.5.1\res
+pt.iade.joaotomas.QRCaching.app-transition-1.2.0-26 C:\Users\cocas\.gradle\caches\transforms-3\ce526d727c9eb14cb47dda630aa8c665\transformed\transition-1.2.0\res
+pt.iade.joaotomas.QRCaching.app-constraintlayout-2.1.4-27 C:\Users\cocas\.gradle\caches\transforms-3\db9704b8eb306319c4147056bfcd8d2d\transformed\constraintlayout-2.1.4\res
+pt.iade.joaotomas.QRCaching.app-pngs-28 C:\Users\cocas\Desktop\projeto\QR-Caching\app\app\build\generated\res\pngs\debug
+pt.iade.joaotomas.QRCaching.app-resValues-29 C:\Users\cocas\Desktop\projeto\QR-Caching\app\app\build\generated\res\resValues\debug
+pt.iade.joaotomas.QRCaching.app-packageDebugResources-30 C:\Users\cocas\Desktop\projeto\QR-Caching\app\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+pt.iade.joaotomas.QRCaching.app-packageDebugResources-31 C:\Users\cocas\Desktop\projeto\QR-Caching\app\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+pt.iade.joaotomas.QRCaching.app-merged_res-32 C:\Users\cocas\Desktop\projeto\QR-Caching\app\app\build\intermediates\merged_res\debug
+pt.iade.joaotomas.QRCaching.app-debug-33 C:\Users\cocas\Desktop\projeto\QR-Caching\app\app\src\debug\res
+pt.iade.joaotomas.QRCaching.app-main-34 C:\Users\cocas\Desktop\projeto\QR-Caching\app\app\src\main\res
