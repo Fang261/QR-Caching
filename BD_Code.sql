@@ -14,12 +14,15 @@ create table events (
 					events_latitude float(53) default 0,    
 					events_longitude float(53) default 0,   
 					events_idate date not null,
-					events_fdate date,  		
+					events_fdate date,
+					events_localphoto VARCHAR(300);  		
 					primary key (events_id)
 );
 		           
 create table lqrcode (
 					lqrcode_id int not null auto_increment,
+					lqrcode_qrcode VARCHAR(200),
+					lqrcode_localphoto VARCHAR(300),
                     lqrcode_latitude float(53) default 0,    
                     lqrcode_longitude float(53) default 0,   
                     lqrcode_altitude float(53) default 0,    
