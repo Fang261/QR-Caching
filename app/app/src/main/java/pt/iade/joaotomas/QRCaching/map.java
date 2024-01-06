@@ -8,6 +8,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.SupportMapFragment;
+
 
 import pt.iade.joaotomas.QRCaching.R;
 import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
@@ -15,6 +17,8 @@ import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
 public class map extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,9 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.mapView);
+        mapFragment.getMapAsync(this);
         mMap = googleMap;
         QrcodeItem Item = new QrcodeItem();
         LatLng lisbon = new LatLng(38.44, 9.8);
