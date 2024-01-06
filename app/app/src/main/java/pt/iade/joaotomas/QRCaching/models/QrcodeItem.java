@@ -10,16 +10,18 @@ public class QrcodeItem {
     private float longitude;
     private float altitude;
     private ArrayList<PhotoItem> photos;
+    private String qrcode;
 
-    public QrcodeItem() {this(0, "Name", "streetName", 0,0 , 0, null);}
+    public QrcodeItem() {this(0, "Name", "streetName", 0,0 , 0, null,"qrcode");}
 
-    public QrcodeItem(int id, String name, String streetName, float latitude, float longitude, float altitude, ArrayList<PhotoItem> photos) {
+    public QrcodeItem(int id, String name, String streetName, float latitude, float longitude, float altitude, ArrayList<PhotoItem> photos,String qrcode) {
         this.id = id;
         this.streetName = streetName;
         this.latitude = latitude;
         this.longitude = longitude;
         this.altitude = altitude;
         this.photos = photos;
+        this.qrcode = qrcode;
     }
 
     public int getId() { return id; }
@@ -54,4 +56,15 @@ public class QrcodeItem {
         this.photos = photos;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getQrcode() {
+        return qrcode;
+    }
+
+    public void setQrcode(String qrcode) {
+        this.qrcode = qrcode;
+    }
 }
