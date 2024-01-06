@@ -1,9 +1,10 @@
 package pt.iade.joaotomas.QRCaching.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.jar.Attributes;
 
-public class QrcodeItem {
+public class QrcodeItem implements Serializable {
     private int id;
     private String streetName;
     private float latitude;
