@@ -1,6 +1,11 @@
 package pt.iade.joaotomas.QRCaching;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -24,21 +29,36 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapView);
-        mapFragment.getMapAsync(this);
+
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapView);
+
+        if (mapFragment != null) {
+            mapFragment.getMapAsync(this);
+        } else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(map.this, R.style.AlertDialogCustom);
+            builder.setTitle("Failed to load map");
+            builder.setPositiveButton("Ok", (dialogInterface, i) -> dialogInterface.dismiss()).show();
+        }
+
+        Button goBackButton = findViewById(R.id.goback_buttonmap);
+
+        goBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(map.this, mainpage.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapView);
-        mapFragment.getMapAsync(this);
         mMap = googleMap;
         QrcodeItem Item = new QrcodeItem();
         LatLng lisbon = new LatLng(38.44, 9.8);
-        LatLng currentQRCode = new LatLng(Item.getLatitude(),Item.getLongitude());
+        LatLng currentQRCode = new LatLng(Item.getLatitude(), Item.getLongitude());
         mMap.addMarker(new MarkerOptions()
                 .position(currentQRCode)
                 .title(Item.getStreetName()));
