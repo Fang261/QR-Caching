@@ -46,7 +46,6 @@ public class profilepage extends AppCompatActivity {
     private void setupComponents() {
         qrcodelistAdapter = new qrcodelist_adapter(this, itemList);
 
-        // set up the qrcode list recycler view
         itemsListView = (RecyclerView) findViewById(R.id.qrcode_list);
         itemsListView.setLayoutManager(new LinearLayoutManager(this));
         itemsListView.setAdapter(qrcodelistAdapter);
