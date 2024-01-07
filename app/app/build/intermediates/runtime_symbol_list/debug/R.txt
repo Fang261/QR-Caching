@@ -3371,8 +3371,6 @@ int id listMode 0x7f09010e
 int id list_item 0x7f09010f
 int id login_button 0x7f090110
 int id login_button2 0x7f090111
-int id login_rememberme_checkBox 0x7f090112
-int id login_rememberme_textView 0x7f090113
 int id logo_image 0x7f090114
 int id logo_image2 0x7f090115
 int id logo_text 0x7f090116
@@ -3470,6 +3468,7 @@ int id parent 0x7f090171
 int id parentPanel 0x7f090172
 int id parentRelative 0x7f090173
 int id parent_matrix 0x7f090174
+int id passwordEditText 0x7f090244
 int id password_toggle 0x7f090175
 int id path 0x7f090176
 int id pathRelative 0x7f090177
@@ -3495,14 +3494,10 @@ int id rectangles 0x7f09018a
 int id recyclerView 0x7f09018b
 int id register 0x7f09018c
 int id register_email_edit 0x7f09018d
-int id register_id 0x7f09018e
 int id register_id_edit 0x7f09018f
-int id register_id_text 0x7f090190
-int id register_password 0x7f090191
 int id register_pw_edit 0x7f090192
-int id register_pw_text 0x7f090193
-int id register_rememberme 0x7f090194
 int id register_username_edit 0x7f090195
+int id relativeLayout 0x7f090245
 int id reverseSawtooth 0x7f090196
 int id right 0x7f090197
 int id rightToLeft 0x7f090198
@@ -3640,6 +3635,7 @@ int id uniform 0x7f09021b
 int id unlabeled 0x7f09021c
 int id up 0x7f09021d
 int id useLogo 0x7f09021e
+int id usernameEditText 0x7f090246
 int id vault_imageButton 0x7f09021f
 int id vault_textView 0x7f090220
 int id vertical_only 0x7f090221

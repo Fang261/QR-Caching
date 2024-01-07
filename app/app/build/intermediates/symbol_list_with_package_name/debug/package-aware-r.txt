@@ -3372,8 +3372,6 @@ id listMode
 id list_item
 id login_button
 id login_button2
-id login_rememberme_checkBox
-id login_rememberme_textView
 id logo_image
 id logo_image2
 id logo_text
@@ -3471,6 +3469,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id passwordEditText
 id password_toggle
 id path
 id pathRelative
@@ -3496,14 +3495,10 @@ id rectangles
 id recyclerView
 id register
 id register_email_edit
-id register_id
 id register_id_edit
-id register_id_text
-id register_password
 id register_pw_edit
-id register_pw_text
-id register_rememberme
 id register_username_edit
+id relativeLayout
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3641,6 +3636,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id usernameEditText
 id vault_imageButton
 id vault_textView
 id vertical_only
