@@ -18,17 +18,18 @@ import pt.iade.joaotomas.QRCaching.models.EventItem;
 public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.ViewHolder> {
     private ArrayList<EventItem> eventItems;
     private LayoutInflater inflater;
-    private ItemClickListener clicklistener;
+    private ItemClickListener clickListener;
 
     public eventlist_adapter(Context context, ArrayList<EventItem> items) {
         inflater = LayoutInflater.from(context);
         eventItems = items;
 
-        clicklistener = null;
+        clickListener = null;
     }
 
     public void setOnClickListener(ItemClickListener listener) {
-        clicklistener = listener;
+
+        clickListener = listener;
     }
 
     @Override
@@ -42,8 +43,6 @@ public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.Vi
         EventItem item = eventItems.get(position);
 
         holder.eventname.setText(item.getEventname());
-
-
     }
 
     @Override
@@ -67,8 +66,8 @@ public class eventlist_adapter extends RecyclerView.Adapter<eventlist_adapter.Vi
 
         @Override
         public void onClick(View view) {
-            if (clicklistener != null) {
-                clicklistener.onItemClick(view, getAdapterPosition());
+            if (clickListener != null) {
+                clickListener.onItemClick(view, getAdapterPosition());
             }
         }
     }

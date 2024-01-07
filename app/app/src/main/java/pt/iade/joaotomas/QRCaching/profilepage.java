@@ -8,11 +8,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import java.util.ArrayList;
 
+import pt.iade.joaotomas.QRCaching.adapters.eventlist_adapter;
 import pt.iade.joaotomas.QRCaching.adapters.qrcodelist_adapter;
+import pt.iade.joaotomas.QRCaching.models.EventItem;
 import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
 
 
@@ -20,6 +23,8 @@ public class profilepage extends AppCompatActivity {
     private Button gobackbutton;
     private RecyclerView itemsListView;
     protected qrcodelist_adapter qrcodelistAdapter;
+    private static final int EDITOR_ACTIVITY_RETURN_ID = 1;
+
     private ArrayList<QrcodeItem> itemList;
 
 
@@ -44,7 +49,25 @@ public class profilepage extends AppCompatActivity {
     }
 
     private void setupComponents() {
-        qrcodelistAdapter = new qrcodelist_adapter(this, itemList);
+        QrcodeItem.List(new QrcodeItem.ListResponse() {
+            @Override
+            public void response(ArrayList<QrcodeItem> items) {
+                itemList = items;
+
+                qrcodelistAdapter = new qrcodelist_adapter(profilepage.this, itemList);
+                qrcodelistAdapter.setOnClickListener(new qrcodelist_adapter.ItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+                        Intent intent = new Intent(profilepage.this, qrcode.class);
+                        intent.putExtra("position", position);
+                        intent.putExtra("item", itemList.get(position));
+
+                        startActivityForResult(intent, EDITOR_ACTIVITY_RETURN_ID);
+                    }
+                });
+
+            }
+        });
 
         // set up the qrcode list recycler view
         itemsListView = (RecyclerView) findViewById(R.id.qrcode_list);

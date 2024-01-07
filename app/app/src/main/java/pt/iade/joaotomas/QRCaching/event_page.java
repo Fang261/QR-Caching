@@ -10,7 +10,6 @@ public class event_page extends AppCompatActivity {
     //protected EditText street;
     protected EventItem item;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

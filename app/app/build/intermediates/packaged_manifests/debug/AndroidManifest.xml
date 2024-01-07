@@ -8,6 +8,8 @@
         android:minSdkVersion="28"
         android:targetSdkVersion="33" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
@@ -66,7 +68,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Copypasteplayground" >
+        android:theme="@style/Theme.Copypasteplayground"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="pt.iade.joaotomas.QRCaching.photo"
             android:exported="false"

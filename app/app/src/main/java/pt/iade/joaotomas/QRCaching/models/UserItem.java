@@ -1,9 +1,21 @@
 package pt.iade.joaotomas.QRCaching.models;
 
+import android.util.Log;
+import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+
+import java.io.Serializable;
 import java.lang.reflect.Array;
+import java.net.URL;
 import java.util.ArrayList;
 
-public class UserItem {
+import pt.iade.joaotomas.QRCaching.utilities.WebRequest;
+
+public class UserItem implements Serializable {
     private int id;
     private String username;
     private String password;
@@ -21,6 +33,121 @@ public class UserItem {
         this.Achievments = Acheivments;
     }
 
+    public static void List(UserItem.ListResponse response) {
+        ArrayList<UserItem> items = new ArrayList<UserItem>();
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    try {
+                        WebRequest req = new WebRequest(new URL(
+                                WebRequest.LOCALHOST + "/list"));
+                        String resp = req.performGetRequest();
+
+                        JsonObject json = new Gson().fromJson(resp, JsonObject.class);
+                        JsonArray arr = json.getAsJsonArray("items");
+                        ArrayList<UserItem> items = new ArrayList<UserItem>();
+                        for (JsonElement elem : arr) {
+                            items.add(new Gson().fromJson(elem, UserItem.class));
+                        }
+
+                        response.response(items);
+                    } catch (Exception e) {
+                        Toast.makeText(null, "Web request failed: " + e.toString(),
+                                Toast.LENGTH_LONG).show();
+                        Log.e("UserItem", e.toString());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread.start();
+    }
+
+    public static void GetById(int id, UserItem.GetByIdResponse response) {
+        // Fetch the item from the web server using its id and populate the object.
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    try {
+                        WebRequest req = new WebRequest(new URL(
+                                WebRequest.LOCALHOST + "/user/" + id));
+                        String resp = req.performGetRequest();
+
+                        response.response(new Gson().fromJson(resp, UserItem.class));
+                    } catch (Exception e) {
+                        Toast.makeText(null, "Web request failed: " + e.toString(),
+                                Toast.LENGTH_LONG).show();
+                        Log.e("UserItem", e.toString());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread.start();
+    }
+
+    public void save() {
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    try {
+                        if (id == 0) {
+                            WebRequest req = new WebRequest(new URL(
+                                    WebRequest.LOCALHOST + "/user/new"));
+                            String response = req.performPostRequest(UserItem.this);
+
+                            UserItem respItem = new Gson().fromJson(response, UserItem.class);
+                            id = respItem.getId();
+                        } else {
+                            WebRequest req = new WebRequest(new URL(
+                                    WebRequest.LOCALHOST + "/user/" + id));
+                            req.performPostRequest(UserItem.this);
+                        }
+                    } catch (Exception e) {
+                        Toast.makeText(null, "Web request failed: " + e.toString(),
+                                Toast.LENGTH_LONG).show();
+                        Log.e("UserItem", e.toString());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread.start();
+    }
+
+    public void delete() {
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    try {
+                        if (id != 0) {
+                            WebRequest req = new WebRequest(new URL(
+                                    WebRequest.LOCALHOST + "/user/" + id));
+                            req.performDeleteRequest();
+                        }
+                    } catch (Exception e) {
+                        Toast.makeText(null, "Web request failed: " + e.toString(),
+                                Toast.LENGTH_LONG).show();
+                        Log.e("UserItem", e.toString());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread.start();
+    }
+
+
     public int getId() {
         return id;
     }
@@ -28,6 +155,7 @@ public class UserItem {
     public void setId(int id) {
         this.id = id;
     }
+
     public static int getLastAssignedId() {
         return lastAssignedId;
     }
@@ -66,5 +194,13 @@ public class UserItem {
 
     public static void setLastAssignedId(int lastAssignedId) {
         UserItem.lastAssignedId = lastAssignedId;
+    }
+
+    public interface ListResponse {
+        public void response(ArrayList<UserItem> items);
+    }
+
+    public interface GetByIdResponse {
+        public void response(UserItem item);
     }
 }
