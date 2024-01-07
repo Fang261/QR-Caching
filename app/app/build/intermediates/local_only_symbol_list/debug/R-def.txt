@@ -48,8 +48,6 @@ id im
 id level_text
 id login_button
 id login_button2
-id login_rememberme_checkBox
-id login_rememberme_textView
 id logo_image
 id logo_image2
 id logo_text
@@ -57,6 +55,7 @@ id mapView
 id map_imageButton
 id map_textView4
 id name_editText
+id passwordEditText
 id photo_imageButton
 id photo_list
 id photo_textView
@@ -68,16 +67,13 @@ id qrcode_streename_textView
 id recyclerView
 id register
 id register_email_edit
-id register_id
 id register_id_edit
-id register_id_text
-id register_password
 id register_pw_edit
-id register_pw_text
-id register_rememberme
 id register_username_edit
+id relativeLayout
 id signguest_button
 id signup_button
+id usernameEditText
 id vault_imageButton
 id vault_textView
 id write_imageButton

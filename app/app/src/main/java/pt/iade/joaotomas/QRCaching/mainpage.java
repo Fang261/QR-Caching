@@ -31,6 +31,10 @@ public class mainpage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage);
+        Intent intent = getIntent();
+        int userId = intent.getIntExtra("userId", -1);
+        String username = intent.getStringExtra("username");
+
 
         itemList = new ArrayList<>();
 

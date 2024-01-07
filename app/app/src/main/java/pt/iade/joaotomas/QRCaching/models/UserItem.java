@@ -9,6 +9,7 @@ public class UserItem {
     private String password;
     private ArrayList<Integer> QRIDCompleted;
     private ArrayList<Integer> Achievments;
+    private static int lastAssignedId = 0;
 
     public UserItem() {this(0,"username","password",null,null);}
 
@@ -26,6 +27,9 @@ public class UserItem {
 
     public void setId(int id) {
         this.id = id;
+    }
+    public static int getLastAssignedId() {
+        return lastAssignedId;
     }
 
     public String getUsername() {
@@ -58,5 +62,9 @@ public class UserItem {
 
     public void setAchievments(ArrayList<Integer> achievments) {
         Achievments = achievments;
+    }
+
+    public static void setLastAssignedId(int lastAssignedId) {
+        UserItem.lastAssignedId = lastAssignedId;
     }
 }

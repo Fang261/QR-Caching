@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -44,40 +44,16 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button loginButton;
 
   @NonNull
-  public final CheckBox loginRemembermeCheckBox;
-
-  @NonNull
-  public final TextView loginRemembermeTextView;
-
-  @NonNull
   public final ImageView logoImage;
 
   @NonNull
   public final TextView logoText;
 
   @NonNull
-  public final TableLayout register;
+  public final EditText passwordEditText;
 
   @NonNull
-  public final TableRow registerId;
-
-  @NonNull
-  public final EditText registerIdEdit;
-
-  @NonNull
-  public final TextView registerIdText;
-
-  @NonNull
-  public final TableRow registerPassword;
-
-  @NonNull
-  public final EditText registerPwEdit;
-
-  @NonNull
-  public final TextView registerPwText;
-
-  @NonNull
-  public final TableRow registerRememberme;
+  public final RelativeLayout relativeLayout;
 
   @NonNull
   public final Button signguestButton;
@@ -85,16 +61,16 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Button signupButton;
 
+  @NonNull
+  public final EditText usernameEditText;
+
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TableLayout autorTable,
       @NonNull TableRow autorTable0550, @NonNull TextView autorTable0550Text,
       @NonNull TableRow autorTable0589, @NonNull TextView autorTable0589Text,
-      @NonNull Button loginButton, @NonNull CheckBox loginRemembermeCheckBox,
-      @NonNull TextView loginRemembermeTextView, @NonNull ImageView logoImage,
-      @NonNull TextView logoText, @NonNull TableLayout register, @NonNull TableRow registerId,
-      @NonNull EditText registerIdEdit, @NonNull TextView registerIdText,
-      @NonNull TableRow registerPassword, @NonNull EditText registerPwEdit,
-      @NonNull TextView registerPwText, @NonNull TableRow registerRememberme,
-      @NonNull Button signguestButton, @NonNull Button signupButton) {
+      @NonNull Button loginButton, @NonNull ImageView logoImage, @NonNull TextView logoText,
+      @NonNull EditText passwordEditText, @NonNull RelativeLayout relativeLayout,
+      @NonNull Button signguestButton, @NonNull Button signupButton,
+      @NonNull EditText usernameEditText) {
     this.rootView = rootView;
     this.autorTable = autorTable;
     this.autorTable0550 = autorTable0550;
@@ -102,20 +78,13 @@ public final class ActivityMainBinding implements ViewBinding {
     this.autorTable0589 = autorTable0589;
     this.autorTable0589Text = autorTable0589Text;
     this.loginButton = loginButton;
-    this.loginRemembermeCheckBox = loginRemembermeCheckBox;
-    this.loginRemembermeTextView = loginRemembermeTextView;
     this.logoImage = logoImage;
     this.logoText = logoText;
-    this.register = register;
-    this.registerId = registerId;
-    this.registerIdEdit = registerIdEdit;
-    this.registerIdText = registerIdText;
-    this.registerPassword = registerPassword;
-    this.registerPwEdit = registerPwEdit;
-    this.registerPwText = registerPwText;
-    this.registerRememberme = registerRememberme;
+    this.passwordEditText = passwordEditText;
+    this.relativeLayout = relativeLayout;
     this.signguestButton = signguestButton;
     this.signupButton = signupButton;
+    this.usernameEditText = usernameEditText;
   }
 
   @Override
@@ -181,18 +150,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.login_rememberme_checkBox;
-      CheckBox loginRemembermeCheckBox = ViewBindings.findChildViewById(rootView, id);
-      if (loginRemembermeCheckBox == null) {
-        break missingId;
-      }
-
-      id = R.id.login_rememberme_textView;
-      TextView loginRemembermeTextView = ViewBindings.findChildViewById(rootView, id);
-      if (loginRemembermeTextView == null) {
-        break missingId;
-      }
-
       id = R.id.logo_image;
       ImageView logoImage = ViewBindings.findChildViewById(rootView, id);
       if (logoImage == null) {
@@ -205,51 +162,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.register;
-      TableLayout register = ViewBindings.findChildViewById(rootView, id);
-      if (register == null) {
+      id = R.id.passwordEditText;
+      EditText passwordEditText = ViewBindings.findChildViewById(rootView, id);
+      if (passwordEditText == null) {
         break missingId;
       }
 
-      id = R.id.register_id;
-      TableRow registerId = ViewBindings.findChildViewById(rootView, id);
-      if (registerId == null) {
-        break missingId;
-      }
-
-      id = R.id.register_id_edit;
-      EditText registerIdEdit = ViewBindings.findChildViewById(rootView, id);
-      if (registerIdEdit == null) {
-        break missingId;
-      }
-
-      id = R.id.register_id_text;
-      TextView registerIdText = ViewBindings.findChildViewById(rootView, id);
-      if (registerIdText == null) {
-        break missingId;
-      }
-
-      id = R.id.register_password;
-      TableRow registerPassword = ViewBindings.findChildViewById(rootView, id);
-      if (registerPassword == null) {
-        break missingId;
-      }
-
-      id = R.id.register_pw_edit;
-      EditText registerPwEdit = ViewBindings.findChildViewById(rootView, id);
-      if (registerPwEdit == null) {
-        break missingId;
-      }
-
-      id = R.id.register_pw_text;
-      TextView registerPwText = ViewBindings.findChildViewById(rootView, id);
-      if (registerPwText == null) {
-        break missingId;
-      }
-
-      id = R.id.register_rememberme;
-      TableRow registerRememberme = ViewBindings.findChildViewById(rootView, id);
-      if (registerRememberme == null) {
+      id = R.id.relativeLayout;
+      RelativeLayout relativeLayout = ViewBindings.findChildViewById(rootView, id);
+      if (relativeLayout == null) {
         break missingId;
       }
 
@@ -265,11 +186,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.usernameEditText;
+      EditText usernameEditText = ViewBindings.findChildViewById(rootView, id);
+      if (usernameEditText == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((ConstraintLayout) rootView, autorTable, autorTable0550,
-          autorTable0550Text, autorTable0589, autorTable0589Text, loginButton,
-          loginRemembermeCheckBox, loginRemembermeTextView, logoImage, logoText, register,
-          registerId, registerIdEdit, registerIdText, registerPassword, registerPwEdit,
-          registerPwText, registerRememberme, signguestButton, signupButton);
+          autorTable0550Text, autorTable0589, autorTable0589Text, loginButton, logoImage, logoText,
+          passwordEditText, relativeLayout, signguestButton, signupButton, usernameEditText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
