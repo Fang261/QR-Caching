@@ -69,7 +69,6 @@ public class profilepage extends AppCompatActivity {
             }
         });
 
-        // set up the qrcode list recycler view
         itemsListView = (RecyclerView) findViewById(R.id.qrcode_list);
         itemsListView.setLayoutManager(new LinearLayoutManager(this));
         itemsListView.setAdapter(qrcodelistAdapter);

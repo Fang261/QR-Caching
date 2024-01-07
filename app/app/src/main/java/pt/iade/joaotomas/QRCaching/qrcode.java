@@ -9,11 +9,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+
+import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
+
 public class qrcode extends AppCompatActivity {
 
     private ImageButton picture;
-    private ImageButton write;
     private ImageButton vault;
+    private ArrayList<QrcodeItem> itemList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,37 +25,25 @@ public class qrcode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qrcode);
         picture = findViewById(R.id.photo_imageButton);
-        write = findViewById(R.id.write_imageButton);
         vault = findViewById(R.id.photo_imageButton);
+        Intent intent = getIntent();
+        if (intent != null) {
+            itemList = (ArrayList<QrcodeItem>) intent.getSerializableExtra("itemList");
+            if (itemList == null) {
+                itemList = new ArrayList<>();
+            }
+        } else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(qrcode.this, R.style.AlertDialogCustom);
+            builder.setTitle("Failed to load Lists");
+            builder.setPositiveButton("Ok", (dialogInterface, i) -> dialogInterface.dismiss()).show();
+        }
 
         picture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //  Intent intent=new Intent(qrcode.this,x.class);
-             //  startActivity(intent);
-                AlertDialog.Builder builder = new AlertDialog.Builder(qrcode.this);
-                builder.setTitle("Work In Progress");
-                builder.setPositiveButton("WIP", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                }).show();
-            }
-        });
-        write.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              //  Intent intent=new Intent(qrcode.this,x.class);
-              //  startActivity(intent);
-                AlertDialog.Builder builder = new AlertDialog.Builder(qrcode.this);
-                builder.setTitle("Work In Progress");
-                builder.setPositiveButton("WIP", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                }).show();
+                Intent intent=new Intent(qrcode.this,takephoto.class);
+                startActivity(intent);
+
             }
         });
         vault.setOnClickListener(new View.OnClickListener() {

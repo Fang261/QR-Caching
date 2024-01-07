@@ -102,7 +102,9 @@ public class mainpage extends AppCompatActivity {
             if (isQRCodeValid) {
                 Intent intent = new Intent(mainpage.this, qrcode.class);
                 intent.putExtra("QRCodeValue", QRCodeValue);
+                intent.putExtra("itemList", itemList);
                 startActivity(intent);
+                finish();
             } else {
                 AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this, R.style.AlertDialogCustom);
                 builder.setTitle("QR Code invalid");
