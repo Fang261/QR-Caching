@@ -56,27 +56,59 @@ public class MainActivity extends AppCompatActivity {
                 String enteredUsername = usernameEditText.getText().toString();
                 String enteredPassword = passwordEditText.getText().toString();
 
-                UserItem currentUser = findUser(enteredUsername, enteredPassword);
+                if (isValidCredentials(enteredUsername, enteredPassword)) {
+                    UserItem currentUser = findUser(enteredUsername, enteredPassword);
 
-                if (currentUser != null) {
-                    Intent intent = new Intent(MainActivity.this, mainpage.class);
-
-                    intent.putExtra("userId", currentUser.getId());
-                    intent.putExtra("username", currentUser.getUsername());
-                    startActivity(intent);
-                } else {
-                    Log.d("MainActivity", "Entered username: " + enteredUsername + ", Entered password: " + enteredPassword);
-                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                    builder.setTitle("Login Failed");
-                    builder.setMessage("Invalid username or password.");
-                    builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            dialogInterface.dismiss();
-                        }
-                    });
-                    builder.show();
+                    if (currentUser != null) {
+                        Intent intent = new Intent(MainActivity.this, mainpage.class);
+                        intent.putExtra("userId", currentUser.getId());
+                        intent.putExtra("username", currentUser.getUsername());
+                        startActivity(intent);
+                    } else {
+                        Log.d("MainActivity", "Entered username: " + enteredUsername + ", Entered password: " + enteredPassword);
+                        showLoginFailedDialog();
+                    }
                 }
+            }
+
+            private boolean isValidCredentials(String username, String password) {
+                if (username.length() < 3) {
+                    showValidationDialog("Username must be at least 3 characters long.");
+                    return false;
+                }
+
+                if (password.length() < 8) {
+                    showValidationDialog("Password must be at least 8 characters long.");
+                    return false;
+                }
+
+                return true;
+            }
+
+            private void showValidationDialog(String message) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Validation Error");
+                builder.setMessage(message);
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                builder.show();
+            }
+
+            private void showLoginFailedDialog() {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Login Failed");
+                builder.setMessage("Invalid username or password.");
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                builder.show();
             }
         });
 

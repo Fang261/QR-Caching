@@ -71,13 +71,53 @@ public class signin extends AppCompatActivity {
             public void onClick(View v) {
                 String enteredUsername = usernameEditText.getText().toString();
                 String enteredPassword = passwordEditText.getText().toString();
-                int newId = UserItem.getLastAssignedId() + 1;
-                UserItem newUser = new UserItem(newId, enteredUsername, enteredPassword, null, null);
-                UserList.add(newUser);
-                UserItem.setLastAssignedId(newId);
-                Log.d("signin", "New user created - ID: " + newId + ", Username: " + newUser.getUsername() + ", Password: " + newUser.getPassword());
-                handleSignInResult(newId,newUser.getUsername(), newUser.getPassword());
+
+                if (isValidCredentials(enteredUsername, enteredPassword)) {
+                    int newId = UserItem.getLastAssignedId() + 1;
+                    UserItem newUser = new UserItem(newId, enteredUsername, enteredPassword, null, null);
+                    UserList.add(newUser);
+                    UserItem.setLastAssignedId(newId);
+                    Log.d("signin", "New user created - ID: " + newId + ", Username: " + newUser.getUsername() + ", Password: " + newUser.getPassword());
+                    handleSignInResult(newId, newUser.getUsername(), newUser.getPassword());
+                }
+            }
+
+            private boolean isValidCredentials(String username, String password) {
+                if (username.length() < 3) {
+                    showValidationDialog("Username must be at least 3 characters long.");
+                    return false;
+                }
+
+                if (password.length() < 8) {
+                    showValidationDialog("Password must be at least 8 characters long.");
+                    return false;
+                }
+
+                return true;
+            }
+
+            private void showValidationDialog(String message) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(signin.this, R.style.AlertDialogCustom);
+                builder.setTitle("Validation Error");
+                builder.setMessage(message);
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                builder.show();
+            }
+
+            private void handleSignInResult(int newCreatedID, String signedInUsername, String signedInPassword) {
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("username", signedInUsername);
+                resultIntent.putExtra("password", signedInPassword);
+                resultIntent.putExtra("ID", newCreatedID);
+                setResult(RESULT_OK, resultIntent);
+                finish();
             }
         });
+
     }
 }

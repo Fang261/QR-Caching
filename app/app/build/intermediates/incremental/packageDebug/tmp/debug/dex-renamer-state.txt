@@ -1,4 +1,4 @@
-#Sun Jan 07 22:59:56 WET 2024
+#Sun Jan 07 23:57:05 WET 2024
 base.0=C\:\\Users\\cocas\\Desktop\\projeto\\QR-Caching\\app\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\cocas\\Desktop\\projeto\\QR-Caching\\app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\cocas\\Desktop\\projeto\\QR-Caching\\app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
