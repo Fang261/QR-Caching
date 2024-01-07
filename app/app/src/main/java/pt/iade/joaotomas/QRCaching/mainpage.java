@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
+import android.widget.Button;
 import android.widget.ImageButton;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
@@ -49,9 +50,9 @@ public class mainpage extends AppCompatActivity {
                 Intent intent = new Intent(mainpage.this, profilepage.class);
                 intent.putExtra("itemList", itemList);
                 startActivity(intent);
-                finish();
             }
         });
+
 
         btn_scan.setOnClickListener(v ->
         {

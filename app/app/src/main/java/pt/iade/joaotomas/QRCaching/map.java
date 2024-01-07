@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +23,8 @@ import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
 public class map extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private Button gobackbutton;
+    private ImageButton profilepic;
 
 
 
@@ -40,13 +43,19 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
             builder.setPositiveButton("Ok", (dialogInterface, i) -> dialogInterface.dismiss()).show();
         }
 
-        Button goBackButton = findViewById(R.id.goback_buttonmap);
-
-        goBackButton.setOnClickListener(new View.OnClickListener() {
+        Button gobackbutton = findViewById(R.id.goback_buttonmap);
+        ImageButton profilepic = findViewById(R.id.profilepic_imageButton);
+        profilepic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(map.this, mainpage.class);
+                Intent intent = new Intent(map.this, profilepage.class);
                 startActivity(intent);
+            }
+        });
+
+        gobackbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 finish();
             }
         });

@@ -45,6 +45,12 @@ public class profilepage extends AppCompatActivity {
             builder.setTitle("Failed to load Lists");
             builder.setPositiveButton("Ok", (dialogInterface, i) -> dialogInterface.dismiss()).show();
         }
+        gobackbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         setupComponents();
     }
 

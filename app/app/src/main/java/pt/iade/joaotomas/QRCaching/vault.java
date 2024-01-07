@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
@@ -19,6 +21,7 @@ public class vault extends AppCompatActivity {
     private RecyclerView photosListView;
     protected photolist_adapter photolistAdapter;
     private static final int EDITOR_ACTIVITY_RETURN_ID = 1;
+    private ImageButton gobackbutton;
 
     protected ArrayList<PhotoItem> itemList;
 
@@ -26,6 +29,14 @@ public class vault extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vault);
+        gobackbutton = findViewById(R.id.profilepic_imageButton);
+        gobackbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        setupComponents();
     }
 
     private void setupComponents() {
@@ -45,6 +56,7 @@ public class vault extends AppCompatActivity {
                         startActivityForResult(intent, EDITOR_ACTIVITY_RETURN_ID);
                     }
                 });
+
 
             }
         });
