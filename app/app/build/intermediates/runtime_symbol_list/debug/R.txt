@@ -3806,7 +3806,6 @@ int layout activity_photo 0x7f0c0021
 int layout activity_profilepage 0x7f0c0022
 int layout activity_qrcode 0x7f0c0023
 int layout activity_signin 0x7f0c0024
-int layout activity_takephoto 0x7f0c0025
 int layout activity_vault 0x7f0c0026
 int layout custom_dialog 0x7f0c0027
 int layout design_bottom_navigation_item 0x7f0c0028

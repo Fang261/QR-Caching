@@ -23,8 +23,6 @@ public class QrcodeItem implements Serializable {
     private ArrayList<PhotoItem> photos;
     private String qrcode;
 
-    public QrcodeItem() {this(0, "Name", "streetName", 0,0 , 0, null,"qrcode");}
-
     public QrcodeItem(int id, String name, String streetName, float latitude, float longitude, float altitude, ArrayList<PhotoItem> photos,String qrcode) {
         this.id = id;
         this.streetName = streetName;
@@ -34,6 +32,9 @@ public class QrcodeItem implements Serializable {
         this.photos = photos;
         this.qrcode = qrcode;
     }
+
+    public QrcodeItem() {this(0, "Name", "streetName", 0,0 , 0, null,"qrcode");}
+
 
     public static void List(QrcodeItem.ListResponse response) {
         ArrayList<QrcodeItem> items = new ArrayList<QrcodeItem>();

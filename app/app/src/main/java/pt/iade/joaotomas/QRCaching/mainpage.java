@@ -59,6 +59,7 @@ public class mainpage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mainpage.this, map.class);
+                intent.putExtra("itemList", itemList);
                 startActivity(intent);
             }
         });

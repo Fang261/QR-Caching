@@ -3807,7 +3807,6 @@ layout activity_photo
 layout activity_profilepage
 layout activity_qrcode
 layout activity_signin
-layout activity_takephoto
 layout activity_vault
 layout custom_dialog
 layout design_bottom_navigation_item

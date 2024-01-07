@@ -1,11 +1,14 @@
 package pt.iade.joaotomas.QRCaching;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -20,6 +23,9 @@ public class qrcode extends AppCompatActivity {
     private ImageButton vault;
     private ArrayList<QrcodeItem> itemList;
     private TextView streetname;
+
+    private static final int REQUEST_IMAGE_CAPTURE = 1;
+    private String currentPhotoPath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,12 +58,10 @@ public class qrcode extends AppCompatActivity {
         picture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(qrcode.this,takephoto.class);
-                intent.putExtra("QRCodeValue", QRCodeValue);
-                startActivity(intent);
-
+                dispatchTakePictureIntent(QRCodeValue);
             }
         });
+
         vault.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,6 +71,24 @@ public class qrcode extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
 
+    private void dispatchTakePictureIntent(String QRCodeValue) {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+
+            currentPhotoPath = data.getStringExtra("PhotoPath");
+
+            Log.d("qrcode", "Photo Path: " + currentPhotoPath);
+        }
     }
 }

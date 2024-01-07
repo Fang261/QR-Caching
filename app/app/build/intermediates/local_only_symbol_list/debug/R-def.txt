@@ -87,7 +87,6 @@ layout activity_photo
 layout activity_profilepage
 layout activity_qrcode
 layout activity_signin
-layout activity_takephoto
 layout activity_vault
 layout row_event_item
 layout row_photo_item

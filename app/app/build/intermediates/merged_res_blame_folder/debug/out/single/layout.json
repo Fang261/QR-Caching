@@ -1,58 +1,62 @@
 [
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_takephoto.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_takephoto.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\row_event_item.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\row_event_item.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_signin.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_signin.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_event_page.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_event_page.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/row_qrcode_item.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/row_qrcode_item.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_map.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_qrcode.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_qrcode.xml"
+    },
+    {
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_takephoto.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_takephoto.xml"
+    },
+    {
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_eventlist.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_eventlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_profilepage.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_profilepage.xml"
     },
     {
         "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_map.xml",
         "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_map.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_qrcode.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_qrcode.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_photo.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_photo.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/row_photo_item.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/row_photo_item.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_main.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_vault.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_vault.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\row_photo_item.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\row_photo_item.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/row_event_item.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/row_event_item.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_mainpage.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_mainpage.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_profilepage.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_profilepage.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\row_qrcode_item.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\row_qrcode_item.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_mainpage.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_mainpage.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_signin.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_signin.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_main.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_main.xml"
-    },
-    {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_event_page.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_event_page.xml"
-    },
-    {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_eventlist.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_eventlist.xml"
-    },
-    {
-        "merged": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:/layout/activity_photo.xml",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_photo.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-mergeDebugResources-60:\\layout\\activity_vault.xml",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_vault.xml"
     }
 ]
