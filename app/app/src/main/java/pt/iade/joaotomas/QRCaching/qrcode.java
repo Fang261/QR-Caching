@@ -24,7 +24,7 @@ public class qrcode extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         itemList = new ArrayList<>();
-        String qrCodeValue = getIntent().getStringExtra("QRCodeValue");
+        String QRCodeValue = getIntent().getStringExtra("QRCodeValue");
         Intent intent = getIntent();
         if (intent != null) {
             itemList = (ArrayList<QrcodeItem>) intent.getSerializableExtra("itemList");
@@ -43,7 +43,7 @@ public class qrcode extends AppCompatActivity {
         streetname = findViewById(R.id.streename_textView);
 
         for (QrcodeItem qrcode : itemList) {
-            if (qrcode.getQrcode().equals(qrCodeValue)) {
+            if (qrcode.getQrcode().equals(QRCodeValue)) {
                 streetname.setText(qrcode.getStreetName());
                 break;
             }
@@ -53,6 +53,7 @@ public class qrcode extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(qrcode.this,takephoto.class);
+                intent.putExtra("QRCodeValue", QRCodeValue);
                 startActivity(intent);
 
             }
@@ -61,6 +62,8 @@ public class qrcode extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(qrcode.this,vault.class);
+                intent.putExtra("QRCodeValue", QRCodeValue);
+                intent.putExtra("itemList", itemList);
                 startActivity(intent);
             }
         });
