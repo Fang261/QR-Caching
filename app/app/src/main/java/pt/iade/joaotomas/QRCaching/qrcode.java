@@ -15,7 +15,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import pt.iade.joaotomas.QRCaching.models.PhotoItem;
 import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
+import pt.iade.joaotomas.QRCaching.adapters.photolist_adapter;
 
 public class qrcode extends AppCompatActivity {
 
@@ -25,6 +27,9 @@ public class qrcode extends AppCompatActivity {
     private TextView streetname;
 
     private static final int REQUEST_IMAGE_CAPTURE = 1;
+    private ArrayList<PhotoItem> photoList;
+    private photolist_adapter photolist_adapter;
+
     private String currentPhotoPath;
 
     @Override
@@ -80,15 +85,36 @@ public class qrcode extends AppCompatActivity {
         }
     }
 
+    private void handlePictureResult(String QRCodeValue, String photoPath) {
+        if (photolist_adapter != null) {
+            photolist_adapter.notifyDataSetChanged();
+        }
+
+        for (QrcodeItem qrcode : itemList) {
+            if (qrcode.getQrcode().equals(QRCodeValue)) {
+                int ID = qrcode.getLastAssignedId()+1;
+                PhotoItem newPhoto = new PhotoItem(ID,photoPath);
+                qrcode.addPhoto(newPhoto);
+                photoList = qrcode.getPhotos();
+                break;
+            }
+        }
+        if (photolist_adapter != null) {
+            photolist_adapter.notifyDataSetChanged();
+        }
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        String QRCodeValue = getIntent().getStringExtra("QRCodeValue");
+
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-
-            currentPhotoPath = data.getStringExtra("PhotoPath");
-
+            String currentPhotoPath = data.getStringExtra("PhotoPath");
+            handlePictureResult(QRCodeValue, currentPhotoPath);
             Log.d("qrcode", "Photo Path: " + currentPhotoPath);
         }
     }
+
 }

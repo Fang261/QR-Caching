@@ -32,6 +32,7 @@ public class vault extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vault);
         String QRCodeValue = getIntent().getStringExtra("QRCodeValue");
+
         Intent intent = getIntent();
         if (intent != null) {
             itemList = (ArrayList<QrcodeItem>) intent.getSerializableExtra("itemList");
@@ -81,9 +82,9 @@ public class vault extends AppCompatActivity {
             }
         });
 
-        // set up the vault list recycler view
-        photosListView = (RecyclerView) findViewById(R.id.photo_list);
+        photosListView = findViewById(R.id.photo_list);
         photosListView.setLayoutManager(new LinearLayoutManager(this));
+        photolistAdapter = new photolist_adapter(vault.this, photoList);
         photosListView.setAdapter(photolistAdapter);
 
     }
