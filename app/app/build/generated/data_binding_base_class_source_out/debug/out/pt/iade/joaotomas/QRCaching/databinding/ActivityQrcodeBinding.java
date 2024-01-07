@@ -47,24 +47,20 @@ public final class ActivityQrcodeBinding implements ViewBinding {
   public final ImageButton profilepicImageButton;
 
   @NonNull
+  public final TextView streenameTextView;
+
+  @NonNull
   public final ImageButton vaultImageButton;
 
   @NonNull
   public final TextView vaultTextView;
 
-  @NonNull
-  public final ImageButton writeImageButton;
-
-  @NonNull
-  public final TextView writeTextView;
-
   private ActivityQrcodeBinding(@NonNull ConstraintLayout rootView,
       @NonNull ProgressBar experiencebarProgressBar3, @NonNull Button gobackButtonqrcode,
       @NonNull ConstraintLayout header, @NonNull ConstraintLayout im, @NonNull TextView levelText,
       @NonNull ImageButton photoImageButton, @NonNull TextView photoTextView,
-      @NonNull ImageButton profilepicImageButton, @NonNull ImageButton vaultImageButton,
-      @NonNull TextView vaultTextView, @NonNull ImageButton writeImageButton,
-      @NonNull TextView writeTextView) {
+      @NonNull ImageButton profilepicImageButton, @NonNull TextView streenameTextView,
+      @NonNull ImageButton vaultImageButton, @NonNull TextView vaultTextView) {
     this.rootView = rootView;
     this.experiencebarProgressBar3 = experiencebarProgressBar3;
     this.gobackButtonqrcode = gobackButtonqrcode;
@@ -74,10 +70,9 @@ public final class ActivityQrcodeBinding implements ViewBinding {
     this.photoImageButton = photoImageButton;
     this.photoTextView = photoTextView;
     this.profilepicImageButton = profilepicImageButton;
+    this.streenameTextView = streenameTextView;
     this.vaultImageButton = vaultImageButton;
     this.vaultTextView = vaultTextView;
-    this.writeImageButton = writeImageButton;
-    this.writeTextView = writeTextView;
   }
 
   @Override
@@ -151,6 +146,12 @@ public final class ActivityQrcodeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.streename_textView;
+      TextView streenameTextView = ViewBindings.findChildViewById(rootView, id);
+      if (streenameTextView == null) {
+        break missingId;
+      }
+
       id = R.id.vault_imageButton;
       ImageButton vaultImageButton = ViewBindings.findChildViewById(rootView, id);
       if (vaultImageButton == null) {
@@ -163,21 +164,9 @@ public final class ActivityQrcodeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.write_imageButton;
-      ImageButton writeImageButton = ViewBindings.findChildViewById(rootView, id);
-      if (writeImageButton == null) {
-        break missingId;
-      }
-
-      id = R.id.write_textView;
-      TextView writeTextView = ViewBindings.findChildViewById(rootView, id);
-      if (writeTextView == null) {
-        break missingId;
-      }
-
       return new ActivityQrcodeBinding((ConstraintLayout) rootView, experiencebarProgressBar3,
           gobackButtonqrcode, header, im, levelText, photoImageButton, photoTextView,
-          profilepicImageButton, vaultImageButton, vaultTextView, writeImageButton, writeTextView);
+          profilepicImageButton, streenameTextView, vaultImageButton, vaultTextView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

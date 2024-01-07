@@ -36,6 +36,7 @@
     <string name="dev_0550">João Moniz 20220550</string>
     <string name="dev_0589">Tomas Salgueiro 20220589</string>
     <string name="title_activity_maps">Maps</string>
+    <string name="title_activity_takephoto">takephoto</string>
     <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>

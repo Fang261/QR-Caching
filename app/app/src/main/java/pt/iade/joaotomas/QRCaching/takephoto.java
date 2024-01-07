@@ -10,5 +10,6 @@ public class takephoto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_takephoto);
+        String QRCodeValue = getIntent().getStringExtra("QRCodeValue");
     }
 }

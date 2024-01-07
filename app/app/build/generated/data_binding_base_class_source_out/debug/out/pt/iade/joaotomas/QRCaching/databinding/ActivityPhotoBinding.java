@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -32,6 +33,9 @@ public final class ActivityPhotoBinding implements ViewBinding {
   public final ConstraintLayout header;
 
   @NonNull
+  public final ImageView imageView;
+
+  @NonNull
   public final TextView levelText;
 
   @NonNull
@@ -39,12 +43,13 @@ public final class ActivityPhotoBinding implements ViewBinding {
 
   private ActivityPhotoBinding(@NonNull ConstraintLayout rootView,
       @NonNull ProgressBar experiencebarProgressBar5, @NonNull Button gobackButtonphoto,
-      @NonNull ConstraintLayout header, @NonNull TextView levelText,
+      @NonNull ConstraintLayout header, @NonNull ImageView imageView, @NonNull TextView levelText,
       @NonNull ImageButton profilepicImageButton) {
     this.rootView = rootView;
     this.experiencebarProgressBar5 = experiencebarProgressBar5;
     this.gobackButtonphoto = gobackButtonphoto;
     this.header = header;
+    this.imageView = imageView;
     this.levelText = levelText;
     this.profilepicImageButton = profilepicImageButton;
   }
@@ -94,6 +99,12 @@ public final class ActivityPhotoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
+        break missingId;
+      }
+
       id = R.id.level_text;
       TextView levelText = ViewBindings.findChildViewById(rootView, id);
       if (levelText == null) {
@@ -107,7 +118,7 @@ public final class ActivityPhotoBinding implements ViewBinding {
       }
 
       return new ActivityPhotoBinding((ConstraintLayout) rootView, experiencebarProgressBar5,
-          gobackButtonphoto, header, levelText, profilepicImageButton);
+          gobackButtonphoto, header, imageView, levelText, profilepicImageButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
