@@ -13,6 +13,7 @@ import android.widget.EditText;
 
 import java.util.ArrayList;
 
+import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
 import pt.iade.joaotomas.QRCaching.models.UserItem;
 
 public class signin extends AppCompatActivity {
@@ -46,7 +47,17 @@ public class signin extends AppCompatActivity {
         confirmbutton = findViewById(R.id.confirm_button);
 
         UserList = new ArrayList<>();
-
+        Intent intent = getIntent();
+        if (intent != null) {
+            UserList = (ArrayList<UserItem>) intent.getSerializableExtra("itemList");
+            if (UserList == null) {
+                UserList = new ArrayList<>();
+            }
+        } else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(signin.this, R.style.AlertDialogCustom);
+            builder.setTitle("Failed to load Lists");
+            builder.setPositiveButton("Ok", (dialogInterface, i) -> dialogInterface.dismiss()).show();
+        }
         loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
