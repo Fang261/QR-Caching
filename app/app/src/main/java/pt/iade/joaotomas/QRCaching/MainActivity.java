@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
@@ -62,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
 
                     intent.putExtra("userId", currentUser.getId());
                     intent.putExtra("username", currentUser.getUsername());
-
-                    startActivityForResult(intent, SIGN_IN_REQUEST_CODE);
+                    startActivity(intent);
                 } else {
+                    Log.d("MainActivity", "Entered username: " + enteredUsername + ", Entered password: " + enteredPassword);
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setTitle("Login Failed");
                     builder.setMessage("Invalid username or password.");
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,signin.class);
-                startActivity(intent);
+                startActivityForResult(intent, SIGN_IN_REQUEST_CODE);
             }
         });
         guestloginbutton.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 int signedInUserId = data.getIntExtra("ID", 0);
                 String signedInUsername = data.getStringExtra("username");
                 String signedInPassword = data.getStringExtra("password");
-
+                Log.d("MainActivity", "Entered username: " + signedInUsername + ", Entered password: " + signedInPassword);
                 UserItem newUser = new UserItem(signedInUserId,signedInUsername,signedInPassword,null,null);
                 UserList.add(newUser);
             } else {
@@ -124,14 +125,4 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-    private UserItem findUserById(int userId) {
-        for (UserItem user : UserList) {
-            if (user.getId() == userId) {
-                return user;
-            }
-        }
-        return null;
-    }
-
 }

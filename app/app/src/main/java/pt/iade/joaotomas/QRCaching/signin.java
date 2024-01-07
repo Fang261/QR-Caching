@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,7 +25,7 @@ public class signin extends AppCompatActivity {
 
     private ArrayList<UserItem> UserList;
 
-    private void handleSignInResult(int newCreatedID,String signedInUsername, String signedInPassword) {
+    private void handleSignInResult(int newCreatedID, String signedInUsername, String signedInPassword) {
         Intent resultIntent = new Intent();
         resultIntent.putExtra("username", signedInUsername);
         resultIntent.putExtra("password", signedInPassword);
@@ -58,25 +59,12 @@ public class signin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String enteredUsername = usernameEditText.getText().toString();
-                int enteredId = Integer.parseInt(idEditText.getText().toString());
                 String enteredPassword = passwordEditText.getText().toString();
                 int newId = UserItem.getLastAssignedId() + 1;
                 UserItem newUser = new UserItem(newId, enteredUsername, enteredPassword, null, null);
                 UserList.add(newUser);
                 UserItem.setLastAssignedId(newId);
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(signin.this);
-                builder.setTitle("Account Created");
-                builder.setMessage("Your account has been created successfully.");
-                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                        Intent intent = new Intent(signin.this, MainActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.show();
+                Log.d("signin", "New user created - ID: " + newId + ", Username: " + newUser.getUsername() + ", Password: " + newUser.getPassword());
                 handleSignInResult(newId,newUser.getUsername(), newUser.getPassword());
             }
         });

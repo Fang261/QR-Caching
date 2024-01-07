@@ -10,16 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eae4191c-65ec-4bff-98bc-964225167764" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/mainpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/mainpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/UserItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/models/UserItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/profilepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/profilepage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/signin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pt/iade/joaotomas/QRCaching/signin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_signin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_signin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
