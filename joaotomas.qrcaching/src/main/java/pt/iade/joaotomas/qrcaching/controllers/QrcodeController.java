@@ -1,52 +1,66 @@
 package pt.iade.joaotomas.qrcaching.controllers;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import pt.iade.joaotomas.qrcaching.models.QrcodeItem;
+import pt.iade.joaotomas.qrcaching.models.exceptions.NotFoundException;
+import pt.iade.joaotomas.qrcaching.models.repositories.QrcodeRepository;
+import pt.iade.joaotomas.qrcaching.models.responses.Response;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "/qrcode")
 public class QrcodeController {
 
-    private static ArrayList<QrcodeItem> qrcodeList = new ArrayList<>();
+    private static final Logger logger = LoggerFactory.getLogger(QrcodeController.class);
 
-    @GetMapping
-    public List<QrcodeItem> getAllNotes() {
-        return qrcodeList;
+    @Autowired
+    private QrcodeRepository qrcodeRepository;
 
+    @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<QrcodeItem> getAllQrcodes() {
+        logger.info("Sending all qrcodes");
+        return (List<QrcodeItem>) qrcodeRepository.findAll();
     }
 
-    @GetMapping(path = "/{id}")
-    public QrcodeItem getQrcodeById(int id) {
-        for (QrcodeItem qrcode : qrcodeList) {
-            if (qrcode.getId() == id)
-                return qrcode;
+    @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Response> getQrcode(@PathVariable("id") int id) {
+        logger.info("Sending qrcode with ID " + id);
+        QrcodeItem qrcode = qrcodeRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException("" + id, "Qrcode", "id"));
+
+        return ResponseEntity.ok(new Response("Qrcode found", qrcode));
+    }
+
+    @DeleteMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Response> deleteQrcode(@PathVariable("id") int id) {
+        logger.info("Deleting qrcode with ID " + id);
+        if (qrcodeRepository.existsById(id)) {
+            qrcodeRepository.deleteById(id);
+            return ResponseEntity.ok(new Response("Qrcode deleted", null));
+        } else {
+            return ResponseEntity.ok(new Response("Qrcode not found", null));
         }
-        return null;
     }
 
-    @GetMapping(path = "/{id}/{qrcode}/{localPhoto}/{latitude}/{longitude}/{altitude}")
-    public QrcodeItem addQrcode(int id) {
-        QrcodeItem qrcode = new QrcodeItem(id, null, null, 0, 0, 0);
-        qrcodeList.add(qrcode);
-        return qrcode;
+    @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Response> addQrcode(@RequestBody QrcodeItem qrcode) {
+        logger.info("Including new qrcode " + qrcode);
+        QrcodeItem savedQrcode = qrcodeRepository.save(qrcode);
+        return ResponseEntity.ok(new Response("Qrcode added", savedQrcode));
     }
 
-    @GetMapping(path = "/{id}/{qrcode}/{localPhoto}/{latitude}/{longitude}/{altitude}")
-    public QrcodeItem deleteQrcode(int id, String qrcode, String localPhoto, float latitude, float longitude,
-            float altitude) {
-        for (QrcodeItem qrcode1 : qrcodeList) {
-            if (qrcode1.getId() == id) {
-                qrcodeList.remove(qrcode1);
-                return qrcode1;
-            }
-        }
-        return null;
-    }
-
+    // Add other custom queries if needed
 }

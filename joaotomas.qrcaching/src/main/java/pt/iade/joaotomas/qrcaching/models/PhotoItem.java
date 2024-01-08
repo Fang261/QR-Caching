@@ -1,13 +1,26 @@
 package pt.iade.joaotomas.qrcaching.models;
 
-public class PhotoItem {
-    //post_id int not null auto_increment,
-	//post_foto VARCHAR(300),		                
-	//post_text VARCHAR(200), 			
-	//primary key (post_id)
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "post")
+public class PhotoItem {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "post_id")
     private int id;
+
+    @Column(name = "post_foto", length = 300)
     private String photo;
+
+    @Column(name = "post_text", length = 200)
     private String text;
 
     public PhotoItem() {
@@ -42,5 +55,8 @@ public class PhotoItem {
         this.text = text;
     }
 
-
+    @Override
+    public String toString() {
+        return photo + " " + text;
+    }
 }
