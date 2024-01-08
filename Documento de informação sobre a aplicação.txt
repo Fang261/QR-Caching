@@ -1,0 +1,48 @@
+Documento de Informação sobre a Aplicação: QRCaching
+
+Introdução:
+A aplicação QRCaching é uma plataforma inovadora que permite aos utilizadores criar e partilhar grupos de fotos associados a códigos QR específicos. Esta aplicação visa proporcionar uma experiência única ao permitir a organização e partilha de momentos através de códigos QR.
+
+Funcionalidades Principais:
+
+Criação de Conta e Login:
+
+Os utilizadores têm a opção de criar uma nova conta ou fazer login.
+Requisitos mínimos: O nome de utilizador deve ter pelo menos 3 caracteres, e a palavra-passe deve ter pelo menos 8 caracteres.
+Exploração do Mapa:
+
+Após o login, os utilizadores têm acesso a um mapa interativo que exibe a localização de códigos QR associados a grupos de fotos.
+Através do mapa, os utilizadores podem explorar eventos próximos e descobrir novas experiências visuais.
+Scanner de Códigos QR:
+
+A funcionalidade de scanner de códigos QR permite aos utilizadores capturar e aceder instantaneamente a grupos de fotos associados a um QR code específico.
+Lista de Eventos:
+
+Os utilizadores podem consultar uma lista completa de todos os eventos disponíveis, facilitando a navegação e escolha de experiências.
+Vault de Fotos:
+
+Após o scan de um código QR, os utilizadores podem explorar a "vault" de fotos associadas, visualizando e adicionando novas imagens ao grupo.
+
+
+
+Instruções de Utilização:
+
+Login:
+
+Escolha entre criar uma nova conta ou fazer login com uma conta existente.
+Certifique-se de que o nome de utilizador tem pelo menos 3 caracteres e a palavra-passe tem pelo menos 8 caracteres.
+Exploração do Mapa:
+
+Utilize o mapa para encontrar códigos QR em diferentes localizações.
+Toque nos marcadores no mapa para obter informações sobre eventos específicos.
+Scanner de Códigos QR:
+
+Utilize a funcionalidade de scanner para capturar códigos QR em eventos e desbloquear grupos de fotos.
+Lista de Eventos:
+
+Consulte a lista de eventos para descobrir novas experiências e escolher qual explorar.
+Vault de Fotos:
+
+Após o scan de um código QR, explore a "vault" de fotos associadas e adicione novas imagens ao grupo.
+Conclusão:
+A aplicação QRCaching é uma ferramenta interativa e envolvente que redefine a forma como partilhamos e preservamos memórias visuais. Combinando a facilidade de uso com a tecnologia dos códigos QR, a QRCaching proporciona uma experiência única e personalizada para todos os utilizadores. Explore, partilhe e reviva momentos inesquecíveis com a QRCaching.

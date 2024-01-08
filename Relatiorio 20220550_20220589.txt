@@ -1,0 +1,33 @@
+
+Nome: João Moniz
+Número de Identificação: 20220550
+
+Função e Áreas de Trabalho:
+Durante o período em que estive envolvido no projeto, assumi a posição de programador, concentrando-me principalmente nas áreas de design e interligação entre classes. As minhas principais responsabilidades abrangeram a codificação em Java e a integração da aplicação com a API do Google.
+
+Contribuições Específicas:
+
+Design da Aplicação: Liderei o processo de design da aplicação, assegurando uma experiência de utilizador intuitiva.
+
+Interligação entre Classes: Fui encarregado de garantir a coesão e comunicação eficaz entre as diferentes classes da aplicação. Isso incluiu a implementação de métodos e estruturas que promoveram uma arquitetura robusta.
+
+Desenvolvimento em Java: Escrevi e otimizei código em Java, assegurando boas práticas de programação, legibilidade e eficiência.
+
+Integração com a API do Google: Trabalhei na integração da aplicação com a API do Google, implementando funcionalidades específicas, como a visualização de mapas e a utilização de marcadores.
+
+Nome: Tomás Salgueiro
+Número de Identificação: 20220589
+
+Função e Áreas de Trabalho:
+O Tomás desempenhou um papel crucial no desenvolvimento da aplicação, concentrando os seus esforços na implementação da RecyclerView e na preparação da aplicação para comunicar com o servidor.
+
+Contribuições Específicas:
+
+Implementação da RecyclerView: O Tomás liderou o desenvolvimento e implementação das RecyclerView's, proporcionando uma exibição eficiente e organizada dos itens na aplicação.
+
+Comunicação com o Servidor: Trabalhou intensivamente para preparar a aplicação para a comunicação com o servidor, garantindo uma integração perfeita entre o frontend e o backend.
+
+Otimização do Desempenho: Contribuiu para a otimização do desempenho da aplicação, assegurando uma resposta rápida e eficiente em todas as interações.
+
+Conclusão:
+A colaboração entre eu e Tomás Salgueiro revelou-se essencial para o desenvolvimento bem-sucedido da aplicação. A combinação das habilidades de design, interligação entre classes, programação em Java, implementação da RecyclerView e integração com o servidor resultou num produto final coeso e funcional. Ambos os membros da equipa demonstraram comprometimento, habilidades técnicas e uma abordagem proativa em suas respectivas áreas de responsabilidade, contribuindo significativamente para o sucesso do projeto.
