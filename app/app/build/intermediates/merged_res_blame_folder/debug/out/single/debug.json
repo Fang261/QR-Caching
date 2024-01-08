@@ -100,12 +100,12 @@
         "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\drawable\\backgroundimg1.png"
     },
     {
-        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-merged_res-61:\\layout_activity_map.xml.flat",
-        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_map.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_profilepage.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_profilepage.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_main.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_main.xml"
+        "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-merged_res-61:\\layout_activity_map.xml.flat",
+        "source": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-main-63:\\layout\\activity_map.xml"
     },
     {
         "merged": "C:\\Users\\cocas\\.gradle\\daemon\\8.0\\pt.iade.joaotomas.QRCaching.app-merged_res-61:\\drawable_screenshot_1.png.flat",
