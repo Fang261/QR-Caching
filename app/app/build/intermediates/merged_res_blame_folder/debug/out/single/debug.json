@@ -1,146 +1,146 @@
 [
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_header.png.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/header.png"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_eventlist.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_eventlist.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_profilepage.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_profilepage.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_row_event_item.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/row_event_item.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_row_event_item.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/row_event_item.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_row_qrcode_item.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/row_qrcode_item.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/drawable_header.png.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/drawable/header.png"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_button_big.png.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/button_big.png"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_vault.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_vault.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_main.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_main.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_event_page.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_event_page.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_row_qrcode_item.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/row_qrcode_item.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_row_photo_item.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/row_photo_item.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/xml_backup_rules.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/xml/backup_rules.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_backgroundimg1.png.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/backgroundimg1.png"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/drawable_button_big.png.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/drawable/button_big.png"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_eventlist.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_eventlist.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/drawable_screenshot_1.png.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/drawable/screenshot_1.png"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/ic_launcher_foreground.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/drawable_camera_button.png.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/drawable/camera_button.png"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/xml_backup_rules.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/xml/backup_rules.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_profilepage.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_profilepage.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_ic_launcher_background.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/ic_launcher_background.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_map.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_map.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/drawable_backgroundimg1.png.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/drawable/backgroundimg1.png"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/xml_data_extraction_rules.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/xml/data_extraction_rules.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/xml_data_extraction_rules.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_signin.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_signin.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_main.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_main.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_mainpage.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_mainpage.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/drawable_experiencebar.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/drawable/experiencebar.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_photo.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_photo.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_qrcode.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_qrcode.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_qrcode.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_qrcode.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_row_photo_item.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/row_photo_item.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_experiencebar.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/experiencebar.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_mainpage.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_mainpage.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/drawable_ic_launcher_background.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_event_page.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_event_page.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_photo.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_photo.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_screenshot_1.png.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/screenshot_1.png"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_signin.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_signin.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/layout_activity_vault.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/layout/activity_vault.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-anydpi/ic_launcher.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_camera_button.png.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/camera_button.png"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/drawable_back.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/drawable/back.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/drawable_back.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/drawable/back.xml"
     },
     {
-        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-32:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "pt.iade.joaotomas.QRCaching.app-main-34:/mipmap-anydpi/ic_launcher_round.xml"
+        "merged": "pt.iade.joaotomas.QRCaching.app-merged_res-61:/layout_activity_map.xml.flat",
+        "source": "pt.iade.joaotomas.QRCaching.app-main-63:/layout/activity_map.xml"
     }
 ]

@@ -17,17 +17,17 @@ import pt.iade.joaotomas.QRCaching.utilities.WebRequest;
 
 public class PhotoItem implements Serializable {
     private int id;
-    private String photoUrl;
+    private String photoPath;
+
 
     public PhotoItem() {
         this(0,"");
     }
 
-    //Constructor
-    public PhotoItem(int id, String photoUrl) {
-        this.id = id;
-        this.photoUrl = photoUrl;
 
+    public PhotoItem(int id,String photoPath) {
+        this.id = id;
+        this.photoPath = photoPath;
     }
 
     public static void List(PhotoItem.ListResponse response) {
@@ -152,9 +152,9 @@ public class PhotoItem implements Serializable {
         this.id = id;
     }
 
-    public String getPhotoUrl() { return photoUrl; }
+    public String getphotoPath() { return photoPath; }
 
-    public void setPhotoUrl(String photoUrl) { this.photoUrl = photoUrl; }
+    public void setphotoPath(String photoUrl) { this.photoPath = photoPath; }
 
     public interface ListResponse {
         public void response(ArrayList<PhotoItem> items);
@@ -163,5 +163,4 @@ public class PhotoItem implements Serializable {
     public interface GetByIdResponse {
         public void response(PhotoItem item);
     }
-
 }

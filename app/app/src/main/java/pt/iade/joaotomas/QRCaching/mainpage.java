@@ -4,7 +4,6 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
@@ -13,9 +12,7 @@ import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
 import java.util.ArrayList;
-import java.io.Serializable;
 
-import pt.iade.joaotomas.QRCaching.models.CaptureAct;
 import pt.iade.joaotomas.QRCaching.models.QrcodeItem;
 
 public class mainpage extends AppCompatActivity {
@@ -49,9 +46,9 @@ public class mainpage extends AppCompatActivity {
                 Intent intent = new Intent(mainpage.this, profilepage.class);
                 intent.putExtra("itemList", itemList);
                 startActivity(intent);
-                finish();
             }
         });
+
 
         btn_scan.setOnClickListener(v ->
         {
@@ -62,9 +59,8 @@ public class mainpage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mainpage.this, map.class);
+                intent.putExtra("itemList", itemList);
                 startActivity(intent);
-                finish();
-
             }
         });
         eventpage.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +68,6 @@ public class mainpage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(mainpage.this, eventlist.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
@@ -104,7 +99,6 @@ public class mainpage extends AppCompatActivity {
                 intent.putExtra("QRCodeValue", QRCodeValue);
                 intent.putExtra("itemList", itemList);
                 startActivity(intent);
-                finish();
             } else {
                 AlertDialog.Builder builder = new AlertDialog.Builder(mainpage.this, R.style.AlertDialogCustom);
                 builder.setTitle("QR Code invalid");

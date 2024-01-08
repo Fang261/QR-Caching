@@ -15,7 +15,7 @@
         android:id="@+id/vault_imageButton"
         android:layout_width="280dp"
         android:layout_height="95dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="#00FFFFFF"
         android:paddingHorizontal="0dp"
         android:paddingVertical="0dp"
@@ -23,9 +23,9 @@
         android:scaleX="1.5"
         android:scaleY="1.5"
         android:src="@drawable/button_big"
+        app:layout_constraintBottom_toTopOf="@+id/goback_buttonqrcode"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/write_imageButton" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/vault_textView"
@@ -52,42 +52,10 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/write_imageButton"
-        android:layout_width="280dp"
-        android:layout_height="95dp"
-        android:backgroundTint="#00FFFFFF"
-        android:paddingHorizontal="0dp"
-        android:paddingVertical="0dp"
-        android:scaleType="fitCenter"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        android:src="@drawable/button_big"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        app:layout_constraintVertical_bias="0.441" />
-
-    <TextView
-        android:id="@+id/write_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleX="2"
-        android:scaleY="1.5"
-        android:text="@string/app_writesomethingtext"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/write_imageButton"
-        app:layout_constraintEnd_toEndOf="@+id/write_imageButton"
-        app:layout_constraintStart_toStartOf="@+id/write_imageButton"
-        app:layout_constraintTop_toTopOf="@+id/write_imageButton"
-        tools:text="@string/app_writesomethingtext" />
-
-    <ImageButton
         android:id="@+id/photo_imageButton"
         android:layout_width="280dp"
         android:layout_height="95dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="84dp"
         android:backgroundTint="#00FFFFFF"
         android:paddingHorizontal="0dp"
         android:paddingVertical="0dp"
@@ -95,9 +63,9 @@
         android:scaleX="1.5"
         android:scaleY="1.5"
         android:src="@drawable/button_big"
-        app:layout_constraintBottom_toTopOf="@+id/write_imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/vault_imageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -168,4 +136,17 @@
             app:layout_constraintEnd_toStartOf="@+id/profilepic_imageButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/streename_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="90dp"
+        android:text="streetName"
+        app:layout_constraintBottom_toTopOf="@+id/photo_imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

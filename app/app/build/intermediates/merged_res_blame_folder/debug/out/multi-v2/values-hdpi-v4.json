@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-30:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-59:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tomas\\.gradle\\caches\\transforms-3\\1ceac7efd2ac0072f833a26d4c326380\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\cocas\\.gradle\\caches\\transforms-3\\787724a0b500b0752a72fd1c01e29ff9\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -45,6 +45,7 @@ id goback_buttonqrcode
 id goback_buttonvault
 id header
 id im
+id imageView
 id level_text
 id login_button
 id login_button2
@@ -73,11 +74,10 @@ id register_username_edit
 id relativeLayout
 id signguest_button
 id signup_button
+id streename_textView
 id usernameEditText
 id vault_imageButton
 id vault_textView
-id write_imageButton
-id write_textView
 layout activity_event_page
 layout activity_eventlist
 layout activity_main
@@ -118,6 +118,7 @@ string app_writesomethingtext
 string dev_0550
 string dev_0589
 string title_activity_maps
+string title_activity_takephoto
 style AlertDialogCustom
 style Base.Theme.Copypasteplayground
 style Theme.Copypasteplayground
