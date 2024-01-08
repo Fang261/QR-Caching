@@ -1,28 +1,52 @@
 package pt.iade.joaotomas.qrcaching.models;
 
-import java.time.LocalDate;
+import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Entity
+@Table(name = "events")
 public class EventItem {
-    private int id; //events_id int not null auto_increment,
-	private String name; //events_name VARCHAR(40) not null,
-	private float latitude; //events_latitude float(53) default 0,    
-	private float longitude; //events_longitude float(53) default 0,   
-	private LocalDate inicial_date; //events_idate date not null,
-	private LocalDate final_date; //events_fdate date,  
-    private String localPhoto; //events_localphoto VARCHAR(300);  
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "events_id")
+    private int id;
+
+    @Column(name = "events_name")
+    private String name;
+
+    @Column(name = "events_latitude")
+    private float latitude;
+
+    @Column(name = "events_longitude")
+    private float longitude;
+
+    @Column(name = "events_idate")
+    private LocalDate inicial_date;
+
+    @Column(name = "events_fdate")
+    private LocalDate final_date;
+
+    @Column(name = "events_localphoto")
+    private String localPhoto;
+
+    @OneToMany(mappedBy = "eventItem", cascade = CascadeType.ALL)
+    private List<QrcodeItem> qrcodes;
 
     public EventItem() {
-        this.id = 0;
-        this.name = "";
-        this.latitude = 0;
-        this.longitude = 0;
-        this.inicial_date = LocalDate.now();
-        this.final_date = LocalDate.now();
-        this.localPhoto = "";
-        
     }
 
-    public EventItem(int id, String name, float latitude, float longitude, LocalDate inicial_date, LocalDate final_date, String localPhoto) {
+    public EventItem(int id, String name, float latitude, float longitude, LocalDate inicial_date, LocalDate final_date,
+            String localPhoto, List<QrcodeItem> qrcodes) {
         this.id = id;
         this.name = name;
         this.latitude = latitude;
@@ -30,6 +54,7 @@ public class EventItem {
         this.inicial_date = inicial_date;
         this.final_date = final_date;
         this.localPhoto = localPhoto;
+        this.qrcodes = qrcodes;
     }
 
     public int getId() {
@@ -87,5 +112,26 @@ public class EventItem {
     public void setLongitude(float longitude) {
         this.longitude = longitude;
     }
-    
+
+    public List<QrcodeItem> getQrcodes() {
+        return qrcodes;
+    }
+
+    public void setQrcodes(List<QrcodeItem> qrcodes) {
+        this.qrcodes = qrcodes;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                " id='" + getId() + "'" +
+                ", name='" + getName() + "'" +
+                ", latitude='" + getLatitude() + "'" +
+                ", longitude='" + getLongitude() + "'" +
+                ", inicial_date='" + getInicial_date() + "'" +
+                ", final_date='" + getFinal_date() + "'" +
+                ", localPhoto='" + getLocalPhoto() + "'" +
+                ", qrcodes='" + getQrcodes() + "'" +
+                "}";
+    }
 }
