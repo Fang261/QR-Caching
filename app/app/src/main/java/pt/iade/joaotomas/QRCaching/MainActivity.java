@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         guestloginbutton = findViewById(R.id.signguest_button);
         signinbutton = findViewById(R.id.signup_button);
 
-        usernameEditText = findViewById(R.id.usernameEditText);
-        passwordEditText = findViewById(R.id.passwordEditText);
+        usernameEditText = findViewById(R.id.login_username_edit);
+        passwordEditText = findViewById(R.id.login_pw_edit);
 
         loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -35,9 +35,6 @@ public final class ActivitySigninBinding implements ViewBinding {
   public final LinearLayoutCompat register;
 
   @NonNull
-  public final EditText registerEmailEdit;
-
-  @NonNull
   public final EditText registerIdEdit;
 
   @NonNull
@@ -48,15 +45,13 @@ public final class ActivitySigninBinding implements ViewBinding {
 
   private ActivitySigninBinding(@NonNull ConstraintLayout rootView, @NonNull Button confirmButton,
       @NonNull Button loginButton2, @NonNull ImageView logoImage2,
-      @NonNull LinearLayoutCompat register, @NonNull EditText registerEmailEdit,
-      @NonNull EditText registerIdEdit, @NonNull EditText registerPwEdit,
-      @NonNull EditText registerUsernameEdit) {
+      @NonNull LinearLayoutCompat register, @NonNull EditText registerIdEdit,
+      @NonNull EditText registerPwEdit, @NonNull EditText registerUsernameEdit) {
     this.rootView = rootView;
     this.confirmButton = confirmButton;
     this.loginButton2 = loginButton2;
     this.logoImage2 = logoImage2;
     this.register = register;
-    this.registerEmailEdit = registerEmailEdit;
     this.registerIdEdit = registerIdEdit;
     this.registerPwEdit = registerPwEdit;
     this.registerUsernameEdit = registerUsernameEdit;
@@ -113,12 +108,6 @@ public final class ActivitySigninBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.register_email_edit;
-      EditText registerEmailEdit = ViewBindings.findChildViewById(rootView, id);
-      if (registerEmailEdit == null) {
-        break missingId;
-      }
-
       id = R.id.register_id_edit;
       EditText registerIdEdit = ViewBindings.findChildViewById(rootView, id);
       if (registerIdEdit == null) {
@@ -138,8 +127,7 @@ public final class ActivitySigninBinding implements ViewBinding {
       }
 
       return new ActivitySigninBinding((ConstraintLayout) rootView, confirmButton, loginButton2,
-          logoImage2, register, registerEmailEdit, registerIdEdit, registerPwEdit,
-          registerUsernameEdit);
+          logoImage2, register, registerIdEdit, registerPwEdit, registerUsernameEdit);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

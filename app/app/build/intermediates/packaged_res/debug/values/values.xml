@@ -11,7 +11,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="myBackgroundColor">#D3D3D3</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_IDtext">Student ID</string>
     <string name="app_backtext">Back</string>
     <string name="app_camera_button">Camera</string>
     <string name="app_confirm">Confirm</string>

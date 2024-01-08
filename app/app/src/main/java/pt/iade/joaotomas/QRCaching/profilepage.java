@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 
@@ -24,7 +25,7 @@ public class profilepage extends AppCompatActivity {
     private RecyclerView itemsListView;
     protected qrcodelist_adapter qrcodelistAdapter;
     private static final int EDITOR_ACTIVITY_RETURN_ID = 1;
-
+    private EditText name_editText;
     private ArrayList<QrcodeItem> itemList;
 
 
@@ -33,7 +34,9 @@ public class profilepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profilepage);
         gobackbutton = findViewById(R.id.goback_buttonprofile);
-
+        name_editText = findViewById(R.id.name_editText);
+        String username = getIntent().getStringExtra("username");
+        name_editText.setText(username);
         Intent intent = getIntent();
         if (intent != null) {
             itemList = (ArrayList<QrcodeItem>) intent.getSerializableExtra("itemList");

@@ -50,10 +50,10 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/register"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/header"
         android:orientation="vertical"
         android:paddingHorizontal="50dp"
@@ -79,17 +79,6 @@
 
         <EditText
             android:id="@+id/register_id_edit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="ID"
-            android:ems="10"
-            android:hint="@string/app_IDtext"
-            android:inputType="number"
-            android:textColorHint="@color/white" />
-
-
-        <EditText
-            android:id="@+id/register_email_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="password"

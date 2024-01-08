@@ -67,7 +67,7 @@
 
 
         <EditText
-            android:id="@+id/usernameEditText"
+            android:id="@+id/register_username_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="username"
@@ -78,7 +78,7 @@
 
 
         <EditText
-            android:id="@+id/register_email_edit"
+            android:id="@+id/register_id_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="password"
@@ -89,7 +89,7 @@
 
 
         <EditText
-            android:id="@+id/passwordEditText"
+            android:id="@+id/register_pw_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="email"

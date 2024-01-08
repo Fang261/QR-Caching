@@ -45,6 +45,7 @@ public class mainpage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(mainpage.this, profilepage.class);
                 intent.putExtra("itemList", itemList);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });

@@ -49,6 +49,8 @@ id imageView
 id level_text
 id login_button
 id login_button2
+id login_pw_edit
+id login_username_edit
 id logo_image
 id logo_image2
 id logo_text
@@ -56,7 +58,6 @@ id mapView
 id map_imageButton
 id map_textView4
 id name_editText
-id passwordEditText
 id photo_imageButton
 id photo_list
 id photo_textView
@@ -67,7 +68,6 @@ id qrcode_list
 id qrcode_streename_textView
 id recyclerView
 id register
-id register_email_edit
 id register_id_edit
 id register_pw_edit
 id register_username_edit
@@ -75,7 +75,6 @@ id relativeLayout
 id signguest_button
 id signup_button
 id streename_textView
-id usernameEditText
 id vault_imageButton
 id vault_textView
 layout activity_event_page
@@ -93,7 +92,6 @@ layout row_photo_item
 layout row_qrcode_item
 mipmap ic_launcher
 mipmap ic_launcher_round
-string app_IDtext
 string app_backtext
 string app_camera_button
 string app_confirm

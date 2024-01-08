@@ -3381,6 +3381,8 @@ id listMode
 id list_item
 id login_button
 id login_button2
+id login_pw_edit
+id login_username_edit
 id logo_image
 id logo_image2
 id logo_text
@@ -3478,7 +3480,6 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
-id passwordEditText
 id password_toggle
 id path
 id pathRelative
@@ -3504,7 +3505,6 @@ id ratio
 id rectangles
 id recyclerView
 id register
-id register_email_edit
 id register_id_edit
 id register_pw_edit
 id register_username_edit
@@ -3648,7 +3648,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id usernameEditText
 id vault_imageButton
 id vault_textView
 id vertical_only
@@ -3922,7 +3921,6 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string androidx_startup
-string app_IDtext
 string app_backtext
 string app_camera_button
 string app_confirm

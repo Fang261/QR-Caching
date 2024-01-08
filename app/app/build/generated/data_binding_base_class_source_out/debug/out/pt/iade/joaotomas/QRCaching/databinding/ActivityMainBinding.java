@@ -13,6 +13,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -44,13 +45,19 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button loginButton;
 
   @NonNull
+  public final EditText loginPwEdit;
+
+  @NonNull
+  public final EditText loginUsernameEdit;
+
+  @NonNull
   public final ImageView logoImage;
 
   @NonNull
   public final TextView logoText;
 
   @NonNull
-  public final EditText passwordEditText;
+  public final LinearLayoutCompat register;
 
   @NonNull
   public final RelativeLayout relativeLayout;
@@ -61,16 +68,13 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Button signupButton;
 
-  @NonNull
-  public final EditText usernameEditText;
-
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TableLayout autorTable,
       @NonNull TableRow autorTable0550, @NonNull TextView autorTable0550Text,
       @NonNull TableRow autorTable0589, @NonNull TextView autorTable0589Text,
-      @NonNull Button loginButton, @NonNull ImageView logoImage, @NonNull TextView logoText,
-      @NonNull EditText passwordEditText, @NonNull RelativeLayout relativeLayout,
-      @NonNull Button signguestButton, @NonNull Button signupButton,
-      @NonNull EditText usernameEditText) {
+      @NonNull Button loginButton, @NonNull EditText loginPwEdit,
+      @NonNull EditText loginUsernameEdit, @NonNull ImageView logoImage, @NonNull TextView logoText,
+      @NonNull LinearLayoutCompat register, @NonNull RelativeLayout relativeLayout,
+      @NonNull Button signguestButton, @NonNull Button signupButton) {
     this.rootView = rootView;
     this.autorTable = autorTable;
     this.autorTable0550 = autorTable0550;
@@ -78,13 +82,14 @@ public final class ActivityMainBinding implements ViewBinding {
     this.autorTable0589 = autorTable0589;
     this.autorTable0589Text = autorTable0589Text;
     this.loginButton = loginButton;
+    this.loginPwEdit = loginPwEdit;
+    this.loginUsernameEdit = loginUsernameEdit;
     this.logoImage = logoImage;
     this.logoText = logoText;
-    this.passwordEditText = passwordEditText;
+    this.register = register;
     this.relativeLayout = relativeLayout;
     this.signguestButton = signguestButton;
     this.signupButton = signupButton;
-    this.usernameEditText = usernameEditText;
   }
 
   @Override
@@ -150,6 +155,18 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.login_pw_edit;
+      EditText loginPwEdit = ViewBindings.findChildViewById(rootView, id);
+      if (loginPwEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.login_username_edit;
+      EditText loginUsernameEdit = ViewBindings.findChildViewById(rootView, id);
+      if (loginUsernameEdit == null) {
+        break missingId;
+      }
+
       id = R.id.logo_image;
       ImageView logoImage = ViewBindings.findChildViewById(rootView, id);
       if (logoImage == null) {
@@ -162,9 +179,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.passwordEditText;
-      EditText passwordEditText = ViewBindings.findChildViewById(rootView, id);
-      if (passwordEditText == null) {
+      id = R.id.register;
+      LinearLayoutCompat register = ViewBindings.findChildViewById(rootView, id);
+      if (register == null) {
         break missingId;
       }
 
@@ -186,15 +203,10 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.usernameEditText;
-      EditText usernameEditText = ViewBindings.findChildViewById(rootView, id);
-      if (usernameEditText == null) {
-        break missingId;
-      }
-
       return new ActivityMainBinding((ConstraintLayout) rootView, autorTable, autorTable0550,
-          autorTable0550Text, autorTable0589, autorTable0589Text, loginButton, logoImage, logoText,
-          passwordEditText, relativeLayout, signguestButton, signupButton, usernameEditText);
+          autorTable0550Text, autorTable0589, autorTable0589Text, loginButton, loginPwEdit,
+          loginUsernameEdit, logoImage, logoText, register, relativeLayout, signguestButton,
+          signupButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
