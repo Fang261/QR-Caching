@@ -4,7 +4,7 @@
             "outputFile": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-59:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cocas\\.gradle\\caches\\transforms-3\\567b81490f871bf02d447322480dd562\\transformed\\material-1.9.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\tomas\\.gradle\\caches\\transforms-3\\567b81490f871bf02d447322480dd562\\transformed\\material-1.9.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,10",
                         "startColumns": "4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\cocas\\.gradle\\caches\\transforms-3\\787724a0b500b0752a72fd1c01e29ff9\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\tomas\\.gradle\\caches\\transforms-3\\787724a0b500b0752a72fd1c01e29ff9\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

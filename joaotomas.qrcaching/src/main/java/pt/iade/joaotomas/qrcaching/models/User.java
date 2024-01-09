@@ -1,15 +1,11 @@
 package pt.iade.joaotomas.qrcaching.models;
 
-import jakarta.persistence.*;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "user")
@@ -32,11 +28,6 @@ public class User {
     @Column(name = "user_email", length = 30, nullable = false)
     private String email;
 
-    @OneToMany(mappedBy = "userItem", cascade = CascadeType.ALL)
-    private List<Post> completedQrcodes;
-
-    @OneToMany(mappedBy = "userItem", cascade = CascadeType.ALL)
-    private List<Achivement> achivements;
 
     public User() {
         this.id = 0;
@@ -44,19 +35,14 @@ public class User {
         this.password = "";
         this.phone = 0;
         this.email = "";
-        this.achivements = new ArrayList<>();
-        this.completedQrcodes = new ArrayList<>();
     }
 
-    public User(int id, String username, String password, int phone, String email,
-                    List<Post> completedQrcodes, List<Achivement> achivements) {
+    public User(int id, String username, String password, int phone, String email) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.phone = phone;
         this.email = email;
-        this.completedQrcodes = new ArrayList<>(completedQrcodes);
-        this.achivements = new ArrayList<>(achivements);
     }
 
     // Getters and setters
@@ -101,21 +87,6 @@ public class User {
         this.email = email;
     }
 
-    public List<Post> getCompletedQrcodes() {
-        return completedQrcodes;
-    }
-
-    public void setCompletedQrcodes(List<Post> completedQrcodes) {
-        this.completedQrcodes = completedQrcodes;
-    }
-
-    public List<Achivement> getAchivements() {
-        return achivements;
-    }
-
-    public void setAchivements(List<Achivement> achivements) {
-        this.achivements = achivements;
-    }
 
     @Override
     public String toString() {
@@ -125,8 +96,6 @@ public class User {
                 ", password='" + getPassword() + "'" +
                 ", phone='" + getPhone() + "'" +
                 ", email='" + getEmail() + "'" +
-                ", completedQrcodes='" + getCompletedQrcodes() + "'" +
-                ", achivements='" + getAchivements() + "'" +
                 "}";
     }
 }

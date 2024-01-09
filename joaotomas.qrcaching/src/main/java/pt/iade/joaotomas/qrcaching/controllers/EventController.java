@@ -22,7 +22,7 @@ import pt.iade.joaotomas.qrcaching.models.responses.Response;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/event")
+@RequestMapping(path = "/events")
 public class EventController {
 
     private static final Logger logger = LoggerFactory.getLogger(EventController.class);
@@ -56,7 +56,7 @@ public class EventController {
         }
     }
 
-    @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(path = "/new", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Response> addEvent(@RequestBody Event event) {
         logger.info("Including new event " + event);
         Event savedEvent = eventRepository.save(event);

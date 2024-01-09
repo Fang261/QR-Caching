@@ -15,7 +15,7 @@ create table events (
 					events_longitude float(53) default 0,   
 					events_idate date not null,
 					events_fdate date,
-					events_localphoto VARCHAR(300);  		
+					events_localphoto VARCHAR(300),		
 					primary key (events_id)
 );
 		           

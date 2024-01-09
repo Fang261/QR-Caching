@@ -54,7 +54,7 @@ public class EventItem implements Serializable {
                 try {
                     try {
                         WebRequest req = new WebRequest(new URL(
-                                WebRequest.LOCALHOST + "/list"));
+                                WebRequest.LOCALHOST + "/events"));
                         String resp = req.performGetRequest();
 
                         JsonObject json = new Gson().fromJson(resp, JsonObject.class);
@@ -86,7 +86,7 @@ public class EventItem implements Serializable {
                 try {
                     try {
                         WebRequest req = new WebRequest(new URL(
-                                WebRequest.LOCALHOST + "/event/" + id));
+                                WebRequest.LOCALHOST + "/events/" + id));
                         String resp = req.performGetRequest();
 
                         response.response(new Gson().fromJson(resp, EventItem.class));
@@ -112,14 +112,14 @@ public class EventItem implements Serializable {
                     try {
                         if (id == 0) {
                             WebRequest req = new WebRequest(new URL(
-                                    WebRequest.LOCALHOST + "/event/new"));
+                                    WebRequest.LOCALHOST + "/events/new"));
                             String response = req.performPostRequest(EventItem.this);
 
                             EventItem respItem = new Gson().fromJson(response, EventItem.class);
                             id = respItem.getId();
                         } else {
                             WebRequest req = new WebRequest(new URL(
-                                    WebRequest.LOCALHOST + "/event/" + id));
+                                    WebRequest.LOCALHOST + "/events/" + id));
                             req.performPostRequest(EventItem.this);
                         }
                     } catch (Exception e) {
@@ -143,7 +143,7 @@ public class EventItem implements Serializable {
                     try {
                         if (id != 0) {
                             WebRequest req = new WebRequest(new URL(
-                                    WebRequest.LOCALHOST + "/event/" + id));
+                                    WebRequest.LOCALHOST + "/events/" + id));
                             req.performDeleteRequest();
                         }
                     } catch (Exception e) {

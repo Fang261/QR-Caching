@@ -6,8 +6,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,28 +18,20 @@ public class Post {
     private int id;
 
     @Column(name = "post_foto", length = 300)
-    private String photo;
+    private String photoPath;
 
     @Column(name = "post_text", length = 200)
     private String text;
 
-    @ManyToOne
-    @JoinColumn(name = "qrcode_id")
-    private Lqrcode qrcodeItem;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User userItem;
-
     public Post() {
         this.id = 0;
-        this.photo = "";
+        this.photoPath = "";
         this.text = "";
     }
 
-    public Post(int id, String photo, String text) {
+    public Post(int id, String photoPath, String text) {
         this.id = id;
-        this.photo = photo;
+        this.photoPath = photoPath;
         this.text = text;
     }
 
@@ -50,15 +40,15 @@ public class Post {
     }
 
     public String getPhoto() {
-        return photo;
+        return photoPath;
     }
 
     public String getText() {
         return text;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setPhoto(String photoPath) {
+        this.photoPath = photoPath;
     }
 
     public void setText(String text) {
@@ -67,6 +57,6 @@ public class Post {
 
     @Override
     public String toString() {
-        return photo + " " + text;
+        return photoPath + " " + text;
     }
 }

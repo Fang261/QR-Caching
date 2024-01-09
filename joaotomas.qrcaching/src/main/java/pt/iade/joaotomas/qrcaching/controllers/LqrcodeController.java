@@ -55,7 +55,7 @@ public class LqrcodeController {
         }
     }
 
-    @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(path = "/new", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Response> addQrcode(@RequestBody Lqrcode qrcode) {
         logger.info("Including new qrcode " + qrcode);
         Lqrcode savedQrcode = qrcodeRepository.save(qrcode);

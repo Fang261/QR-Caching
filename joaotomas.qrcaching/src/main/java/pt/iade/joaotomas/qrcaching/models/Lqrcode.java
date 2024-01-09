@@ -2,7 +2,6 @@ package pt.iade.joaotomas.qrcaching.models;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
 
 @Entity
 @Table(name = "lqrcode")
@@ -28,13 +27,7 @@ public class Lqrcode {
     @Column(name = "lqrcode_altitude")
     private float altitude;
 
-    @ManyToOne
-    @JoinColumn(name = "event_id")
-    private Event eventItem;
 
-
-    @OneToMany(mappedBy = "qrcodeItem", cascade = CascadeType.ALL)
-    private ArrayList<Post> photos;
 
     public Lqrcode() {
         this.id = 0;
@@ -43,26 +36,19 @@ public class Lqrcode {
         this.latitude = 0;
         this.longitude = 0;
         this.altitude = 0;
-        this.photos = new ArrayList<>();
+
     }
 
-    public Lqrcode(int id, String qrcode, String localPhoto, float latitude, float longitude, float altitude, ArrayList<Post> photos) {
+    public Lqrcode(int id, String qrcode, String localPhoto, float latitude, float longitude, float altitude) {
         this.id = id;
         this.qrcode = qrcode;
         this.localPhoto = localPhoto;
         this.latitude = latitude;
         this.longitude = longitude;
         this.altitude = altitude;
-        this.photos = photos;
+    
     }
 
-    public ArrayList<Post> getPhotos() {
-        return photos;
-    }
-
-    public void setPhotos(ArrayList<Post> photos) {
-        this.photos = photos;
-    }
 
     public int getId() {
         return id;
@@ -117,7 +103,6 @@ public class Lqrcode {
             ", latitude='" + getLatitude() + "'" +
             ", longitude='" + getLongitude() + "'" +
             ", altitude='" + getAltitude() + "'" +
-            ", photos='" + getPhotos() + "'" +
             "}";
     }
 }

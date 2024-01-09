@@ -47,7 +47,7 @@ public class QrcodeItem implements Serializable {
                 try {
                     try {
                         WebRequest req = new WebRequest(new URL(
-                                WebRequest.LOCALHOST + "/list"));
+                                WebRequest.LOCALHOST + "/qrcode"));
                         String resp = req.performGetRequest();
 
                         JsonObject json = new Gson().fromJson(resp, JsonObject.class);

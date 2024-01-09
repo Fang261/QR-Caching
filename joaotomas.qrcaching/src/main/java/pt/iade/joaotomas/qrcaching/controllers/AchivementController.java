@@ -14,7 +14,7 @@ import pt.iade.joaotomas.qrcaching.models.responses.Response;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/achivement")
+@RequestMapping(path = "/achivements")
 public class AchivementController {
 
     private static final Logger logger = LoggerFactory.getLogger(AchivementController.class);

@@ -4,7 +4,7 @@
             "outputFile": "pt.iade.joaotomas.QRCaching.app-mergeDebugResources-59:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cocas\\.gradle\\caches\\transforms-3\\787724a0b500b0752a72fd1c01e29ff9\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\tomas\\.gradle\\caches\\transforms-3\\787724a0b500b0752a72fd1c01e29ff9\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

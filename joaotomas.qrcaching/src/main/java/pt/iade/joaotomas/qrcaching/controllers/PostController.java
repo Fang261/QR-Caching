@@ -55,7 +55,7 @@ public class PostController {
         }
     }
 
-    @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(path = "/new", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Response> addPhoto(@RequestBody Post photo) {
         logger.info("Including new photo " + photo);
         Post savedPhoto = photoRepository.save(photo);

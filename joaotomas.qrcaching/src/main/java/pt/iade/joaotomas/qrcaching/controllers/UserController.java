@@ -55,7 +55,7 @@ public class UserController {
         }
     }
 
-    @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(path = "/new", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Response> addUser(@RequestBody User user) {
         logger.info("Including new user " + user);
         User savedUser = userRepository.save(user);
