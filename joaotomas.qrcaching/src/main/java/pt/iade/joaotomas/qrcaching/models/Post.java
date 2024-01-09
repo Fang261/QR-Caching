@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "post")
-public class PostI {
+public class Post {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,13 +33,13 @@ public class PostI {
     @JoinColumn(name = "user_id")
     private User userItem;
 
-    public PostI() {
+    public Post() {
         this.id = 0;
         this.photo = "";
         this.text = "";
     }
 
-    public PostI(int id, String photo, String text) {
+    public Post(int id, String photo, String text) {
         this.id = id;
         this.photo = photo;
         this.text = text;

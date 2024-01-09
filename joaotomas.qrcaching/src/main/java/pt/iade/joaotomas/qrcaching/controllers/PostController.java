@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import pt.iade.joaotomas.qrcaching.models.PostI;
+import pt.iade.joaotomas.qrcaching.models.Post;
 import pt.iade.joaotomas.qrcaching.models.exceptions.NotFoundException;
 import pt.iade.joaotomas.qrcaching.models.repositories.PostRepository;
 import pt.iade.joaotomas.qrcaching.models.responses.Response;
@@ -30,15 +30,15 @@ public class PostController {
     private PostRepository photoRepository;
 
     @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<PostI> getAllPhotos() {
+    public List<Post> getAllPhotos() {
         logger.info("Sending all photos");
-        return (List<PostI>) photoRepository.findAll();
+        return (List<Post>) photoRepository.findAll();
     }
 
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Response> getPhoto(@PathVariable("id") int id) {
         logger.info("Sending photo with ID " + id);
-        PostI photo = photoRepository.findById(id)
+        Post photo = photoRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("" + id, "Photo", "id"));
 
         return ResponseEntity.ok(new Response("Photo found", photo));
@@ -56,9 +56,9 @@ public class PostController {
     }
 
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Response> addPhoto(@RequestBody PostI photo) {
+    public ResponseEntity<Response> addPhoto(@RequestBody Post photo) {
         logger.info("Including new photo " + photo);
-        PostI savedPhoto = photoRepository.save(photo);
+        Post savedPhoto = photoRepository.save(photo);
         return ResponseEntity.ok(new Response("Photo added", savedPhoto));
     }
 

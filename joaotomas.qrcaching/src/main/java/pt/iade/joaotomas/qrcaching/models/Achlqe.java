@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "achlqe")
-public class AchlqeI {
+public class Achlqe {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,12 +24,12 @@ public class AchlqeI {
 
     @ManyToOne
     @JoinColumn(name = "achlqe_achivements_id")
-    private AchivementI achivementItem;
+    private Achivement achivementItem;
 
-    public AchlqeI() {
+    public Achlqe() {
     }
 
-    public AchlqeI(Lqe lqeItem, AchivementI achivementItem) {
+    public Achlqe(Lqe lqeItem, Achivement achivementItem) {
         this.lqeItem = lqeItem;
         this.achivementItem = achivementItem;
     }
@@ -50,11 +50,11 @@ public class AchlqeI {
         this.lqeItem = lqeItem;
     }
 
-    public AchivementI getAchivementItem() {
+    public Achivement getAchivementItem() {
         return achivementItem;
     }
 
-    public void setAchivementItem(AchivementI achivementItem) {
+    public void setAchivementItem(Achivement achivementItem) {
         this.achivementItem = achivementItem;
     }
 
@@ -63,7 +63,7 @@ public class AchlqeI {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        AchlqeI achlqeItem = (AchlqeI) o;
+        Achlqe achlqeItem = (Achlqe) o;
 
         return id == achlqeItem.id;
     }

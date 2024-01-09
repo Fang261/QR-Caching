@@ -30,11 +30,11 @@ public class Lqrcode {
 
     @ManyToOne
     @JoinColumn(name = "event_id")
-    private EventI eventItem;
+    private Event eventItem;
 
 
     @OneToMany(mappedBy = "qrcodeItem", cascade = CascadeType.ALL)
-    private ArrayList<PostI> photos;
+    private ArrayList<Post> photos;
 
     public Lqrcode() {
         this.id = 0;
@@ -46,7 +46,7 @@ public class Lqrcode {
         this.photos = new ArrayList<>();
     }
 
-    public Lqrcode(int id, String qrcode, String localPhoto, float latitude, float longitude, float altitude, ArrayList<PostI> photos) {
+    public Lqrcode(int id, String qrcode, String localPhoto, float latitude, float longitude, float altitude, ArrayList<Post> photos) {
         this.id = id;
         this.qrcode = qrcode;
         this.localPhoto = localPhoto;
@@ -56,11 +56,11 @@ public class Lqrcode {
         this.photos = photos;
     }
 
-    public ArrayList<PostI> getPhotos() {
+    public ArrayList<Post> getPhotos() {
         return photos;
     }
 
-    public void setPhotos(ArrayList<PostI> photos) {
+    public void setPhotos(ArrayList<Post> photos) {
         this.photos = photos;
     }
 

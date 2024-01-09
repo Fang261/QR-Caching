@@ -33,10 +33,10 @@ public class User {
     private String email;
 
     @OneToMany(mappedBy = "userItem", cascade = CascadeType.ALL)
-    private List<PostI> completedQrcodes;
+    private List<Post> completedQrcodes;
 
     @OneToMany(mappedBy = "userItem", cascade = CascadeType.ALL)
-    private List<AchivementI> achivements;
+    private List<Achivement> achivements;
 
     public User() {
         this.id = 0;
@@ -49,7 +49,7 @@ public class User {
     }
 
     public User(int id, String username, String password, int phone, String email,
-                    List<PostI> completedQrcodes, List<AchivementI> achivements) {
+                    List<Post> completedQrcodes, List<Achivement> achivements) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -101,19 +101,19 @@ public class User {
         this.email = email;
     }
 
-    public List<PostI> getCompletedQrcodes() {
+    public List<Post> getCompletedQrcodes() {
         return completedQrcodes;
     }
 
-    public void setCompletedQrcodes(List<PostI> completedQrcodes) {
+    public void setCompletedQrcodes(List<Post> completedQrcodes) {
         this.completedQrcodes = completedQrcodes;
     }
 
-    public List<AchivementI> getAchivements() {
+    public List<Achivement> getAchivements() {
         return achivements;
     }
 
-    public void setAchivements(List<AchivementI> achivements) {
+    public void setAchivements(List<Achivement> achivements) {
         this.achivements = achivements;
     }
 

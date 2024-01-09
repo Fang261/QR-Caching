@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import pt.iade.joaotomas.qrcaching.models.UserItem;
+import pt.iade.joaotomas.qrcaching.models.User;
 import pt.iade.joaotomas.qrcaching.models.exceptions.NotFoundException;
 import pt.iade.joaotomas.qrcaching.models.repositories.UserRepository;
 import pt.iade.joaotomas.qrcaching.models.responses.Response;
@@ -30,15 +30,15 @@ public class UserController {
     private UserRepository userRepository;
 
     @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<UserItem> getUsers() {
+    public List<User> getUsers() {
         logger.info("Sending all users");
-        return (List<UserItem>) userRepository.findAll();
+        return (List<User>) userRepository.findAll();
     }
 
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Response> getUser(@PathVariable("id") int id) {
         logger.info("Sending user with ID " + id);
-        UserItem user = userRepository.findById(id)
+        User user = userRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("" + id, "User", "id"));
 
         return ResponseEntity.ok(new Response("User found", user));
@@ -56,9 +56,9 @@ public class UserController {
     }
 
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Response> addUser(@RequestBody UserItem user) {
+    public ResponseEntity<Response> addUser(@RequestBody User user) {
         logger.info("Including new user " + user);
-        UserItem savedUser = userRepository.save(user);
+        User savedUser = userRepository.save(user);
         return ResponseEntity.ok(new Response("User added", savedUser));
     }
 

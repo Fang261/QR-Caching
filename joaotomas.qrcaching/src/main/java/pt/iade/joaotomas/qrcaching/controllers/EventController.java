@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import pt.iade.joaotomas.qrcaching.models.EventItem;
+import pt.iade.joaotomas.qrcaching.models.Event;
 import pt.iade.joaotomas.qrcaching.models.exceptions.NotFoundException;
 import pt.iade.joaotomas.qrcaching.models.repositories.EventRepository;
 import pt.iade.joaotomas.qrcaching.models.responses.Response;
@@ -31,15 +31,15 @@ public class EventController {
     private EventRepository eventRepository;
 
     @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<EventItem> getEvents() {
+    public List<Event> getEvents() {
         logger.info("Sending all events");
-        return (List<EventItem>) eventRepository.findAll();
+        return (List<Event>) eventRepository.findAll();
     }
 
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Response> getEvent(@PathVariable("id") int id) {
         logger.info("Sending event with ID " + id);
-        EventItem event = eventRepository.findById(id)
+        Event event = eventRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("" + id, "Event", "id"));
 
         return ResponseEntity.ok(new Response("Event found", event));
@@ -57,9 +57,9 @@ public class EventController {
     }
 
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Response> addEvent(@RequestBody EventItem event) {
+    public ResponseEntity<Response> addEvent(@RequestBody Event event) {
         logger.info("Including new event " + event);
-        EventItem savedEvent = eventRepository.save(event);
+        Event savedEvent = eventRepository.save(event);
         return ResponseEntity.ok(new Response("Event added", savedEvent));
     }
     

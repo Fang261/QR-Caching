@@ -24,12 +24,12 @@ public class Lqe {
 
     @ManyToOne
     @JoinColumn(name = "lqe_events_id")
-    private EventI eventItem;
+    private Event eventItem;
 
     public Lqe() {
     }
 
-    public Lqe(Lqrcode lqrcodeItem, EventI eventItem) {
+    public Lqe(Lqrcode lqrcodeItem, Event eventItem) {
         this.lqrcodeItem = lqrcodeItem;
         this.eventItem = eventItem;
     }
@@ -50,11 +50,11 @@ public class Lqe {
         this.lqrcodeItem = lqrcodeItem;
     }
 
-    public EventI getEventItem() {
+    public Event getEventItem() {
         return eventItem;
     }
 
-    public void setEventItem(EventI eventItem) {
+    public void setEventItem(Event eventItem) {
         this.eventItem = eventItem;
     }
 

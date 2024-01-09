@@ -14,7 +14,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "events")
-public class EventItem {
+public class Event {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -40,13 +40,13 @@ public class EventItem {
     private String localPhoto;
 
     @OneToMany(mappedBy = "eventItem", cascade = CascadeType.ALL)
-    private List<QrcodeItem> qrcodes;
+    private List<Lqrcode> qrcodes;
 
-    public EventItem() {
+    public Event() {
     }
 
-    public EventItem(int id, String name, float latitude, float longitude, LocalDate inicial_date, LocalDate final_date,
-            String localPhoto, List<QrcodeItem> qrcodes) {
+    public Event(int id, String name, float latitude, float longitude, LocalDate inicial_date, LocalDate final_date,
+            String localPhoto, List<Lqrcode> qrcodes) {
         this.id = id;
         this.name = name;
         this.latitude = latitude;
@@ -113,11 +113,11 @@ public class EventItem {
         this.longitude = longitude;
     }
 
-    public List<QrcodeItem> getQrcodes() {
+    public List<Lqrcode> getQrcodes() {
         return qrcodes;
     }
 
-    public void setQrcodes(List<QrcodeItem> qrcodes) {
+    public void setQrcodes(List<Lqrcode> qrcodes) {
         this.qrcodes = qrcodes;
     }
 

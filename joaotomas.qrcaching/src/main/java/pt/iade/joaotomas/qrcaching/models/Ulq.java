@@ -24,7 +24,7 @@ public class Ulq {
 
     @ManyToOne
     @JoinColumn(name = "ulq_post_id")
-    private PostI postItem;
+    private Post postItem;
 
     @ManyToOne
     @JoinColumn(name = "ulq_lqrcode_id")
@@ -33,7 +33,7 @@ public class Ulq {
     public Ulq() {
     }
 
-    public Ulq(User userItem, PostI postItem, Lqrcode lqrcodeItem) {
+    public Ulq(User userItem, Post postItem, Lqrcode lqrcodeItem) {
         this.userItem = userItem;
         this.postItem = postItem;
         this.lqrcodeItem = lqrcodeItem;
@@ -55,11 +55,11 @@ public class Ulq {
         this.userItem = userItem;
     }
 
-    public PostI getPostItem() {
+    public Post getPostItem() {
         return postItem;
     }
 
-    public void setPostItem(PostI postItem) {
+    public void setPostItem(Post postItem) {
         this.postItem = postItem;
     }
 

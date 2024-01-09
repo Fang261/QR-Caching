@@ -3,6 +3,6 @@ package pt.iade.joaotomas.qrcaching.models.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import pt.iade.joaotomas.qrcaching.models.AchivementI;
+import pt.iade.joaotomas.qrcaching.models.Achivement;
 
-public interface AchivementRepository extends CrudRepository<AchivementI, Integer> { }
+public interface AchivementRepository extends CrudRepository<Achivement, Integer> { }

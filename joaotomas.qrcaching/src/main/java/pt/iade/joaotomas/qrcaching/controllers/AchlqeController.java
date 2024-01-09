@@ -7,7 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import pt.iade.joaotomas.qrcaching.models.AchlqeI;
+import pt.iade.joaotomas.qrcaching.models.Achlqe;
 import pt.iade.joaotomas.qrcaching.models.exceptions.NotFoundException;
 import pt.iade.joaotomas.qrcaching.models.repositories.AchlqeRepository;
 import pt.iade.joaotomas.qrcaching.models.responses.Response;
@@ -24,15 +24,15 @@ public class AchlqeController {
     private AchlqeRepository achlqeRepository;
 
     @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<AchlqeI> getAllAchlqes() {
+    public List<Achlqe> getAllAchlqes() {
         logger.info("Sending all Achlqes");
-        return (List<AchlqeI>) achlqeRepository.findAll();
+        return (List<Achlqe>) achlqeRepository.findAll();
     }
 
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Response> getAchlqe(@PathVariable("id") int id) {
         logger.info("Sending Achlqe with ID " + id);
-        AchlqeI achlqe = achlqeRepository.findById(id)
+        Achlqe achlqe = achlqeRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("" + id, "Achlqe", "id"));
 
         return ResponseEntity.ok(new Response("Achlqe found", achlqe));
@@ -50,9 +50,9 @@ public class AchlqeController {
     }
 
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Response> addAchlqe(@RequestBody AchlqeI achlqe) {
+    public ResponseEntity<Response> addAchlqe(@RequestBody Achlqe achlqe) {
         logger.info("Including new Achlqe " + achlqe);
-        AchlqeI savedAchlqe = achlqeRepository.save(achlqe);
+        Achlqe savedAchlqe = achlqeRepository.save(achlqe);
         return ResponseEntity.ok(new Response("Achlqe added", savedAchlqe));
     }
 
